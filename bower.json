@@ -1,0 +1,25 @@
+{
+  "name": "bem-grid",
+  "version": "0.0.1",
+  "description": "Grid for bem-projects",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/verybigman/bem-grid.git"
+  },
+  "keywords": [
+    "bem",
+    "roole",
+    "sass"
+  ],
+  "authors": [
+    "Anton Winogradov <winogradovaa@gmail.com>"
+  ],
+  "dependencies": {
+    "bem-core": "v2.2.1"
+},
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "libs"
+  ]
+}

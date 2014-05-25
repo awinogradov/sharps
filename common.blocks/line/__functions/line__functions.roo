@@ -1,0 +1,17 @@
+// STRIP UNIT
+// ============================================
+
+$strip_unit = @function $num {
+    @return $num / ($num * 0 + 1);
+};
+
+// CONVERT TO REM
+// ============================================
+
+$convert_to_rem = @function $value, $base_value  {
+    $value = $strip_unit($value) / $strip_unit($base_value) * 1rem;
+    @if $value is 0rem {
+        $value = 0;
+    }
+    @return $value;
+};

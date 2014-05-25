@@ -1,0 +1,23 @@
+@mixin mantle_undress($size, $up) {
+
+    @media #{$up} {
+        .mantle_undress_#{$size} {
+            display: none !important;
+        }
+    }
+
+}
+
+@include exports("grid") {
+
+    @media #{$small-up} {
+        @include mantle_undress($size:s, $up:$small-up);
+    }
+    @media #{$medium-up} {
+        @include mantle_undress($size:m, $up:$medium-up);
+    }
+    @media #{$large-up} {
+        @include mantle_undress($size:l, $up:$large-up);
+    }
+
+}

@@ -1,0 +1,26 @@
+.line {
+    @mixin $grid_row(false);
+    @mixin .clearfix;
+
+    .line {
+        @mixin $grid_row(true);
+        @mixin .clearfix;
+    }
+}
+
+.line__col {
+    @mixin $grid_column($total_columns);
+    min-height: 10px;
+}
+
+@media $small_up {
+    @mixin $grid_html_classes(s);
+}
+
+@media $medium_up {
+    @mixin $grid_html_classes(m);
+}
+
+@media $large_up {
+    @mixin $grid_html_classes(l);
+}

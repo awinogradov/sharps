@@ -1,0 +1,23 @@
+@mixin mantle_dress($size, $up) {
+
+    @media #{$up} {
+        .mantle_dress_#{$size} {
+            display: none !important;
+        }
+    }
+
+}
+
+@include exports("grid") {
+
+    @media #{$small-up} {
+        @include mantle_dress($size:s, $up:$small-up);
+    }
+    @media #{$medium-up} {
+        @include mantle_dress($size:m, $up:$medium-up);
+    }
+    @media #{$large-up} {
+        @include mantle_dress($size:l, $up:$large-up);
+    }
+
+}
