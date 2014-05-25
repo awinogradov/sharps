@@ -53,6 +53,9 @@ Example for two columns for devices with medium screen. Collapsed on small.
     ]
 }
 ```
+
+See more examples desktop.examples/index/index.html, use `bem make` for build them.
+
 Useful mods for col element:
 
 __dlw__ - display large width
