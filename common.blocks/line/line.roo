@@ -1,9 +1,9 @@
 .line {
-    @mixin $grid_row(false);
+    @mixin $grid_row(false, $page_width, $rem_base);
     @mixin .clearfix;
 
     .line {
-        @mixin $grid_row(true);
+        @mixin $grid_row(true, $page_width, $rem_base);
         @mixin .clearfix;
     }
 }

@@ -4,8 +4,6 @@ $grid_columns_count: 12;
 
 $rem_base:      16px;
 $total_columns: $grid_columns_count;
-$line_width:    convert_to_rem($page_width, $rem_base);
-$column_gutter: convert_to_rem(30, $rem_base);
 
 // MEDIA QUERIES
 $screen:      "only screen";

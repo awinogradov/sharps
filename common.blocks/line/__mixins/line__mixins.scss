@@ -16,7 +16,7 @@
 *
 * $nest - special behavior for row, default: false
 */
-@mixin grid_row($nest:false) {
+@mixin grid_row($nest:false,$pageWidth:1000, $remBase:16px) {
 
     @if $nest {
         width: auto;
@@ -28,7 +28,7 @@
     @else {
         width: 100%;
         margin: 0 auto;
-        max-width: $line_width;
+        max-width: convert_to_rem($pageWidth, $remBase);
     }
 
 };

@@ -1,9 +1,9 @@
 .line {
-    @include grid_row();
+    @include grid_row($pageWidth:$page_with, $remBase:$rem_base);
     @include clearfix();
 
     .line {
-        @include grid_row($nest:true);
+        @include grid_row($nest:true, $pageWidth:$page_with, $remBase:$rem_base);
         @include clearfix();
     }
 }
