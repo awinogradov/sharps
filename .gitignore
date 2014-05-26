@@ -5,6 +5,7 @@ dist
 .sass-cache
 libs
 test/libs
+common.blocks/mantle
 .DS_Store
 .project
 .bem/cache/

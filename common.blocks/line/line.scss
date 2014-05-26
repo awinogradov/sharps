@@ -1,7 +1,3 @@
-// @import "./__functions/line__functions";
-// @import "./__mixins/line__mixins";
-// @import "./__variables/line__variables";
-
 .line {
     @include grid_row();
     @include clearfix();
