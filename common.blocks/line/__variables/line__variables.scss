@@ -10,17 +10,17 @@ $column_gutter: convert_to_rem(30, $rem_base);
 // MEDIA QUERIES
 $screen:      "only screen";
 
-$landscape:   "$screen and (orientation: landscape)";
-$portrait:    "$screen and (orientation: portrait)";
+$landscape:   "#{$screen} and (orientation: landscape)";
+$portrait:    "#{$screen} and (orientation: portrait)";
 
 $small_up:    $screen;
-$small_only:  "$screen and (max-width: 40em)";
+$small_only:  "#{$screen} and (max-width: 40em)";
 
-$medium_up:   "$screen and (min-width: 40.063em)";
-$medium_only: "$screen and (min-width: 40.063em) and (max-width: 64em)";
+$medium_up:   "#{$screen} and (min-width: 40.063em)";
+$medium_only: "#{$screen} and (min-width: 40.063em) and (max-width: 64em)";
 
-$large_up:    "$screen and (min-width: 64.063em)";
-$large_only:  "$screen and (min-width: 64.063em) and (max-width: 90em)";
+$large_up:    "#{$screen} and (min-width: 64.063em)";
+$large_only:  "#{$screen} and (min-width: 64.063em) and (max-width: 90em)";
 
 $small:  $medium_up;
 $medium: $medium_up;

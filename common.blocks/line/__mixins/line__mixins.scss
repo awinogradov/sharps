@@ -108,15 +108,15 @@
     .line__col { @include grid_column($position:true); }
 
     // columns = $i
-    @for $i from 1 through$total_columns {
-        .line__col_d#{$size}w_#{$i} { @include grid_column(columns:$i); }
+    @for $i from 1 through $total_columns {
+        .line__col_d#{$size}w_#{$i} { @include grid_column($columns:$i); }
     }
 
     [class^="line__col_"] + [class^="line__col_"]:last-child { float: right; }
     [class^="line__col_"] + [class^="line__col_"].line__col_end { float: left; }
 
     // offset = $i
-    @for $i from 0 through - 1 {
+    @for $i from 0 through $total_columns - 1 {
         .line__col_d#{$size}o_#{$i} { @include grid_column($offset:$i); }
     }
 
