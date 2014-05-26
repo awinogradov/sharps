@@ -11,6 +11,8 @@ grid row. You can use it now on BEM notations. Read more about that grid
 .line_col = .columns
 ```
 
+Grid available for Roole and Sass(scss) preprocessors.
+
 ### Dependencies
 
 - i-bem and ua blocks from [bem-core](https//github.com/bem/bem-core)
