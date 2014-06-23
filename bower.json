@@ -15,9 +15,9 @@
   "authors": [
     "Anton Winogradov <winogradovaa@gmail.com>"
   ],
-  "dependencies": {
-    "bem-core": "v2.2.1"
-},
+  "devDependencies": {
+    "bem-core": "~2.2.4"
+  },
   "license": "MIT",
   "ignore": [
     "node_modules",
