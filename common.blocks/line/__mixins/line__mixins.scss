@@ -1,7 +1,6 @@
 // CLEAR FLOATS
 @mixin clearfix {
-  &:before, &:after { content: " "; display: table; }
-  &:after { clear: both; }
+  &:before, &:after { clear: both; content: " "; display: table; }
 }
 
 // GRID CONSTRUCTORS
@@ -112,8 +111,8 @@
         .line__col_d#{$size}w_#{$i} { @include grid_column($columns:$i); }
     }
 
-    [class^="line__col_"] + [class^="line__col_"]:last-child { float: right; }
-    [class^="line__col_"] + [class^="line__col_"].line__col_end { float: left; }
+    [class*="line__col"] + [class*="line__col"]:last-child { float: right; }
+    [class*="line__col"] + [class*="line__col"].line__col_end { float: left; }
 
     // offset = $i
     @for $i from 0 through $total_columns - 1 {

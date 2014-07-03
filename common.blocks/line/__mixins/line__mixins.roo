@@ -4,8 +4,7 @@
 */
 .clearfix {
     *zoom: 1;
-    &:before, &:after { content: " "; display: table; }
-    &:after { clear: both; }
+    &:before, &:after { clear: both; content: " "; display: table; }
 }
 
 // GRID CONSTRUCTORS
@@ -112,8 +111,8 @@ $grid_html_classes = @function $size {
         .line__col_d{$size}w_{$i} { @mixin $grid_column($i); }
     }
 
-    [class^="line__col_"] + [class^="line__col_"]:last-child { float: right; }
-    [class^="line__col_"] + [class^="line__col_"].line__col_end { float: left; }
+    [class*="line__col"] + [class*="line__col"]:last-child { float: right; }
+    [class*="line__col"] + [class*="line__col"].line__col_end { float: left; }
 
     // offset = $i
     @for $i in 0..$total_columns - 1 {
