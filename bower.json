@@ -1,6 +1,6 @@
 {
   "name": "bem-grid",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Grid for bem-projects",
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
     "Anton Winogradov <winogradovaa@gmail.com>"
   ],
   "devDependencies": {
-    "bem-core": "~2.2.4"
+    "bem-core": "git://github.com/bem/bem-core.git#v2.4.0"
   },
   "license": "MIT",
   "ignore": [
