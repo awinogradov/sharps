@@ -1,41 +1,46 @@
 {
-    "private": true,
-    "name": "bem-grid",
-    "version": "0.0.5",
-    "description": "Grid for bem-projects",
-    "homepage": "https://github.com/verybigman/bem-grid",
-    "bugs": "https://github.com/verybigman/bem-grid/issues",
-    "author": {
-        "name": "Anton Winogradov",
-        "email": "winogradovaa@gmail.com",
-        "url": "https://github.com/verybigman"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/verybigman/bem-grid.git"
-    },
-    "_directories": {
-        "blocks": "*.blocks",
-        "bundles": "*.examples",
-        "libs": "libs"
-    },
-    "dependencies": {
-        "bem-environ": "~1.4.0"
-    },
-    "devDependencies": {
-        "bem": "~0.8.1",
-        "bower-npm-install": "~0.5.2",
-        "bem-tools-autoprefixer": "~0.0.3",
-        "roole": "~0.9.0"
-    },
-    "peerDependencies": {
-        "bem-cli": "~1.0.1"
-    },
-    "scripts": {
-        "deps": "bower-npm-install --non-interactive"
-    },
-    "engines": {
-        "node": ">=0.10.0"
-    },
-    "license": "MIT"
+  "private": true,
+  "name": "bem-grid",
+  "version": "0.0.5",
+  "description": "Grid for bem-projects",
+  "homepage": "https://github.com/verybigman/bem-grid",
+  "bugs": "https://github.com/verybigman/bem-grid/issues",
+  "author": {
+    "name": "Anton Winogradov",
+    "email": "winogradovaa@gmail.com",
+    "url": "https://github.com/verybigman"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/verybigman/bem-grid.git"
+  },
+  "_directories": {
+    "blocks": "*.blocks",
+    "bundles": "*.examples",
+    "libs": "libs"
+  },
+  "dependencies": {
+    "bem-environ": "~1.4.0",
+    "stylus-type-utils": "0.0.3",
+    "ym": "^0.1.0"
+  },
+  "devDependencies": {
+    "bem": "~0.8.1",
+    "bem-tools-autoprefixer": "~0.0.3",
+    "bem-xjst": "^0.8.2",
+    "bemhtml-compat": "0.0.11",
+    "bower-npm-install": "~0.5.2",
+    "roole": "~0.9.0",
+    "stylus": "^0.47.3"
+  },
+  "peerDependencies": {
+    "bem-cli": "~1.0.1"
+  },
+  "scripts": {
+    "deps": "bower-npm-install --non-interactive"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "MIT"
 }

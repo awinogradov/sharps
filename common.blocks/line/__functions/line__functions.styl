@@ -1,0 +1,10 @@
+// STRIP UNIT
+strip_unit(num)
+    num / (num * 0 + 1)
+
+// CONVERT TO REM
+convert_to_rem(value, base_value = 16)
+    value = (strip_unit(value) / strip_unit(base_value) * 1)
+    if (value == 0)
+        value = 0
+    return unit(value, 'rem')

@@ -1,7 +1,7 @@
 {
   "name": "bem-grid",
   "version": "0.0.5",
-  "description": "Grid for bem-projects",
+  "description": "Responsive grid for bem-projects",
   "repository": {
     "type": "git",
     "url": "git://github.com/verybigman/bem-grid.git"
@@ -10,6 +10,9 @@
     "bem",
     "roole",
     "sass",
+    "scss",
+    "stylus",
+    "flexbox",
     "grid"
   ],
   "authors": [

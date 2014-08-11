@@ -13,7 +13,7 @@ exports.getTechs = function() {
         'bemdecl.js'           : 'v2/bemdecl.js',
         'deps.js'              : 'v2/deps.js',
         'css'                  : 'v2/css',
-        'roole'                : 'v2/roole',
+        'stylus'               : 'v2/styl',
         'js'                   : 'v2/js-i'
     };
 
@@ -26,4 +26,4 @@ exports.getTechs = function() {
     return techs;
 };
 
-exports.defaultTechs = ['roole', 'bemhtml', 'js', 'md'];
+exports.defaultTechs = ['styl', 'bemhtml', 'js', 'md'];

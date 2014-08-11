@@ -20,7 +20,7 @@ MAKE.decl('BundleNode', {
             'bemjson.js',
             'bemdecl.js',
             'deps.js',
-            'roole',
+            'stylus',
             'css',
             'js',
             'bemhtml',
@@ -30,7 +30,7 @@ MAKE.decl('BundleNode', {
     },
 
     getForkedTechs : function() {
-        return this.__base().concat(['roole']);
+        return this.__base().concat(['stylus']);
     },
 
     getLevelsMap : function() {
@@ -62,7 +62,7 @@ MAKE.decl('BundleNode', {
     },
 
     'create-css-node' : function(tech, bundleNode, magicNode) {
-        var source = this.getBundlePath('roole');
+        var source = this.getBundlePath('stylus');
         if(this.ctx.arch.hasNode(source)) {
             return this.createAutoprefixerNode(tech, this.ctx.arch.getNode(source), bundleNode, magicNode);
         }

@@ -1,6 +1,6 @@
 ({
     mustDeps: [
-        {elems: ['functions', 'mixins', 'variables']}
+        {elems: ['variables', 'functions', 'mixins' ]}
     ],
     shouldDeps: []
 })

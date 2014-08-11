@@ -1,0 +1,20 @@
+.line
+    grid_row(pageWidth: page_width, remBase: rem_base)
+    clearfix()
+
+    .line
+        grid_row(nest: true, pageWidth: page_width, remBase: rem_base)
+        clearfix()
+
+.line__col
+    grid_column(columns: total_columns)
+    min-height: 10px
+
+@media small_up
+    grid_html_classes(size: s)
+
+@media medium_up
+    grid_html_classes(size: m)
+
+@media large_up
+    grid_html_classes(size: l)
