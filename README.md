@@ -88,7 +88,7 @@ Useful mods for col element:
 - __dmuc__ - display medium uncentered
 - __dsuc__ - display small uncentered
 
-### Autors
+### Authors
 
 - Anton Winogradov ([verybigman](https://github.com/verybigman))
 
