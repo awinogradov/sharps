@@ -1,0 +1,103 @@
+ctx = '.line__col'
+
+calc_columns(colNumber)
+    ((colNumber / total_columns) * 100) + '%'
+
+/*
+* creates a column, should be used inside of a media query to control layouts
+*
+* columns  - the number of columns this should be
+* center   - center columns, default: false
+* offset   - # of columns to offset, default: false
+* push     - # of columns to push, default: false
+* pull     - # of columns to pull, default: false
+* position - column position, default: false
+*/
+column(columns = false, center = false, offset = false, push = false, pull = false, position = false)
+
+    if position or push or pull
+        position: relative
+
+    padding-left:  0
+    padding-right: 0
+
+    if columns
+        width: calc_columns(columns)
+
+    if push
+        left:  calc_columns(push)
+        right: auto
+
+    if pull
+        right: calc_columns(pull)
+        left:  auto
+
+    float: left
+
+    if center
+        margin-left:  auto
+        margin-right: auto
+        float:        none !important
+
+    if offset
+        margin-left: calc_columns(offset) !important
+
+html_classes(size)
+
+    // center = true
+    .line__col_d{size}c
+        column(center: true)
+
+    // uncenter
+    .line__col_d{size}uc
+        margin-left:  0
+        margin-right: 0
+        float:        left !important
+
+    for i in (1..total_columns - 1)
+        // push = i
+        .line__col_d{size}ph_{i}
+            column(push: i)
+
+        // pull = i
+        .line__col_d{size}pl_{i}
+            column(pull: i)
+
+    // position = true
+    {ctx}
+        column(position: true)
+
+    // columns = i
+    for i in (1..total_columns)
+        .line__col_d{size}w_{i}
+            column(columns: i)
+
+    // offset = i
+    for i in (1..total_columns - 1)
+        .line__col_d{size}o_{i}
+            column(offset: i)
+
+    .line__col_d{size}ro
+        margin-left: 0
+        margin-right: 0
+        left: auto
+        right: auto
+        float: left
+
+{ctx}
+    column(columns: total_columns)
+    min-height: 10px
+
+[class*="line__col"] + [class*="line__col"]:last-child
+    float: right
+[class*="line__col"] + [class*="line__col"].line__col_end
+    float: left
+
+@media small_up
+    html_classes(size: s)
+
+@media medium_up
+    html_classes(size: m)
+
+@media large_up
+    html_classes(size: l)

@@ -1,6 +1,6 @@
 ({
     mustDeps: [
-        {elems: ['variables', 'functions', 'mixins' ]}
+        {block: 'variables'}
     ],
     shouldDeps: []
 })
