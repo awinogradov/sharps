@@ -11,7 +11,7 @@ grid row. You can use it now on BEM notations. Read more about that grid
 .line_col = .columns
 ```
 
-Grid available for Roole and Sass(scss) preprocessors.
+Grid available for Stylus only.
 
 ### Dependencies
 
@@ -19,8 +19,8 @@ Grid available for Roole and Sass(scss) preprocessors.
 
 ### Install
 
-Take way like connecting with [bem-bl](https//github.com/bem/bem-bl),
-[bem-core](https//github.com/bem/bem-core) and [bem-components](https//github.com/bem/bem-components) libraries.
+Take way like connecting with [bem-core](https//github.com/bem/bem-core)
+and [bem-components](https//github.com/bem/bem-components) libraries.
 Use [bower-npm-install](https://github.com/arikon/bower-npm-install) to install bem-grid from
 GitHub or Bower register.
 
@@ -32,7 +32,7 @@ Add levels from bem-grid to your make.js file:
 
 ### Using
 
-Example for two columns for devices with medium screen. Collapsed on small.
+Example for two columns on devices with medium screen. Will be collapsed on small.
 
 ``` javascript
 {
@@ -56,7 +56,7 @@ Example for two columns for devices with medium screen. Collapsed on small.
 }
 ```
 
-See more examples desktop.examples/index/index.html, use `bem make` for build them.
+See more examples desktop.pages/index/index.html, use `bem make` for build them.
 
 Useful mods for col element:
 
@@ -88,7 +88,7 @@ Useful mods for col element:
 - __dmuc__ - display medium uncentered
 - __dsuc__ - display small uncentered
 
-### Autors
+### Authors
 
 - Anton Winogradov ([verybigman](https://github.com/verybigman))
 
