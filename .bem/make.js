@@ -1,14 +1,13 @@
-var dirs = require('../package.json')._directories,
-    path = require('path');
+var PATH = require('path'),
+    environ = require('bem-environ')(__dirname),
+    U = require('bem').util;
 
-// npm package with tech for autoprefixer
-// more info here: https://github.com/bem/bem-tools-autoprefixer
 require('bem-tools-autoprefixer').extendMake(MAKE);
 
 MAKE.decl('Arch', {
 
-    blocksLevelsRegexp : /^.+?(\.blocks|\.design)/,
-    bundlesLevelsRegexp : /^.+?\.examples$/
+    blocksLevelsRegexp : /^.+?\.blocks$/,
+    bundlesLevelsRegexp : /^.+?\.pages$/,
 
 });
 
@@ -33,32 +32,12 @@ MAKE.decl('BundleNode', {
         return this.__base().concat(['stylus']);
     },
 
-    getLevelsMap : function() {
-        return {
-            'desktop':
-            // bem-core levels
-            [
-                'common.blocks'
-            ].map(function(level){ return path.join(dirs.libs, 'bem-core', level); })
-
-            // bem-grid levels
-            .concat(
-                [
-                    'common.blocks',
-                    'design/common.blocks'
-                ]
-            )
-        };
-    },
-
     getLevels : function() {
-        var resolve = path.resolve.bind(path, this.root),
-            buildLevel = this.getLevelPath().split('.')[0],
-            levels = this.getLevelsMap()[buildLevel] || [];
-
-        return levels
-            .map(function(path) { return resolve(path); })
-            .concat(resolve(path.dirname(this.getNodePrefix()), 'blocks'));
+        return [
+            'libs/bem-core/common.blocks',
+            'common.blocks',
+            'design/common.blocks'
+        ];
     },
 
     'create-css-node' : function(tech, bundleNode, magicNode) {
@@ -72,38 +51,16 @@ MAKE.decl('BundleNode', {
 
 MAKE.decl('AutoprefixerNode', {
 
-    getPlatform : function() {
-        return this.output.split('.')[0];
-    },
-
     getBrowsers : function() {
-        var platform = this.getPlatform();
-        switch(platform) {
-
-        case 'desktop':
-            return [
-                'last 2 versions',
-                'ie 10',
-                'ff 24',
-                'opera 12.16'
-            ];
-
-        case 'touch-pad':
-            return [
-                'android 4',
-                'ios 5'
-            ];
-
-        case 'touch-phone':
-            return [
-                'android 4',
-                'ios 6',
-                'ie 10'
-            ];
-
-        }
-
-        return this.__base();
+        return [
+            'last 2 versions',
+            'ie 10',
+            'ff 24',
+            'opera 12.16',
+            'android 4',
+            'ios 5',
+            'ie 10'
+        ];
     }
 
 });
