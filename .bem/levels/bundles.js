@@ -13,7 +13,7 @@ exports.getTechs = function() {
     var techs = this.__base();
 
     // Use techs from lib bem-core
-    ['html'].forEach(getTechResolver(techs, BEMCORE_TECHS));
+    ['browser.js+bemhtml', 'html'].forEach(getTechResolver(techs, BEMCORE_TECHS));
 
     return techs;
 };

@@ -13,17 +13,17 @@ exports.getTechs = function() {
         'bemdecl.js'           : 'v2/bemdecl.js',
         'deps.js'              : 'v2/deps.js',
         'css'                  : 'v2/css',
-        'stylus'               : 'v2/styl',
+        'stylus'               : 'v2/styl.js',
         'js'                   : 'v2/js-i'
     };
+
+    // use techs from bem-core library
+    ['bemhtml', 'vanilla.js', 'browser.js'].forEach(getTechResolver(techs, BEMCORE_TECHS));
 
     // use techs from project (.bem/techs)
     [].forEach(getTechResolver(techs, PRJ_TECHS));
 
-    // use techs from bem-core library
-    ['bemhtml', 'md'].forEach(getTechResolver(techs, BEMCORE_TECHS));
-
     return techs;
 };
 
-exports.defaultTechs = ['styl', 'bemhtml', 'js', 'md'];
+exports.defaultTechs = ['stylus', 'browser.js', 'bemhtml', 'md'];

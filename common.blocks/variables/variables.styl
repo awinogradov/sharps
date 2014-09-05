@@ -4,20 +4,28 @@ rem_base      = 16px
 total_columns = 12
 
 // MEDIA QUERIES
-screen      = "only screen"
+screen       = "only screen"
+landscape    = screen + " and (orientation : landscape)"
+portrait     = screen + " and (orientation : portrait)"
 
-landscape   = screen + " and (orientation : landscape)"
-portrait    = screen + " and (orientation : portrait)"
+// SMALL DISPLAYS
+small_start  = 40em
+small_up     = screen
+small_only   = screen + " and (max-width : " + small_start + ")"
 
-small_up    = screen
-small_only  = screen + " and (max-width : 40em)"
+// MEDIUM DISPLAYS
+medium_start = 40.063em
+medium_stop  = 64em
+medium_up    = screen + " and (min-width : " + medium_start + ")"
+medium_only  = screen + " and (min-width : " + medium_start + ") and (max-width : " + medium_stop + ")"
 
-medium_up   = screen + " and (min-width : 40.063em)"
-medium_only = screen + " and (min-width : 40.063em) and (max-width : 64em)"
+// LARGE DISPLAYS
+large_start  = 64.063em
+large_stop   = 90em
+large_up     = screen + " and (min-width : " + large_start + ")"
+large_only   = screen + " and (min-width : " + large_start + ") and (max-width : " + large_stop + ")"
 
-large_up    = screen + " and (min-width : 64.063em)"
-large_only  = screen + " and (min-width : 64.063em) and (max-width : 90em)"
-
-small  =  medium_up
-medium =  medium_up
-large  =  large_up
+// BUILD FOR
+small        = medium_up
+medium       = medium_up
+large        = large_up
