@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "bem-grid",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Grid for bem-projects",
   "homepage": "https://github.com/verybigman/bem-grid",
   "bugs": "https://github.com/verybigman/bem-grid/issues",
