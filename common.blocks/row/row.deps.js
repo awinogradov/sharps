@@ -1,6 +1,7 @@
 ({
     mustDeps: [
-        {block: 'variables'}
+        {block: 'variables'},
+        {mods: 'no-flexbox'}
     ],
     shouldDeps: []
 })

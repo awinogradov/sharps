@@ -5,7 +5,9 @@
     head : [
         { elem : 'meta', attrs : { name: 'viewport', content: 'width=device-width, initial-scale=1' } }
     ],
-    styles : [{ elem : 'css', url : '_index.css' }],
+    styles : [
+        { elem : 'css', url : '_index.css' }
+    ],
     content : [
         {
             elem : 'header',
