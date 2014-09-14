@@ -1,11 +1,11 @@
-## Мы используем рабочий процесс GitHub'а
+## Я использую рабочий процесс GitHub'а
 
 Подробнее почитать об этом можно на GitHub [guides](http://guides.github.com/),
 а также в статье на [хабре](http://habrahabr.ru/post/189046/).
 
 ### Как внести изменения
 
-1. [Создайте новое issue](https://github.com/verybigman/bem-ng/issues/new) с описанием или возьмите существующее.
+1. [Создайте новое issue](https://github.com/verybigman/bem-grid/issues/new) с описанием или возьмите существующее.
 2. Создайте feature-branch с номером issue от master ветки. Например, для issue #42: `git checkout -b feature/issue@42`.
 3. Зафиксируйте изменения и сделайте `push` вашей ветки.
 4. Создайте pull-request.
