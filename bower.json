@@ -1,16 +1,13 @@
 {
   "name": "bem-grid",
   "version": "0.0.7",
-  "description": "Responsive grid for bem-projects",
+  "description": "Responsive grid on BEM methodology",
   "repository": {
     "type": "git",
     "url": "git://github.com/verybigman/bem-grid.git"
   },
   "keywords": [
     "bem",
-    "roole",
-    "sass",
-    "scss",
     "stylus",
     "flexbox",
     "grid"
@@ -18,8 +15,17 @@
   "authors": [
     "Anton Winogradov <winogradovaa@gmail.com>"
   ],
-  "devDependencies": {
+  "ignore": [
+    ".bem/cache",
+    ".enb/tmp",
+    "node_modules",
+    "libs"
+  ],
+  "dependencies": {
     "bem-core": "git://github.com/bem/bem-core.git#v2.4.0"
+  },
+  "devDependencies": {
+    "bem-pr": "git://github.com/narqo/bem-pr.git#~0.10.0"
   },
   "license": "MIT",
   "ignore": [
