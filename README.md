@@ -2,27 +2,17 @@
 
 This README also available in [russian](https://github.com/verybigman/bem-grid/blob/master/README.ru.md).
 
-Library for do awesome grid in bem-projects. This is fork from Zurb Foundation
-grid row. You can use it now on BEM notations. Read more about that grid
-[here](http://foundation.zurb.com/docs/components/grid.html). And member about this:
-
-``` javascript
-.line = .row
-.line_col = .columns
-```
-
-Grid available for Stylus only.
+Library for do awesome grid in bem-projects. This grid inspired by [Zurb Foundation grid](http://foundation.zurb.com/docs/components/grid.html) and [Flexbox grid](http://flexboxgrid.com/). Grid available for Stylus only.
 
 ### Dependencies
 
-- i-bem and ua blocks from [bem-core](https//github.com/bem/bem-core)
+- i-bem block from [bem-core](https//github.com/bem/bem-core)
 
 ### Install
 
 Take way like connecting with [bem-core](https//github.com/bem/bem-core)
 and [bem-components](https//github.com/bem/bem-components) libraries.
-Use [bower-npm-install](https://github.com/arikon/bower-npm-install) to install bem-grid from
-GitHub or Bower register.
+Use [bower-npm-install](https://github.com/arikon/bower-npm-install) to install bem-grid from GitHub or Bower register.
 
 Add levels from bem-grid to your make.js file:
 
@@ -36,61 +26,46 @@ Example for two columns on devices with medium screen. Will be collapsed on smal
 
 ``` javascript
 {
-    block: 'line',
+    block: 'row',
     content: [
         {
             elem: 'col',
-            mods: { dmw: 6 },
-            content: [
-                'left column'
-            ]
+            mods: { mw: 6 },
+            content: 'left column'
         },
         {
             elem: 'col',
-            mods: { dmw: 6 },
-            content: [
-                'right column'
-            ]
+            mods: { mw: 6 },
+            content: 'right column'
         }
     ]
 }
 ```
 
-See more examples desktop.pages/index/index.html, use `bem make` for build them.
+See more examples in desktop.pages/index/index.bemjson.js (build it with `bem make`) or on [landing page](http://verybigman.github.io/bem-grid).
+
+Useful mods for row block:
+
+- __{s,m,l}al__ - align cols to left on {small, medium, large} displays
+- __{s,m,l}ac__ - align cols to center on {small, medium, large} displays
+- __{s,m,l}ar__ - align cols to right on {small, medium, large} displays
+
+- __{s,m,l}vat__ - align cols verticaly to top on {small, medium, large} displays
+- __{s,m,l}vam__ - align cols verticaly to middle on {small, medium, large} displays
+- __{s,m,l}vab__ - align cols bottom to top on {small, medium, large} displays
 
 Useful mods for col element:
 
-- __dlw__ - display large width
-- __dmw__ - display medium width
-- __dsw__ - display small width
+- __{l,m,s}__ - auto width on {small, medium, large} displays
+- __{l,m,s}w__ - width on {small, medium, large} displays
+- __{l,m,s}o__ - offset on {small, medium, large} displays
 
-- __dlro__ - display large reset order
-- __dmro__ - display medium reset order
-- __dsro__ - display small reset order
+- __{s,m,l}of__ - order first this col on {small, medium, large} displays 
+- __{s,m,l}ol__ - order last this col on {small, medium, large} displays 
 
-- __dlo__ - display large offset
-- __dmo__ - display medium offset
-- __dso__ - display small offset
+### Author
 
-- __dlph__ - display large push
-- __dmph__ - display medium push
-- __dsph__ - display small push
-
-- __dlpl__ - display large pull
-- __dmpl__ - display medium pull
-- __dspl__ - display small pull
-
-- __dlc__ - display large centered
-- __dmc__ - display medium centered
-- __dsc__ - display small centered
-
-- __dluc__ - display large uncentered
-- __dmuc__ - display medium uncentered
-- __dsuc__ - display small uncentered
-
-### Authors
-
-- Anton Winogradov ([verybigman](https://github.com/verybigman))
+Anton Winogradov ([verybigman](https://github.com/verybigman)) @awinogradov
 
 ### Ideas
 
