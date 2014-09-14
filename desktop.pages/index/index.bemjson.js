@@ -13,14 +13,29 @@
             elem : 'header',
             content : [
                 {
+                    block : 'link',
+                    url : 'https://github.com/verybigman/bem-grid/tree/flexbox',
+                    content : [
+                        {
+                            tag : 'img',
+                            attrs : {
+                                src : 'https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67',
+                                alt : 'Fork me on GitHub',
+                                style : 'position: absolute; top: 0; right: 0; border: 0;',
+                                'data-canonical-src' : 'https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png'
+                            }
+                        }
+                    ]
+                },
+                {
                     block : 'title',
                     tag : 'h1',
-                    content : 'Grid examples'
+                    content : 'Flexbox grid examples'
                 },
                 {
                     block : 'text',
                     tag : 'p',
-                    content : 'Change browser width to take effect'
+                    content : 'This is very simple flexbox grid for your bem-projects. Change browser width to take effect.'
                 }
             ]
         },
@@ -586,6 +601,25 @@
                             content : [
                                 'All features work in: IE 10+, FF 25+, Chrome 28+, Safari 7+, Opera 12.1+, iOS 7.1+, Android Browser 4.1+, Chrome for Android 37+. <br>',
                                 'For support old browsers i made degradation blocks and in future this grid maybe support IE 8+.'
+                            ]
+                        },
+                        {
+                            block : 'text',
+                            tag : 'p',
+                            content : [
+                                {
+                                    block : 'link',
+                                    url : 'http://bem.info',
+                                    content : [
+                                        {
+                                            tag : 'img',
+                                            attrs : {
+                                                src : 'https://rawgit.com/bem/bem-identity/master/sign/sign.png',
+                                                width: '30px'
+                                            }
+                                        }
+                                    ]
+                                }
                             ]
                         }
                     ]
