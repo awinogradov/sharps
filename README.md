@@ -1,6 +1,6 @@
 # bem-grid
 
-This README also available in [russian](https://github.com/verybigman/bem-grid/blob/master/README.ru.md).
+This README also available in [russian](https://github.com/verybigman/bem-grid/blob/flexbox/README.ru.md).
 
 Library for do awesome grid in bem-projects. This grid inspired by [Zurb Foundation grid](http://foundation.zurb.com/docs/components/grid.html) and [Flexbox grid](http://flexboxgrid.com/). Grid available for Stylus only.
 
