@@ -63,6 +63,10 @@ Useful mods for col element:
 - __{s,m,l}of__ - order first this col on {small, medium, large} displays 
 - __{s,m,l}ol__ - order last this col on {small, medium, large} displays 
 
+### Browsers support
+
+All features work in: IE 10+, FF 25+, Chrome 28+, Safari 7+, Opera 12.1+, iOS 7.1+, Android Browser 4.1+, Chrome for Android 37+. For support old browsers i made degradation blocks and in future this grid maybe support IE 8+.
+
 ### Author
 
 Anton Winogradov ([verybigman](https://github.com/verybigman)) @awinogradov
