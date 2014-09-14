@@ -65,7 +65,7 @@ Useful mods for col element:
 
 ### Browsers support
 
-All features work in: IE 10+, FF 25+, Chrome 28+, Safari 7+, Opera 12.1+, iOS 7.1+, Android Browser 4.1+, Chrome for Android 37+. For support old browsers i made degradation blocks and in future this grid maybe support IE 8+.
+All features work in: IE 10+, FF 25+, Chrome 28+, Safari 7+, Opera 12.1+, iOS 7.1+, Android Browser 4.1+, Chrome for Android 37+. For support old browsers i made mod no-flexbox for row block. In future this grid maybe support in IE 8+.
 
 ### Author
 
