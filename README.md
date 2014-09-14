@@ -52,7 +52,7 @@ Useful mods for row block:
 
 - __{s,m,l}vat__ - align cols verticaly to top on {small, medium, large} displays
 - __{s,m,l}vam__ - align cols verticaly to middle on {small, medium, large} displays
-- __{s,m,l}vab__ - align cols bottom to top on {small, medium, large} displays
+- __{s,m,l}vab__ - align cols verticaly to bottom on {small, medium, large} displays
 
 Useful mods for col element:
 
