@@ -1,29 +1,37 @@
-var dirs            = require('../../package.json')._directories,
-    path            = require('path'),
-    environ         = require('bem-environ'),
-    getTechResolver = environ.getTechResolver,
-
-    PRJ_ROOT        = environ.PRJ_ROOT,
-    PRJ_TECHS       = path.resolve(PRJ_ROOT, '.bem/techs'),
-    BEMCORE_TECHS   = environ.getLibPath('bem-core', '.bem/techs');
+var environ         = require('bem-environ'),
+    BEMCORE_TECHS   = environ.getLibPath('bem-core', '.bem/techs'),
+    BEMPR_TECHS     = environ.getLibPath('bem-pr', 'bem/techs'),
+    getTechResolver = environ.getTechResolver;
 
 exports.getTechs = function() {
     var techs = {
-        'bemjson.js'           : 'v2/bemjson.js',
-        'bemdecl.js'           : 'v2/bemdecl.js',
-        'deps.js'              : 'v2/deps.js',
-        'css'                  : 'v2/css',
-        'stylus'               : 'v2/styl.js',
-        'js'                   : 'v2/js-i'
+        'bemjson.js' : 'bem/lib/tech/v2',
+        'blocks'     : 'level-proto',
+        'examples'   : 'level-proto',
+        'specs'      : 'level-proto',
+        'tests'      : 'level-proto',
+        'bemdecl.js' : 'v2/bemdecl.js',
+        'deps.js'    : 'v2/deps.js',
+        'js'         : 'v2/js-i',
+        'stylus'     : 'v2/styl.js',
+        'css'        : 'v2/css',
+        'ie.css'     : 'v2/ie.css',
+        'ie9.css'    : 'v2/ie9.css'
     };
 
-    // use techs from bem-core library
-    ['bemhtml', 'vanilla.js', 'browser.js'].forEach(getTechResolver(techs, BEMCORE_TECHS));
+    [
+        'bemhtml',
+        'vanilla.js',
+        'browser.js'
+    ].forEach(getTechResolver(techs, BEMCORE_TECHS));
 
-    // use techs from project (.bem/techs)
-    [].forEach(getTechResolver(techs, PRJ_TECHS));
+    [
+        'spec.js',
+        'spec.js+browser.js+bemhtml',
+        'spec.bemjson.js'
+    ].forEach(getTechResolver(techs, BEMPR_TECHS));
 
     return techs;
 };
 
-exports.defaultTechs = ['stylus', 'browser.js', 'bemhtml', 'md'];
+exports.defaultTechs = ['stylus', 'browser.js', 'bemhtml'];
