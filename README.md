@@ -1,6 +1,6 @@
 # bem-grid
 
-This README also available in [russian](https://github.com/verybigman/bem-grid/blob/flexbox/README.ru.md).
+This README also available in [russian](https://github.com/verybigman/bem-grid/blob/master/README.ru.md).
 
 Library for do awesome grid in bem-projects. This grid inspired by [Zurb Foundation grid](http://foundation.zurb.com/docs/components/grid.html) and [Flexbox grid](http://flexboxgrid.com/). Grid available for Stylus only.
 
@@ -60,8 +60,8 @@ Useful mods for col element:
 - __(l|m|s)w__ - width on (small | medium | large) displays
 - __(l|m|s)o__ - offset on (small | medium | large) displays
 
-- __(s|m|l)of__ - order first this col on (small | medium | large) displays 
-- __(s|m|l)ol__ - order last this col on (small | medium | large) displays 
+- __(s|m|l)of__ - order first this col on (small | medium | large) displays
+- __(s|m|l)ol__ - order last this col on (small | medium | large) displays
 
 ### Browsers support
 
