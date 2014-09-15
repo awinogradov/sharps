@@ -581,6 +581,50 @@
                             ]
                         }
                     ]
+                },
+                {
+                    block : 'grid',
+                    content : [
+                        {
+                            block : 'title',
+                            tag : 'h2',
+                            content : 'Mantle'
+                        },
+                        {
+                            block : 'text',
+                            tag : 'p',
+                            content : 'Block for pretty work with different screens. Resize your browser :-)'
+                        },
+                        {
+                            block : 'row',
+                            content : [
+                                {
+                                    elem : 'col',
+                                    mix : [ { block : 'mantle', mods : { hidden : 's', visible : 'm', view : 'block' } } ],
+                                    mods : { s : true },
+                                    content : [
+                                        { block : 'box', content : '1' }
+                                    ]
+                                },
+                                {
+                                    elem : 'col',
+                                    mix : [ { block : 'mantle', mods : { hidden : 'm' } } ],
+                                    mods : { s : true },
+                                    content : [
+                                        { block : 'box', content : '2' }
+                                    ]
+                                },
+                                {
+                                    elem : 'col',
+                                    mix : [ { block : 'mantle', mods : { hidden : 'l' } } ],
+                                    mods : { s : true },
+                                    content : [
+                                        { block : 'box', content : '3' }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },

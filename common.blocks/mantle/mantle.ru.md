@@ -1,1 +1,1 @@
-Use this for show and hide elements on different devices.
+Используется для показа или скрытия блоков на различных дейвайсах.

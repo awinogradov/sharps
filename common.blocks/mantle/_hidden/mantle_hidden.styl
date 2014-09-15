@@ -1,0 +1,14 @@
+ctx = '.mantle_hidden'
+
+mantle_hidden(size)
+    {ctx}_{size}
+        display: none !important
+
+@media small_up
+    mantle_hidden(size: s)
+
+@media medium_up
+    mantle_hidden(size: m)
+
+@media large_up
+    mantle_hidden(size: l)

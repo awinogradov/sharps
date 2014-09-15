@@ -1,0 +1,20 @@
+ctx = '.mantle_visible'
+
+mantle_visible(size)
+    {ctx}_{size}.mantle_view_inline
+        display: inline !important
+
+    {ctx}_{size}.mantle_view_inline-block
+        display: inline-block !important
+
+    {ctx}_{size}.mantle_view_block
+        display: block !important
+
+@media small_up
+    mantle_visible(size: s)
+
+@media medium_up
+    mantle_visible(size: m)
+
+@media large_up
+    mantle_visible(size: l)
