@@ -1,0 +1,72 @@
+ctx = '.row__col'
+
+calc_columns(colNumber)
+    ((colNumber / total_columns) * 100) + '%'
+
+/*
+* creates a column, should be used inside of a media query to control layouts
+*
+* columns - the number of columns this should be
+* offset  - # of columns to offset, default: false
+*/
+column(columns = false, offset = false)
+
+    padding-left:   col_padding
+    padding-right:  col_padding
+    box-sizing:     border-box
+    display:        flex
+    flex-direction: column
+    flex-grow:      0
+    flex-shrink:    0
+
+    if columns
+        flex-basis: calc_columns(columns)
+        max-width:  calc_columns(columns)
+
+    if offset
+        margin-left: calc_columns(offset)
+
+col_base_classes(size)
+
+    // normal col
+    // {s,m,l}w = {small, medium, large} width
+    for i in (1..total_columns)
+        {ctx}_{size}w_{i}
+            column(columns: i)
+
+    // offset col
+    // {s,m,l}o = {small, medium, large} offset
+    for i in (1..total_columns - 1)
+        {ctx}_{size}o_{i}
+            column(offset: i)
+
+    // auto size col
+    {ctx}_{size}
+        flex-grow:  1
+        flex-basis: 0
+        max-width:  100%
+
+col_order_classes(size)
+
+    // {s,m,l}of = {small, medium, large} order first
+    {ctx}_{size}of
+        order: -1
+
+    // {s,m,l}ol = {small, medium, large} order last
+    {ctx}_{size}ol
+        order: 1
+
+{ctx}
+    column(columns: total_columns)
+
+@media small_up
+    col_base_classes(size: s)
+    col_order_classes(size: s)
+
+@media medium_up
+    col_base_classes(size: m)
+    col_order_classes(size: m)
+
+@media large_up
+    col_base_classes(size: l)
+    col_order_classes(size: l)

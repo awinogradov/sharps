@@ -77,8 +77,9 @@ MAKE.decl('BundleNode', {
     getLevels : function() {
         return [
             'libs/bem-core/common.blocks',
+            'libs/bem-components/common.blocks',
             'common.blocks',
-            'design/common.blocks'
+            'test.blocks'
         ];
     },
 

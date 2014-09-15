@@ -1,0 +1,60 @@
+ctx = '.row'
+
+row(nest = false)
+
+    if nest
+        padding: 0
+    else
+        padding-left:  row_padding
+        padding-right: row_padding
+
+    margin:         0
+    width:          100%
+    box-sizing:     border-box
+    display:        flex
+    flex-direction: row
+    flex-wrap:      wrap
+
+row_align_classes(size)
+
+    // {s,m,l}al = {small, medium, large} align left
+    {ctx}_{size}al
+        justify-content: flex-start
+        text-align:      start
+
+    // {s,m,l}ac = {small, medium, large} align center
+    {ctx}_{size}ac
+        justify-content: center
+        text-align:      center
+
+    // {s,m,l}ar = {small, medium, large} align right
+    {ctx}_{size}ar
+        justify-content: flex-end
+        text-align:      end
+
+    // {s,m,l}vat = {small, medium, large} vertical align top
+    {ctx}_{size}vat
+        align-items: flex-start
+
+    // {s,m,l}vam = {small, medium, large} vertical align medium
+    {ctx}_{size}vam
+        align-items: center
+
+    // {s,m,l}vab = {small, medium, large} vertical align bottom
+    {ctx}_{size}vab
+        align-items: flex-end
+
+{ctx}
+    row()
+
+    {ctx}
+        row(nest: true)
+
+@media small_up
+    row_align_classes(size: s)
+
+@media medium_up
+    row_align_classes(size: m)
+
+@media large_up
+    row_align_classes(size: l)

@@ -5,20 +5,37 @@
     head : [
         { elem : 'meta', attrs : { name: 'viewport', content: 'width=device-width, initial-scale=1' } }
     ],
-    styles : [{ elem : 'css', url : '_index.css' }],
+    styles : [
+        { elem : 'css', url : '_index.css' }
+    ],
     content : [
         {
             elem : 'header',
             content : [
                 {
+                    block : 'link',
+                    url : 'https://github.com/verybigman/bem-grid/tree/flexbox',
+                    content : [
+                        {
+                            tag : 'img',
+                            attrs : {
+                                src : 'https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67',
+                                alt : 'Fork me on GitHub',
+                                style : 'position: absolute; top: 0; right: 0; border: 0;',
+                                'data-canonical-src' : 'https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png'
+                            }
+                        }
+                    ]
+                },
+                {
                     block : 'title',
                     tag : 'h1',
-                    content : 'Grid examples'
+                    content : 'Flexbox grid examples'
                 },
                 {
                     block : 'text',
                     tag : 'p',
-                    content : 'Change browser width to take effect'
+                    content : 'This is very simple flexbox grid for your bem-projects. Change browser width to take effect.'
                 }
             ]
         },
@@ -26,633 +43,585 @@
             elem : 'content',
             content : [
                 {
-                    tag : 'section',
+                    block : 'grid',
                     content : [
                         {
                             block : 'title',
                             tag : 'h2',
-                            content : 'dlw - display large width'
+                            content : 'Awesome for responsive bem-projects'
                         },
                         {
-                            block : 'line',
+                            block : 'text',
+                            tag : 'p',
+                            content : 'Responsive mods enable specifying different column sizes, offsets and alignment at s, m & l widths'
+                        },
+                        {
+                            block : 'row',
                             content : [
                                 {
                                     elem : 'col',
-                                    mods : { dlw : 11 },
-                                    content : '11'
+                                    mods : { sw : 12, mw : 3, lw : 1 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 },
                                 {
                                     elem : 'col',
-                                    mods : { dlw : 1 },
-                                    content : '1'
+                                    mods : { sw : 6, mw : 8, lw : 10 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
+                                },
+                                {
+                                    elem : 'col',
+                                    mods : { sw : 6, mw : 2, lw : 1 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            block : 'line',
+                            block : 'row',
                             content : [
                                 {
                                     elem : 'col',
-                                    mods : { dlw: 10 },
-                                    content : '10'
+                                    mods : { sw : 12, mw : 2, lw : 1 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 },
                                 {
                                     elem : 'col',
-                                    mods : { dlw : 2 },
-                                    content : '2'
+                                    mods : { sw : 12, mw : 10, lw : 11 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            block : 'line',
+                            block : 'row',
                             content : [
                                 {
                                     elem : 'col',
-                                    mods : { dlw: 9 },
-                                    content : '9'
+                                    mods : { sw : 10, mw : 8, lw : 10 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 },
                                 {
                                     elem : 'col',
-                                    mods : { dlw : 3 },
-                                    content : '3'
-                                }
-                            ]
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dlw : 8 },
-                                    content : '8'
-                                },
-                                {
-                                    elem : 'col',
-                                    mods : { dlw : 4 },
-                                    content : '4'
-                                }
-                            ]
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dlw : 7 },
-                                    content : '7'
-                                },
-                                {
-                                    elem : 'col',
-                                    mods : { dlw : 5 },
-                                    content : '5'
-                                }
-                            ]
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dlw : 6 },
-                                    content : '6'
-                                },
-                                {
-                                    elem : 'col',
-                                    mods : { dlw : 6 },
-                                    content : '6'
-                                },
-                            ]
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dlw : 5 },
-                                    content : '5'
-                                },
-                                {
-                                    elem : 'col',
-                                    mods : { dlw : 7 },
-                                    content : '7'
-                                }
-                            ]
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dlw : 4 },
-                                    content : '4'
-                                },
-                                {
-                                    elem : 'col',
-                                    mods : { dlw : 8 },
-                                    content : '8'
-                                }
-                            ]
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dlw : 3 },
-                                    content : '3'
-                                },
-                                {
-                                    elem : 'col',
-                                    mods : { dlw : 9 },
-                                    content : '9'
-                                }
-                            ]
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dlw : 2 },
-                                    content : '2'
-                                },
-                                {
-                                    elem : 'col',
-                                    mods : { dlw : 10 },
-                                    content : '10'
-                                }
-                            ]
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dlw : 1 },
-                                    content : '1'
-                                },
-                                {
-                                    elem : 'col',
-                                    mods : { dlw : 11 },
-                                    content : '11'
+                                    mods : { sw : 2, mw : 4, lw : 2 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 }
                             ]
                         }
                     ]
                 },
                 {
-                    tag : 'section',
+                    block : 'grid',
                     content : [
                         {
                             block : 'title',
                             tag : 'h2',
-                            content : 'dmw - display medium width'
+                            content : 'Fluid '
                         },
                         {
-                            block : 'line',
+                            block : 'text',
+                            tag : 'p',
+                            content : 'Percent based widths allow fluid resizing of columns and rows'
+                        },
+                        {
+                            block : 'row',
                             content : [
                                 {
                                     elem : 'col',
-                                    mods : { dmw : 6 },
-                                    content : '6'
+                                    mods : { sw : 1 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 },
                                 {
                                     elem : 'col',
-                                    mods : { dmw : 4 },
-                                    content : '4'
+                                    mods : { sw : 2 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 },
                                 {
                                     elem : 'col',
-                                    mods : { dmw : 2 },
-                                    content : '2'
+                                    mods : { sw : 3 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
+                                },
+                                {
+                                    elem : 'col',
+                                    mods : { sw : 6 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            block : 'line',
+                            block : 'row',
                             content : [
                                 {
                                     elem : 'col',
-                                    mods : { dmw : 5 },
-                                    content : '5'
+                                    mods : { sw : 2 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 },
                                 {
                                     elem : 'col',
-                                    mods : { dmw : 4 },
-                                    content : '4'
+                                    mods : { sw : 3 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 },
                                 {
                                     elem : 'col',
-                                    mods : { dmw : 3 },
-                                    content : '3'
+                                    mods : { sw : 4 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
+                                },
+                                {
+                                    elem : 'col',
+                                    mods : { sw : 3 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            block : 'line',
+                            block : 'row',
                             content : [
                                 {
                                     elem : 'col',
-                                    mods : { dmw: 4 },
-                                    content : '4'
+                                    mods : { sw : 3 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 },
                                 {
                                     elem : 'col',
-                                    mods : { dmw: 4 },
-                                    content : '4'
+                                    mods : { sw : 4 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 },
                                 {
                                     elem : 'col',
-                                    mods : { dmw: 4 },
-                                    content : '4'
-                                }
-                            ]
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dmw: 3 },
-                                    content : '3'
+                                    mods : { sw : 3 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 },
                                 {
                                     elem : 'col',
-                                    mods : { dmw: 4 },
-                                    content : '4'
-                                },
-                                {
-                                    elem : 'col',
-                                    mods : { dmw: 5 },
-                                    content : '5'
-                                }
-                            ]
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dmw: 2 },
-                                    content : '2'
-                                },
-                                {
-                                    elem : 'col',
-                                    mods : { dmw: 4 },
-                                    content : '4'
-                                },
-                                {
-                                    elem : 'col',
-                                    mods : { dmw: 6 },
-                                    content : '6'
-                                }
-                            ]
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dmw: 1 },
-                                    content : '1'
-                                },
-                                {
-                                    elem : 'col',
-                                    mods : { dmw: 4 },
-                                    content : '4'
-                                },
-                                {
-                                    elem : 'col',
-                                    mods : { dmw: 7 },
-                                    content : '7'
+                                    mods : { sw : 2 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 }
                             ]
                         }
                     ]
                 },
                 {
-                    tag : 'section',
+                    block : 'grid',
                     content : [
                         {
                             block : 'title',
                             tag : 'h2',
-                            content : 'dsw - display small width'
+                            content : 'Offsets'
                         },
                         {
-                            block : 'line',
+                            block : 'text',
+                            tag : 'p',
+                            content : 'Offset a column'
+                        },
+                        {
+                            block : 'row',
                             content : [
                                 {
                                     elem : 'col',
-                                    mods : { dsw : 1 },
-                                    content : '1'
-                                },
-                                {
-                                    elem : 'col',
-                                    mods : { dsw : 2 },
-                                    content : '2'
-                                },
-                                {
-                                    elem : 'col',
-                                    mods : { dsw : 3 },
-                                    content : '3'
-                                },
-                                {
-                                    elem : 'col',
-                                    mods : { dsw : 6 },
-                                    content : '6'
+                                    mods : { sw : 10, so : 2 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            block : 'line',
+                            block : 'row',
                             content : [
                                 {
                                     elem : 'col',
-                                    mods : { dsw : 2 },
-                                    content : '2'
-                                },
-                                {
-                                    elem : 'col',
-                                    mods : { dsw : 3 },
-                                    content : '3'
-                                },
-                                {
-                                    elem : 'col',
-                                    mods : { dsw : 4 },
-                                    content : '4'
-                                },
-                                {
-                                    elem : 'col',
-                                    mods : { dsw : 3 },
-                                    content : '3'
+                                    mods : { sw : 8, so : 4 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            block : 'line',
+                            block : 'row',
                             content : [
                                 {
                                     elem : 'col',
-                                    mods : { dsw : 3 },
-                                    content : '3'
-                                },
+                                    mods : { sw : 6, so : 6 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            block : 'row',
+                            content : [
                                 {
                                     elem : 'col',
-                                    mods : { dsw : 4 },
-                                    content : '4'
-                                },
+                                    mods : { sw : 4, so : 8 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            block : 'row',
+                            content : [
                                 {
                                     elem : 'col',
-                                    mods : { dsw : 3 },
-                                    content : '3'
-                                },
-                                {
-                                    elem : 'col',
-                                    mods : { dsw : 2 },
-                                    content : '2'
+                                    mods : { sw : 2, so : 10 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 }
                             ]
                         }
                     ]
                 },
                 {
-                    tag : 'section',
+                    block : 'grid',
                     content : [
                         {
                             block : 'title',
                             tag : 'h2',
-                            content : 'dlc, dmc, dsc - centered columns'
+                            content : 'Auto size'
                         },
                         {
-                            block : 'line',
+                            block : 'text',
+                            tag : 'p',
+                            content : 'Any number of auto sizing columns to a row'
+                        },
+                        {
+                            block : 'row',
                             content : [
                                 {
                                     elem : 'col',
-                                    mods : { dlw: 8, dlc : true },
-                                    content : 'dlc - centered on large displays'
-                                }
-                            ]
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dmw : 6, dmc : true },
-                                    content : 'dmc - centered on medium displays'
-                                }
-                            ]
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dsw : 4, dsc : true },
-                                    content : 'dsc - centered on small displays'
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    tag : 'section',
-                    content : [
-                        {
-                            block : 'title',
-                            tag : 'h2',
-                            content : 'dluc, dmuc, dsuc - uncentered columns'
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dlw: 4, dluc : true },
-                                    content : 'dluc - uncentered on large displays'
-                                }
-                            ]
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dmw : 6, dmuc : true },
-                                    content : 'dmuc - uncentered on medium displays'
-                                }
-                            ]
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dsw : 8, dsuc : true },
-                                    content : 'dsuc - uncentered on small displays'
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    tag : 'section',
-                    content : [
-                        {
-                            block : 'title',
-                            tag : 'h2',
-                            content : 'dlo, dmo, dso - offset columns'
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dlw : 6, dlo : 6 },
-                                    content : '6'
-                                }
-                            ]
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dmw : 4, dmo : 8 },
-                                    content : '4'
-                                }
-                            ]
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dsw : 2, dso : 10 },
-                                    content : '2'
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    tag : 'section',
-                    content : [
-                        {
-                            block : 'title',
-                            tag : 'h2',
-                            content : 'dlph, dmph, dsph - push columns'
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dmw : 2, dsph : 2 },
-                                    content : '2'
-                                }
-                            ]
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dmw : 6, dlph : 4 },
-                                    content : '6'
-                                }
-                            ]
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dsw : 2, dmph : 10 },
-                                    content : '2'
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    tag : 'section',
-                    content : [
-                        {
-                            block : 'title',
-                            tag : 'h2',
-                            content : 'dlpl, dmpl, dspl - pull columns'
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dsw : 2 },
-                                    content : '2'
+                                    mods : { s : true },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 },
                                 {
                                     elem : 'col',
-                                    mods : { dsw : 8, dmpl : 2 },
-                                    content : '8'
+                                    mods : { s : true },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            block : 'line',
+                            block : 'row',
                             content : [
                                 {
                                     elem : 'col',
-                                    mods : { dmw : 4 },
-                                    content : '4'
+                                    mods : { s : true },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 },
                                 {
                                     elem : 'col',
-                                    mods : { dmw : 6, dlpl : 4 },
-                                    content : '6'
-                                }
-                            ]
-                        },
-                        {
-                            block : 'line',
-                            content : [
-                                {
-                                    elem : 'col',
-                                    mods : { dlw : 2 },
-                                    content : '2'
+                                    mods : { s : true },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 },
                                 {
                                     elem : 'col',
-                                    mods : { dlw : 5, dspl : 3 },
-                                    content : '5'
+                                    mods : { s : true },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 }
                             ]
                         }
                     ]
                 },
                 {
-                    tag : 'section',
+                    block : 'grid',
                     content : [
                         {
                             block : 'title',
                             tag : 'h2',
-                            content : 'dlro, dmro, dsro - reset columns order'
+                            content : 'Alignment'
                         },
                         {
-                            block : 'line',
+                            block : 'text',
+                            tag : 'p',
+                            content : 'Mods to align elements to the left or right of a row as well as the top, bottom, or center of a column'
+                        },
+                        {
+                            block : 'row',
+                            mods : { sal : true },
                             content : [
                                 {
                                     elem : 'col',
-                                    mods : { dlw : 4, dlro : true },
-                                    content : '4'
+                                    mods : { sw : 2 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 },
                                 {
                                     elem : 'col',
-                                    mods : { dlw : 8, dlro : true },
-                                    content : '8'
+                                    mods : { sw : 2 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
                                 }
                             ]
                         },
+                        {
+                            block : 'row',
+                            mods : { sac : true },
+                            content : [
+                                {
+                                    elem : 'col',
+                                    mods : { sw : 2 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
+                                },
+                                {
+                                    elem : 'col',
+                                    mods : { sw : 2 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            block : 'row',
+                            mods : { sar : true },
+                            content : [
+                                {
+                                    elem : 'col',
+                                    mods : { sw : 2 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
+                                },
+                                {
+                                    elem : 'col',
+                                    mods : { sw : 2 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            block : 'row',
+                            mods : { svat : true },
+                            content : [
+                                {
+                                    elem : 'col',
+                                    mods : { sw : 6 },
+                                    content : [
+                                        { block : 'box' },
+                                        { block : 'box' }
+                                    ]
+                                },
+                                {
+                                    elem : 'col',
+                                    mods : { sw : 6 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            block : 'row',
+                            mods : { svam : true },
+                            content : [
+                                {
+                                    elem : 'col',
+                                    mods : { sw : 6 },
+                                    content : [
+                                        { block : 'box' },
+                                        { block : 'box' }
+                                    ]
+                                },
+                                {
+                                    elem : 'col',
+                                    mods : { sw : 6 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            block : 'row',
+                            mods : { svab : true },
+                            content : [
+                                {
+                                    elem : 'col',
+                                    mods : { sw : 6 },
+                                    content : [
+                                        { block : 'box' },
+                                        { block : 'box' }
+                                    ]
+                                },
+                                {
+                                    elem : 'col',
+                                    mods : { sw : 6 },
+                                    content : [
+                                        { block : 'box' }
+                                    ]
+                                }
+                            ]
+                        },
+                    ]
+                },
+                {
+                    block : 'grid',
+                    content : [
+                        {
+                            block : 'title',
+                            tag : 'h2',
+                            content : 'Ordering'
+                        },
+                        {
+                            block : 'text',
+                            tag : 'p',
+                            content : 'Mods to reorder columns'
+                        },
+                        {
+                            block : 'row',
+                            content : [
+                                {
+                                    elem : 'col',
+                                    mods : { sw : 4 },
+                                    content : [
+                                        { block : 'box', content : '1' }
+                                    ]
+                                },
+                                {
+                                    elem : 'col',
+                                    mods : { sw : 4 },
+                                    content : [
+                                        { block : 'box', content : '2' }
+                                    ]
+                                },
+                                {
+                                    elem : 'col',
+                                    mods : { sw : 4, sof : true },
+                                    content : [
+                                        { block : 'box', content : '3' }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            block : 'row',
+                            content : [
+                                {
+                                    elem : 'col',
+                                    mods : { sw : 3 },
+                                    content : [
+                                        { block : 'box', content : '1' }
+                                    ]
+                                },
+                                {
+                                    elem : 'col',
+                                    mods : { sw : 3, sol : true },
+                                    content : [
+                                        { block : 'box', content : '2' }
+                                    ]
+                                },
+                                {
+                                    elem : 'col',
+                                    mods : { sw : 3 },
+                                    content : [
+                                        { block : 'box', content : '3' }
+                                    ]
+                                },
+                                {
+                                    elem : 'col',
+                                    mods : { sw : 3 },
+                                    content : [
+                                        { block : 'box', content : '4' }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            elem : 'footer',
+            content : [
+                {
+                    block : 'grid',
+                    content : [
+                        {
+                            block : 'title',
+                            tag : 'h2',
+                            content : 'Browsers support'
+                        },
+                        {
+                            block : 'text',
+                            tag : 'p',
+                            content : [
+                                'All features work in: IE 10+, FF 25+, Chrome 28+, Safari 7+, Opera 12.1+, iOS 7.1+, Android Browser 4.1+, Chrome for Android 37+. <br>',
+                                'For support old browsers i made degradation blocks and in future this grid maybe support IE 8+.'
+                            ]
+                        },
+                        {
+                            block : 'text',
+                            tag : 'p',
+                            content : [
+                                {
+                                    block : 'link',
+                                    url : 'http://bem.info',
+                                    content : [
+                                        {
+                                            tag : 'img',
+                                            attrs : {
+                                                src : 'https://rawgit.com/bem/bem-identity/master/sign/sign.png',
+                                                width: '30px'
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
