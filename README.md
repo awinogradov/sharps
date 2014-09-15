@@ -46,22 +46,22 @@ See more examples in desktop.pages/index/index.bemjson.js (build it with `bem ma
 
 Useful mods for row block:
 
-- __{s,m,l}al__ - align cols to left on {small, medium, large} displays
-- __{s,m,l}ac__ - align cols to center on {small, medium, large} displays
-- __{s,m,l}ar__ - align cols to right on {small, medium, large} displays
+- __(s|m|l)al__ - align cols to left on (small | medium | large) displays
+- __(s|m|l)ac__ - align cols to center on (small | medium | large) displays
+- __(s|m|l)ar__ - align cols to right on (small | medium | large) displays
 
-- __{s,m,l}vat__ - align cols verticaly to top on {small, medium, large} displays
-- __{s,m,l}vam__ - align cols verticaly to middle on {small, medium, large} displays
-- __{s,m,l}vab__ - align cols verticaly to bottom on {small, medium, large} displays
+- __(s|m|l)vat__ - align cols verticaly to top on (small | medium | large) displays
+- __(s|m|l)vam__ - align cols verticaly to middle on (small | medium | large) displays
+- __(s|m|l)vab__ - align cols verticaly to bottom on (small | medium | large) displays
 
 Useful mods for col element:
 
-- __{l,m,s}__ - auto width on {small, medium, large} displays
-- __{l,m,s}w__ - width on {small, medium, large} displays
-- __{l,m,s}o__ - offset on {small, medium, large} displays
+- __(l|m|s)__ - auto width on (small | medium | large) displays
+- __(l|m|s)w__ - width on (small | medium | large) displays
+- __(l|m|s)o__ - offset on (small | medium | large) displays
 
-- __{s,m,l}of__ - order first this col on {small, medium, large} displays 
-- __{s,m,l}ol__ - order last this col on {small, medium, large} displays 
+- __(s|m|l)of__ - order first this col on (small | medium | large) displays 
+- __(s|m|l)ol__ - order last this col on (small | medium | large) displays 
 
 ### Browsers support
 
