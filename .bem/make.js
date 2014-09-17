@@ -41,7 +41,6 @@ MAKE.decl('SetsNode', {
         return {
             'desktop' : [
                 'common.blocks',
-                'design/common.blocks',
                 'test.blocks'
             ]
         };
@@ -79,7 +78,7 @@ MAKE.decl('BundleNode', {
             'libs/bem-core/common.blocks',
             'libs/bem-components/common.blocks',
             'common.blocks',
-            'test.blocks'
+            'design/desktop.blocks'
         ];
     },
 

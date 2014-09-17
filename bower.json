@@ -1,6 +1,6 @@
 {
   "name": "bem-grid",
-  "version": "0.0.7",
+  "version": "1.0.0-beta2",
   "description": "Responsive grid on BEM methodology",
   "repository": {
     "type": "git",
@@ -16,21 +16,16 @@
     "Anton Winogradov <winogradovaa@gmail.com>"
   ],
   "ignore": [
-    ".bem/cache",
-    ".enb/tmp",
     "node_modules",
     "libs"
   ],
   "dependencies": {
     "bem-core": "git://github.com/bem/bem-core.git#v2.4.0",
-    "bem-components": "0b09f205e38cfd535c692ae1a0cfb36a713d90d0"
+    "highlight": "~7.0.1"
   },
   "devDependencies": {
-    "bem-pr": "git://github.com/narqo/bem-pr.git#~0.10.0"
+    "bem-pr": "git://github.com/narqo/bem-pr.git#~0.10.0",
+    "bem-components": "0b09f205e38cfd535c692ae1a0cfb36a713d90d0"
   },
-  "license": "MIT",
-  "ignore": [
-    "node_modules",
-    "libs"
-  ]
+  "license": "MIT"
 }
