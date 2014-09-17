@@ -118,6 +118,17 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            block : 'example',
+                            content : [
+                                {
+                                    block : 'link',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L58-L123',
+                                    target : '_blank',
+                                    content : 'view source'
+                                }
+                            ]
                         }
                     ]
                 },
@@ -232,6 +243,17 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            block : 'example',
+                            content : [
+                                {
+                                    block : 'link',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L137-L235',
+                                    target : '_blank',
+                                    content : 'view source'
+                                }
+                            ]
                         }
                     ]
                 },
@@ -307,6 +329,17 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            block : 'example',
+                            content : [
+                                {
+                                    block : 'link',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L251-L310',
+                                    target : '_blank',
+                                    content : 'view source'
+                                }
+                            ]
                         }
                     ]
                 },
@@ -365,6 +398,17 @@
                                     content : [
                                         { block : 'box' }
                                     ]
+                                }
+                            ]
+                        },
+                        {
+                            block : 'example',
+                            content : [
+                                {
+                                    block : 'link',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L326-L370',
+                                    target : '_blank',
+                                    content : 'view source'
                                 }
                             ]
                         }
@@ -506,6 +550,17 @@
                                 }
                             ]
                         },
+                        {
+                            block : 'example',
+                            content : [
+                                {
+                                    block : 'link',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L386-L508',
+                                    target : '_blank',
+                                    content : 'view source'
+                                }
+                            ]
+                        }
                     ]
                 },
                 {
@@ -579,6 +634,17 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            block : 'example',
+                            content : [
+                                {
+                                    block : 'link',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L524-L582',
+                                    target : '_blank',
+                                    content : 'view source'
+                                }
+                            ]
                         }
                     ]
                 },
@@ -623,14 +689,20 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            block : 'example',
+                            content : [
+                                {
+                                    block : 'link',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L598-L626',
+                                    target : '_blank',
+                                    content : 'view source'
+                                }
+                            ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            elem : 'footer',
-            content : [
+                },
                 {
                     block : 'grid',
                     content : [
@@ -646,23 +718,28 @@
                                 'All features work in: IE 10+, FF 25+, Chrome 28+, Safari 7+, Opera 12.1+, iOS 7.1+, Android Browser 4.1+, Chrome for Android 37+. <br>',
                                 'For support old browsers i made degradation blocks and in future this grid maybe support IE 8+.'
                             ]
-                        },
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            elem : 'footer',
+            content : [
+                {
+                    block : 'text',
+                    tag : 'p',
+                    content : [
                         {
-                            block : 'text',
-                            tag : 'p',
+                            block : 'link',
+                            url : 'http://bem.info',
                             content : [
                                 {
-                                    block : 'link',
-                                    url : 'http://bem.info',
-                                    content : [
-                                        {
-                                            tag : 'img',
-                                            attrs : {
-                                                src : 'https://rawgit.com/bem/bem-identity/master/sign/sign.png',
-                                                width: '30px'
-                                            }
-                                        }
-                                    ]
+                                    tag : 'img',
+                                    attrs : {
+                                        src : 'https://rawgit.com/bem/bem-identity/master/sign/sign.png',
+                                        width: '30px'
+                                    }
                                 }
                             ]
                         }
