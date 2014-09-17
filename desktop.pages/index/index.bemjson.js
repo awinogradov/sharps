@@ -30,7 +30,7 @@
                 {
                     block : 'title',
                     tag : 'h1',
-                    content : 'Flexbox grid examples'
+                    content : 'Flexbox bem-grid'
                 },
                 {
                     block : 'text',
@@ -124,7 +124,7 @@
                             content : [
                                 {
                                     block : 'link',
-                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L58-L123',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L58-L121',
                                     target : '_blank',
                                     content : 'view source'
                                 }
@@ -249,7 +249,7 @@
                             content : [
                                 {
                                     block : 'link',
-                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L137-L235',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L148-L246',
                                     target : '_blank',
                                     content : 'view source'
                                 }
@@ -335,7 +335,7 @@
                             content : [
                                 {
                                     block : 'link',
-                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L251-L310',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L285-L332',
                                     target : '_blank',
                                     content : 'view source'
                                 }
@@ -406,7 +406,7 @@
                             content : [
                                 {
                                     block : 'link',
-                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L326-L370',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L359-L403',
                                     target : '_blank',
                                     content : 'view source'
                                 }
@@ -555,7 +555,7 @@
                             content : [
                                 {
                                     block : 'link',
-                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L386-L508',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L430-L552',
                                     target : '_blank',
                                     content : 'view source'
                                 }
@@ -640,7 +640,7 @@
                             content : [
                                 {
                                     block : 'link',
-                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L524-L582',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L579-L637',
                                     target : '_blank',
                                     content : 'view source'
                                 }
@@ -695,7 +695,7 @@
                             content : [
                                 {
                                     block : 'link',
-                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L598-L626',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L664-L692',
                                     target : '_blank',
                                     content : 'view source'
                                 }
