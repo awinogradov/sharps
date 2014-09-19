@@ -66,13 +66,18 @@ __Useful mods for col element:__
 - __(s|m|l)ol__ - order last this col on (small | medium | large) displays
 
 ## Mantle
-Block for pretty work with blocks on different screens. 
+Block for pretty work with blocks on different screens.
 
 __Useful mods:__
 
-- __hidden__ - hide block on screen with size: (s|m|l) 
-- __visible__ - show block on screen with size: (s|m|l) 
+- __hidden__ - hide block on screen with size: (s|m|l)
+- __visible__ - show block on screen with size: (s|m|l)
 - __view__ - display block as: (inline|inline-block|block), work with __visible__ mod like Bonee and Clyde
+
+## Customize
+Grid very simple for customize. You can configure everything. Ex: base grid width, columns count, media queries, paddings and more.
+To do this you need create block __variables__ on one of levels in your project and override any variable in it.
+So, list of variables you can watch [here](https://github.com/verybigman/bem-grid/blob/master/common.blocks/variables/variables.styl).
 
 ### Browsers support
 
