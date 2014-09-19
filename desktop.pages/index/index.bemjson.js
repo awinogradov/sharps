@@ -709,6 +709,32 @@
                         {
                             block : 'title',
                             tag : 'h2',
+                            content : 'Customize'
+                        },
+                        {
+                            block : 'text',
+                            tag : 'p',
+                            content : [
+                                'Grid very simple for customize. You can configure everything. Ex: base grid width, columns count, media queries, paddings and more.',
+                                'To do this you need create block <strong>variables</strong> on one of levels in your project and override any variable in it.',
+                                'So, list of variables you can watch ',
+                                {
+                                    block : 'link',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/common.blocks/variables/variables.styl',
+                                    target : '_blank',
+                                    content : 'here'
+                                },
+                                '.'
+                            ]
+                        }
+                    ]
+                },
+                {
+                    block : 'grid',
+                    content : [
+                        {
+                            block : 'title',
+                            tag : 'h2',
                             content : 'Browsers support'
                         },
                         {
