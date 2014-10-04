@@ -1,7 +1,10 @@
 ({
-    mustDeps: [
-        {block: 'variables'},
-        {mods: 'no-flexbox'}
+    mustDeps : [
+        { block : 'variables' },
+        { block : 'mq' },
+        { mods : 'no-flexbox' }
     ],
-    shouldDeps: []
+    shouldDeps : [
+    
+    ]
 })

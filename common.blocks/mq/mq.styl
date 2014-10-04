@@ -1,0 +1,33 @@
+// MEDIA QUERIES ===============================================================
+
+/*
+* SMALL DISPLAYS:
+*/
+small_start  = 40em;
+small_up     = "screen";
+small_only   = "screen and (max-width : " + small_start + ")";
+
+/*
+* MEDIUM DISPLAYS
+*/
+medium_start = 40.063em;
+medium_stop  = 64em;
+medium_up    = "screen and (min-width : " + medium_start + ")";
+medium_only  = "screen and (min-width : " + medium_start + ") and (max-width : " + medium_stop + ")";
+
+/*
+* LARGE DISPLAYS:
+*/
+large_start  = 64.063em;
+large_stop   = 90em;
+large_up     = "screen and (min-width : " + large_start + ")";
+large_only   = "screen and (min-width : " + large_start + ") and (max-width : " + large_stop + ")";
+
+/*
+* ALIAS
+*/
+small        = small_up;
+medium       = medium_up;
+large        = large_up;
+landscape    = "screen and (orientation : landscape)";
+portrait     = "screen and (orientation : portrait)";

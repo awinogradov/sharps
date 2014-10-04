@@ -25,7 +25,7 @@
   "devDependencies": {
     "bem-pr": "git://github.com/narqo/bem-pr.git#~0.10.0",
     "bem-components": "0b09f205e38cfd535c692ae1a0cfb36a713d90d0",
-    "bem-content": "git://github.com/verybigman/bem-content#~0.0.2"
+    "bem-content": "git://github.com/verybigman/bem-content#~0.0.3"
   },
   "license": "MIT"
 }
