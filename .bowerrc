@@ -1,3 +1,8 @@
 {
-    "directory": "libs"
+    "directory": "libs",
+    "storage": {
+        "packages": ".libs-cache",
+        "registry": ".libs-registry"
+    },
+    "tmp": ".libs-tmp"
 }

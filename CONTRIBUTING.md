@@ -1,4 +1,4 @@
-## I use GitHub workflow
+## Workflow
 
 This README also available in [russian](https://github.com/verybigman/bem-grid/blob/master/CONTRIBUTING.ru.md).
 

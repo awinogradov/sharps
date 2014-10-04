@@ -5,15 +5,14 @@ row(nest = false)
     if nest
         padding: 0
     else
-        padding-left:  row_padding
-        padding-right: row_padding
-
-    margin:         0
-    width:          100%
-    box-sizing:     border-box
-    display:        flex
-    flex-direction: row
-    flex-wrap:      wrap
+        padding-left:   row_padding
+        padding-right:  row_padding
+        margin:         0
+        width:          100%
+        box-sizing:     border-box
+        display:        flex
+        flex-direction: row
+        flex-wrap:      wrap
 
 row_align_classes(size)
 
@@ -50,11 +49,11 @@ row_align_classes(size)
     {ctx}
         row(nest: true)
 
-@media small_up
+@media small
     row_align_classes(size: s)
 
-@media medium_up
+@media medium
     row_align_classes(size: m)
 
-@media large_up
+@media large
     row_align_classes(size: l)

@@ -1,62 +1,44 @@
 {
   "private": true,
-  "name": "bem-grid",
-  "version": "1.0.0-beta2",
-  "description": "Grid for bem-projects",
-  "homepage": "https://github.com/verybigman/bem-grid",
-  "bugs": "https://github.com/verybigman/bem-grid/issues",
-  "author": {
-    "name": "Anton Winogradov",
-    "email": "winogradovaa@gmail.com",
-    "url": "https://github.com/verybigman"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/verybigman/bem-grid.git"
-  },
   "dependencies": {
     "bem-environ": "~1.4.0"
   },
   "devDependencies": {
-    "bem": "~0.9.0",
-    "bem-tools-autoprefixer": "~0.0.3",
-    "bh": "3.1.1",
-    "bower-npm-install": "~0.5.4",
-    "bower": "1.3.9",
-    "csscomb": "~2.0.0",
-    "bem-naming": "0.2.1",
-    "enb": "0.13.8",
-    "enb-bem": "0.1.0-beta4",
-    "enb-autoprefixer": "0.1.1",
-    "enb-bem-docs": "0.5.1",
-    "enb-bem-examples": "0.4.12",
-    "enb-bem-specs": "0.4.8",
-    "enb-bem-tmpl-specs": "0.2.5",
-    "enb-bemxjst": "1.3.2",
-    "enb-bh": "0.2.3",
-    "enb-borschik": "1.1.1",
-    "enb-diverse-js": "0.1.0",
-    "enb-modules": "0.2.0",
-    "enb-stylus": "1.1.2",
-    "borschik-tech-cleancss": "1.0.2",
+    "bem": "0.9.0",
+    "bem-cli": "1.0.1",
+    "bem-tools-autoprefixer": "0.0.3",
+    "borschik": "1.3.0",
+    "bower": "1.3.11",
+    "bower-npm-install": "0.5.8",
+    "browser-sync": "1.5.1",
     "gemini": "^0.6.4",
-    "git-hooks": "~0.0.6",
+    "git-hooks": "0.0.7",
+    "gulp": "3.8.8",
+    "gulp-concat": "2.4.1",
+    "gulp-filter": "1.0.2",
+    "gulp-if": "1.2.4",
+    "gulp-jshint": "1.8.4",
+    "gulp-load-plugins": "0.6.0",
+    "gulp-minify-css": "0.3.10",
+    "gulp-nodemon": "1.0.4",
+    "gulp-notify": "1.7.0",
+    "gulp-rename": "1.2.0",
+    "gulp-shell": "0.2.9",
     "http-server": "^0.6.1",
     "istanbul": "0.3.0",
     "jscs": "1.5.3",
     "jshint": "2.3.0",
     "jshint-groups": "0.6.0",
-    "stylus": "0.47.1",
+    "run-sequence": "0.3.7",
+    "stylus": "0.49.0",
     "svgo": "0.4.5"
   },
-  "peerDependencies": {
-    "bem-cli": "~1.0.1"
-  },
   "scripts": {
-    "deps": "bower-npm-install --non-interactive"
+    "postinstall": "bower-npm-install",
+    "deps": "bower-npm-install --non-interactive",
+    "lint": "jshint-groups && jscs ."
   },
   "engines": {
     "node": ">=0.10.0"
-  },
-  "license": "MIT"
+  }
 }

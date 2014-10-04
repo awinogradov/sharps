@@ -1,20 +1,17 @@
 ({
     block : 'page',
-    title : 'Grid examples',
+    title : 'BEM Flexbox grid',
     favicon : 'favicon.ico',
-    head : [
-        { elem : 'meta', attrs : { name: 'viewport', content: 'width=device-width, initial-scale=1' } }
-    ],
-    styles : [
-        { elem : 'css', url : '_index.css' }
-    ],
+    head : [{ elem : 'meta', attrs : { name : 'viewport', content : 'width=device-width, initial-scale=1.0' }}],
+    styles : [{ elem : 'css', url : 'assets/application.min.css' }],
+    scripts : [{ elem : 'js', url : 'assets/application.min.js' }],
     content : [
         {
             elem : 'header',
             content : [
                 {
                     block : 'link',
-                    url : 'https://github.com/verybigman/bem-grid/tree/flexbox',
+                    url : 'https://github.com/verybigman/bem-grid/tree/master',
                     content : [
                         {
                             tag : 'img',
@@ -28,13 +25,11 @@
                     ]
                 },
                 {
-                    block : 'title',
-                    tag : 'h1',
-                    content : 'Flexbox bem-grid'
+                    block : 'heading', lvl : 1, content : 'Flexbox bem-grid'
                 },
                 {
-                    block : 'text',
-                    tag : 'p',
+                    block : 'paragraph',
+                    mods : { lead : true },
                     content : 'This is very simple flexbox grid for your bem-projects. Change browser width to take effect.'
                 }
             ]
@@ -43,16 +38,13 @@
             elem : 'content',
             content : [
                 {
-                    block : 'grid',
+                    tag : 'section',
                     content : [
                         {
-                            block : 'title',
-                            tag : 'h2',
-                            content : 'Awesome for responsive bem-projects'
+                            block : 'heading', lvl : 2, content : 'Awesome for responsive bem-projects'
                         },
                         {
-                            block : 'text',
-                            tag : 'p',
+                            block : 'paragraph',
                             content : 'Responsive mods enable specifying different column sizes, offsets and alignment at s, m & l widths'
                         },
                         {
@@ -67,7 +59,7 @@
                                 },
                                 {
                                     elem : 'col',
-                                    mods : { sw : 6, mw : 8, lw : 10 },
+                                    mods : { sw : 6, mw : 7, lw : 10 },
                                     content : [
                                         { block : 'box' }
                                     ]
@@ -133,16 +125,13 @@
                     ]
                 },
                 {
-                    block : 'grid',
+                    tag : 'section',
                     content : [
                         {
-                            block : 'title',
-                            tag : 'h2',
-                            content : 'Fluid '
+                            block : 'heading', lvl : 2, content : 'Fluid '
                         },
                         {
-                            block : 'text',
-                            tag : 'p',
+                            block : 'paragraph',
                             content : 'Percent based widths allow fluid resizing of columns and rows'
                         },
                         {
@@ -258,16 +247,13 @@
                     ]
                 },
                 {
-                    block : 'grid',
+                    tag : 'section',
                     content : [
                         {
-                            block : 'title',
-                            tag : 'h2',
-                            content : 'Offsets'
+                            block : 'heading', lvl : 2, content : 'Offsets'
                         },
                         {
-                            block : 'text',
-                            tag : 'p',
+                            block : 'paragraph',
                             content : 'Offset a column'
                         },
                         {
@@ -344,16 +330,13 @@
                     ]
                 },
                 {
-                    block : 'grid',
+                    tag : 'section',
                     content : [
                         {
-                            block : 'title',
-                            tag : 'h2',
-                            content : 'Auto size'
+                            block : 'heading', lvl : 2, content : 'Auto size'
                         },
                         {
-                            block : 'text',
-                            tag : 'p',
+                            block : 'paragraph',
                             content : 'Any number of auto sizing columns to a row'
                         },
                         {
@@ -415,16 +398,13 @@
                     ]
                 },
                 {
-                    block : 'grid',
+                    tag : 'section',
                     content : [
                         {
-                            block : 'title',
-                            tag : 'h2',
-                            content : 'Alignment'
+                            block : 'heading', lvl : 2, content : 'Alignment'
                         },
                         {
-                            block : 'text',
-                            tag : 'p',
+                            block : 'paragraph',
                             content : 'Mods to align elements to the left or right of a row as well as the top, bottom, or center of a column'
                         },
                         {
@@ -564,16 +544,13 @@
                     ]
                 },
                 {
-                    block : 'grid',
+                    tag : 'section',
                     content : [
                         {
-                            block : 'title',
-                            tag : 'h2',
-                            content : 'Ordering'
+                            block : 'heading', lvl : 2, content : 'Ordering'
                         },
                         {
-                            block : 'text',
-                            tag : 'p',
+                            block : 'paragraph',
                             content : 'Mods to reorder columns'
                         },
                         {
@@ -649,16 +626,13 @@
                     ]
                 },
                 {
-                    block : 'grid',
+                    tag : 'section',
                     content : [
                         {
-                            block : 'title',
-                            tag : 'h2',
-                            content : 'Mantle'
+                            block : 'heading', lvl : 2, content : 'Mantle'
                         },
                         {
-                            block : 'text',
-                            tag : 'p',
+                            block : 'paragraph',
                             content : 'Block for pretty work with different screens. Resize your browser :-)'
                         },
                         {
@@ -704,16 +678,13 @@
                     ]
                 },
                 {
-                    block : 'grid',
+                    tag : 'section',
                     content : [
                         {
-                            block : 'title',
-                            tag : 'h2',
-                            content : 'Customize'
+                            block : 'heading', lvl : 2, content : 'Customize'
                         },
                         {
-                            block : 'text',
-                            tag : 'p',
+                            block : 'paragraph',
                             content : [
                                 'Grid very simple for customize. You can configure everything. Ex: base grid width, columns count, media queries, paddings and more.',
                                 'To do this you need create block <strong>variables</strong> on one of levels in your project and override any variable in it.',
@@ -730,16 +701,13 @@
                     ]
                 },
                 {
-                    block : 'grid',
+                    tag : 'section',
                     content : [
                         {
-                            block : 'title',
-                            tag : 'h2',
-                            content : 'Browsers support'
+                            block : 'heading', lvl : 2, content : 'Browsers support'
                         },
                         {
-                            block : 'text',
-                            tag : 'p',
+                            block : 'paragraph',
                             content : [
                                 'All features work in: IE 10+, FF 25+, Chrome 28+, Safari 7+, Opera 12.1+, iOS 7.1+, Android Browser 4.1+, Chrome for Android 37+. <br>',
                                 'For support old browsers i made degradation blocks and in future this grid maybe support IE 8+.'
@@ -753,19 +721,16 @@
             elem : 'footer',
             content : [
                 {
-                    block : 'text',
-                    tag : 'p',
+                    block : 'paragraph',
                     content : [
                         {
                             block : 'link',
                             url : 'http://bem.info',
                             content : [
                                 {
-                                    tag : 'img',
-                                    attrs : {
-                                        src : 'https://rawgit.com/bem/bem-identity/master/sign/sign.png',
-                                        width: '30px'
-                                    }
+                                    block : 'image',
+                                    url : 'https://rawgit.com/bem/bem-identity/master/sign/sign.png',
+                                    width: '50px'
                                 }
                             ]
                         }
@@ -773,6 +738,5 @@
                 }
             ]
         }
-    ],
-    scripts : [{ elem : 'js', url : '_index.js' }]
+    ]
 })

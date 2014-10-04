@@ -1,6 +1,7 @@
-var PATH    = require('path'),
-    environ = require('bem-environ')(__dirname),
-    U       = require('bem').util;
+/* global MAKE:false */
+
+var settings = require('../settings.json'),
+    environ  = require('bem-environ')(__dirname);
 
 require('bem-tools-autoprefixer').extendMake(MAKE);
 
@@ -33,13 +34,9 @@ MAKE.decl('Arch', {
 
 MAKE.decl('SetsNode', {
 
-    /**
-     * Описание уровней-источников для сетов
-     * @returns {Object}
-     */
     getSets : function() {
         return {
-            'desktop' : [
+            'library' : [
                 'common.blocks',
                 'test.blocks'
             ]
@@ -54,8 +51,7 @@ MAKE.decl('SetsNode', {
 
 MAKE.decl('BundleNode', {
 
-    getTechs: function() {
-
+    getTechs : function() {
         return [
             'bemjson.js',
             'bemdecl.js',
@@ -66,19 +62,20 @@ MAKE.decl('BundleNode', {
             'browser.js+bemhtml',
             'html'
         ];
-
     },
 
     getForkedTechs : function() {
-        return this.__base().concat(['stylus']);
+        return this.__base().concat(['browser.js+bemhtml', 'stylus']);
     },
 
     getLevels : function() {
         return [
             'libs/bem-core/common.blocks',
             'libs/bem-components/common.blocks',
+            'libs/bem-content/common.blocks',
+            'libs/bem-content/design/common.blocks',
             'common.blocks',
-            'design/desktop.blocks'
+            'design/promo.blocks'
         ];
     },
 
@@ -94,15 +91,7 @@ MAKE.decl('BundleNode', {
 MAKE.decl('AutoprefixerNode', {
 
     getBrowsers : function() {
-        return [
-            'last 2 versions',
-            'ie 10',
-            'ff 24',
-            'opera 12.16',
-            'android 4',
-            'ios 5',
-            'ie 10'
-        ];
+        return settings.browsers_support;
     }
 
 });
@@ -124,16 +113,23 @@ MAKE.decl('SpecNode', {
     },
 
     getForkedTechs : function() {
-        return [
-            'bemhtml',
-            'spec.js+browser.js+bemhtml',
-            'phantomjs'
-        ];
+        return ['bemhtml', 'spec.js+browser.js+bemhtml', 'phantomjs'];
     },
 
     getLevels : function() {
         return this.__base.apply(this, arguments)
             .concat(environ.getLibPath('bem-pr', 'spec.blocks'));
+    }
+
+});
+
+MAKE.decl('BundlesLevelNode', {
+
+    buildMergedBundle : function() {
+        return true;
+    },
+    mergedBundleName : function() {
+        return settings.assets.name;
     }
 
 });
