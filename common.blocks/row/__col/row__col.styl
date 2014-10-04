@@ -56,17 +56,31 @@ col_order_classes(size)
     {ctx}_{size}ol
         order: 1
 
+col_visibility_classes(size)
+
+    {ctx}_{size}w_0
+        display: none
+
 {ctx}
     column(columns: total_columns)
 
 @media small
-    col_base_classes(size: s)
-    col_order_classes(size: s)
+    col_base_classes(s)
+    col_order_classes(s)
+
+@media small_only
+    col_visibility_classes(s)
 
 @media medium
-    col_base_classes(size: m)
-    col_order_classes(size: m)
+    col_base_classes(m)
+    col_order_classes(m)
+
+@media medium_only
+    col_visibility_classes(m)
 
 @media large
-    col_base_classes(size: l)
-    col_order_classes(size: l)
+    col_base_classes(l)
+    col_order_classes(l)
+
+@media large_only
+    col_visibility_classes(l)

@@ -640,16 +640,14 @@
                             content : [
                                 {
                                     elem : 'col',
-                                    mix : [ { block : 'mantle', mods : { hidden : 's', visible : 'm', view : 'block' } } ],
-                                    mods : { s : true },
+                                    mods : { m : true, sw : 0  },
                                     content : [
                                         { block : 'box', content : '1' }
                                     ]
                                 },
                                 {
                                     elem : 'col',
-                                    mix : [ { block : 'mantle', mods : { hidden : 'm' } } ],
-                                    mods : { s : true },
+                                    mods : { s : true, mw : 0 },
                                     content : [
                                         { block : 'box', content : '2' }
                                     ]
@@ -657,7 +655,7 @@
                                 {
                                     elem : 'col',
                                     mix : [ { block : 'mantle', mods : { hidden : 'l' } } ],
-                                    mods : { s : true },
+                                    mods : { s : true, lw : 0 },
                                     content : [
                                         { block : 'box', content : '3' }
                                     ]
