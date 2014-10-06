@@ -105,7 +105,7 @@
                             content : [
                                 {
                                     block : 'link',
-                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L58-L121',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L39-L102',
                                     target : '_blank',
                                     content : 'view source'
                                 }
@@ -227,7 +227,7 @@
                             content : [
                                 {
                                     block : 'link',
-                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L148-L246',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L126-L224',
                                     target : '_blank',
                                     content : 'view source'
                                 }
@@ -310,7 +310,7 @@
                             content : [
                                 {
                                     block : 'link',
-                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L285-L332',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L248-L307',
                                     target : '_blank',
                                     content : 'view source'
                                 }
@@ -378,7 +378,7 @@
                             content : [
                                 {
                                     block : 'link',
-                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L359-L403',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L331-L375',
                                     target : '_blank',
                                     content : 'view source'
                                 }
@@ -524,7 +524,7 @@
                             content : [
                                 {
                                     block : 'link',
-                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L430-L552',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L399-L521',
                                     target : '_blank',
                                     content : 'view source'
                                 }
@@ -606,7 +606,7 @@
                             content : [
                                 {
                                     block : 'link',
-                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L579-L637',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L545-L603',
                                     target : '_blank',
                                     content : 'view source'
                                 }
@@ -656,7 +656,7 @@
                             content : [
                                 {
                                     block : 'link',
-                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L664-L692',
+                                    url : 'https://github.com/verybigman/bem-grid/blob/master/desktop.pages/index/index.bemjson.js#L627-L653',
                                     target : '_blank',
                                     content : 'view source'
                                 }
