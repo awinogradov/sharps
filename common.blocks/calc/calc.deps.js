@@ -1,6 +1,6 @@
 ({
     mustDeps : [
-        { block : 'calc' }
+        { block : 'variables' }
     ],
     shouldDeps : [
 
