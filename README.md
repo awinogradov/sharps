@@ -73,7 +73,7 @@ So, list of variables you can watch [here](https://github.com/verybigman/bem-gri
 
 ### Browsers support
 
-All features work in: IE 10+, FF 25+, Chrome 28+, Safari 7+, Opera 12.1+, iOS 7.1+, Android Browser 4.1+, Chrome for Android 37+. For support old browsers i made mod `no-flexbox` for `row` block. Auto setup on `row` where flexbox's unsupported and create fallback to tables.
+All features work in: IE 10+, FF 25+, Chrome 28+, Safari 7+, Opera 12.1+, iOS 7.1+, Android Browser 4.1+, Chrome for Android 37+. For support old browsers i made `no-flexbox` mod for `row` block. It will be setup automatically on `row` where flexbox's unsupported and create fallback to tables.
 
 ### Authors
 
