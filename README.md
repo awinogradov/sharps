@@ -6,7 +6,7 @@ Library for do awesome grid in bem-projects. This grid inspired by [Zurb Foundat
 
 ## Dependencies
 
-- i-bem block from [bem-core](https//github.com/bem/bem-core)
+- `i-bem` block from [bem-core](https//github.com/bem/bem-core)
 
 ## Install
 
@@ -59,33 +59,25 @@ __Useful mods for row block:__
 __Useful mods for col element:__
 
 - __(l|m|s)__ - auto width on (small | medium | large) displays
-- __(l|m|s)w__ - width on (small | medium | large) displays
+- __(l|m|s)w__ - width on (small | medium | large) displays, 0 hide col on this device
 - __(l|m|s)o__ - offset on (small | medium | large) displays
 
 - __(s|m|l)of__ - order first this col on (small | medium | large) displays
 - __(s|m|l)ol__ - order last this col on (small | medium | large) displays
 
-## Mantle
-Block for pretty work with blocks on different screens.
-
-__Useful mods:__
-
-- __hidden__ - hide block on screen with size: (s|m|l)
-- __visible__ - show block on screen with size: (s|m|l)
-- __view__ - display block as: (inline|inline-block|block), work with __visible__ mod like Bonee and Clyde
-
 ## Customize
+
 Grid very simple for customize. You can configure everything. Ex: base grid width, columns count, media queries, paddings and more.
 To do this you need create block __variables__ on one of levels in your project and override any variable in it.
 So, list of variables you can watch [here](https://github.com/verybigman/bem-grid/blob/master/common.blocks/variables/variables.styl).
 
 ### Browsers support
 
-All features work in: IE 10+, FF 25+, Chrome 28+, Safari 7+, Opera 12.1+, iOS 7.1+, Android Browser 4.1+, Chrome for Android 37+. For support old browsers i made mod no-flexbox for row block. In future this grid maybe support in IE 8+.
+All features work in: IE 10+, FF 25+, Chrome 28+, Safari 7+, Opera 12.1+, iOS 7.1+, Android Browser 4.1+, Chrome for Android 37+. For support old browsers i made mod `no-flexbox` for `row` block. Auto setup on `row` where flexbox's unsupported and create fallback to tables.
 
-### Author
+### Authors
 
-Anton Winogradov ([verybigman](https://github.com/verybigman)) @awinogradov
+- Anton Winogradov ([verybigman](https://github.com/verybigman)) @awinogradov
 
 ### Ideas
 
