@@ -1,6 +1,6 @@
 {
   "name": "bem-grid",
-  "version": "1.0.0-beta2",
+  "version": "1.0.0",
   "description": "Flexbox grid on BEM methodology",
   "repository": {
     "type": "git",
