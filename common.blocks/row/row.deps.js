@@ -1,6 +1,7 @@
 ({
     mustDeps : [
-        { block : 'calc' }
+        { block : 'calc' },
+        { block : 'mq' }
     ],
     shouldDeps : [
 
