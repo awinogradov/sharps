@@ -27,5 +27,8 @@
     "bem-components": "0b09f205e38cfd535c692ae1a0cfb36a713d90d0",
     "bem-content": "git://github.com/verybigman/bem-content#~0.0.3"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "resolutions": {
+    "bem-core": "v2.3.0"
+  }
 }
