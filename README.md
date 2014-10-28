@@ -14,7 +14,7 @@ Take way like connecting with [bem-core](https//github.com/bem/bem-core)
 and [bem-components](https//github.com/bem/bem-components) libraries.
 Use [bower-npm-install](https://github.com/arikon/bower-npm-install) to install bem-grid from GitHub or Bower register.
 
-Add levels from bem-grid to your make.js file:
+Add levels from bem-grid to your `make.js` file:
 
 ``` javascript
 [ 'libs/bem-grid/common.blocks' ]
@@ -26,23 +26,23 @@ Example for two columns on devices with medium screen. They will be collapsed on
 
 ``` javascript
 {
-    block: 'row',
-    content: [
+    block : 'row',
+    content : [
         {
-            elem: 'col',
-            mods: { mw: 6 },
-            content: 'left column'
+            elem : 'col',
+            mods : { mw : 6 },
+            content : 'left column'
         },
         {
-            elem: 'col',
-            mods: { mw: 6 },
-            content: 'right column'
+            elem : 'col',
+            mods : { mw : 6 },
+            content : 'right column'
         }
     ]
 }
 ```
 
-See more examples in desktop.pages/index/index.bemjson.js (build it with `bem make`) or on [landing page](http://verybigman.github.io/bem-grid).
+See more examples in `promo.pages/index/index.bemjson.js` (build it with `bem make`) or on [landing page](http://verybigman.github.io/bem-grid).
 
 ## Row
 
@@ -67,8 +67,8 @@ __Useful mods for col element:__
 
 ## Customize
 
-Grid very simple for customize. You can configure everything. Ex: base grid width, columns count, media queries, paddings and more.
-To do this you need create block __variables__ on one of levels in your project and override any variable in it.
+Grid very simple to customize. You can configure everything. Ex: base grid width, columns count, media queries, paddings and more.
+To do this you need create block `variables` on one of levels in your project and override any variable in it.
 So, list of variables you can watch [here](https://github.com/verybigman/bem-grid/blob/master/common.blocks/variables/variables.styl).
 
 ### Browsers support
