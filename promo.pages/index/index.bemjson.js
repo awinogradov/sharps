@@ -11,7 +11,7 @@
             content : [
                 {
                     block : 'gh-ribbon',
-                    url : 'https://github.com/verybigman/bem-grid'
+                    url : '//github.com/verybigman/bem-grid'
                 },
                 {
                     block : 'heading', content : 'BEM Grid'
@@ -33,7 +33,7 @@
                             block : 'heading',
                             lvl : 2,
                             mix : [ { block : 'section', elem : 'title' } ],
-                            content : 'Awesome for responsive bem-projects'
+                            content : 'Responsive'
                         },
                         {
                             elem : 'content',
@@ -119,7 +119,7 @@
                                             content : [
                                                 {
                                                     block : 'link',
-                                                    url : 'https://github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L39-L102',
+                                                    url : '//github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L51-L114',
                                                     target : '_blank',
                                                     content : 'view source'
                                                 }
@@ -259,7 +259,7 @@
                                             content : [
                                                 {
                                                     block : 'link',
-                                                    url : 'https://github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L126-L224',
+                                                    url : '//github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L156-L254',
                                                     target : '_blank',
                                                     content : 'view source'
                                                 }
@@ -360,7 +360,7 @@
                                             content : [
                                                 {
                                                     block : 'link',
-                                                    url : 'https://github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L248-L307',
+                                                    url : '//github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L296-L355',
                                                     target : '_blank',
                                                     content : 'view source'
                                                 }
@@ -446,7 +446,7 @@
                                             content : [
                                                 {
                                                     block : 'link',
-                                                    url : 'https://github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L331-L375',
+                                                    url : '//github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L397-L441',
                                                     target : '_blank',
                                                     content : 'view source'
                                                 }
@@ -610,7 +610,7 @@
                                             content : [
                                                 {
                                                     block : 'link',
-                                                    url : 'https://github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L399-L521',
+                                                    url : '//github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L483-L605',
                                                     target : '_blank',
                                                     content : 'view source'
                                                 }
@@ -710,7 +710,7 @@
                                             content : [
                                                 {
                                                     block : 'link',
-                                                    url : 'https://github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L545-L603',
+                                                    url : '//github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L647-L705',
                                                     target : '_blank',
                                                     content : 'view source'
                                                 }
@@ -778,7 +778,7 @@
                                             content : [
                                                 {
                                                     block : 'link',
-                                                    url : 'https://github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L627-L653',
+                                                    url : '//github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L747-L773',
                                                     target : '_blank',
                                                     content : 'view source'
                                                 }
@@ -810,7 +810,7 @@
                                         'So, list of variables you can watch ',
                                         {
                                             block : 'link',
-                                            url : 'https://github.com/verybigman/bem-grid/blob/master/common.blocks/variables/variables.styl',
+                                            url : '//github.com/verybigman/bem-grid/blob/master/common.blocks/variables/variables.styl',
                                             target : '_blank',
                                             content : 'here'
                                         },
@@ -854,11 +854,11 @@
                     content : [
                         {
                             block : 'link',
-                            url : 'http://bem.info',
+                            url : '//bem.info',
                             content : [
                                 {
                                     block : 'image',
-                                    url : 'https://rawgit.com/bem/bem-identity/master/sign/sign.png',
+                                    url : '//rawgit.com/bem/bem-identity/master/sign/sign.png',
                                     width: '50px'
                                 }
                             ]
