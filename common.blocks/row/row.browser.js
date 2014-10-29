@@ -1,7 +1,7 @@
 modules.define(
     'row',
-    ['i-bem__dom', 'jquery', 'dom'],
-    function(provide, BEMDOM, $, dom) {
+    ['i-bem__dom'],
+    function(provide, BEMDOM) {
 
 provide(BEMDOM.decl(this.name, {
 
