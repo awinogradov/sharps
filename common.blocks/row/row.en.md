@@ -138,7 +138,7 @@ Auto width on small, medium and large devices.
 }
 ```
 
-### _sof, _mof, _lof, _xlof, _xlof
+### _sof, _mof, _lof, _xlof, _xxlof
 
 Display column as first.
 

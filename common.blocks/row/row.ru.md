@@ -138,7 +138,7 @@
 }
 ```
 
-### _sof, _mof, _lof, _xlof, _xlof
+### _sof, _mof, _lof, _xlof, _xxlof
 
 Отображает колонку как первую.
 
