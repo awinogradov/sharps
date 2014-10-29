@@ -48,27 +48,27 @@ See more examples in desktop.pages/index/index.bemjson.js (build it with `bem ma
 
 __Useful mods for row block:__
 
-- __(s|m|l)al__ - align cols to left on (small | medium | large) displays
-- __(s|m|l)ac__ - align cols to center on (small | medium | large) displays
-- __(s|m|l)ar__ - align cols to right on (small | medium | large) displays
+- __(s|m|l|xl|xxl)al__ - align cols to left on needed displays
+- __(s|m|l|xl|xxl)ac__ - align cols to center on needed displays
+- __(s|m|l|xl|xxl)ar__ - align cols to right on needed displays
 
-- __(s|m|l)vat__ - align cols verticaly to top on (small | medium | large) displays
-- __(s|m|l)vam__ - align cols verticaly to middle on (small | medium | large) displays
-- __(s|m|l)vab__ - align cols verticaly to bottom on (small | medium | large) displays
+- __(s|m|l|xl|xxl)vat__ - align cols verticaly to top on needed displays
+- __(s|m|l|xl|xxl)vam__ - align cols verticaly to middle on needed displays
+- __(s|m|l|xl|xxl)vab__ - align cols verticaly to bottom on needed displays
 
 __Useful mods for col element:__
 
-- __(l|m|s)__ - auto width on (small | medium | large) displays
-- __(l|m|s)w__ - width on (small | medium | large) displays, 0 hide col on this device
-- __(l|m|s)o__ - offset on (small | medium | large) displays
+- __(s|m|l|xl|xxl)__ - auto width on needed displays
+- __(s|m|l|xl|xxl)w__ - width on needed displays, 0 hide col on this device
+- __(s|m|l|xl|xxl)o__ - offset on needed displays
 
-- __(s|m|l)of__ - order first this col on (small | medium | large) displays
-- __(s|m|l)ol__ - order last this col on (small | medium | large) displays
+- __(s|m|l|xl|xxl)of__ - order first this col on needed displays
+- __(s|m|l|xl|xxl)ol__ - order last this col on needed displays
 
 ## Customize
 
 Grid very simple for customize. You can configure everything. Ex: base grid width, columns count, media queries, paddings and more.
-To do this you need create block __variables__ on one of levels in your project and override any variable in it.
+To do this you need create block `variables` on one of levels in your project and override any variable in it.
 So, list of variables you can watch [here](https://github.com/verybigman/bem-grid/blob/master/common.blocks/variables/variables.styl).
 
 ### Browsers support
