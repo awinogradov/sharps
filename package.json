@@ -22,8 +22,8 @@
     "svgo": "0.4.5"
   },
   "scripts": {
-    "postinstall": "bower-npm-install",
-    "deps": "bower-npm-install --non-interactive",
+    "deps": "bower-npm-install",
+    "build": "npm run deps",
     "lint": "jshint-groups && jscs ."
   },
   "engines": {
