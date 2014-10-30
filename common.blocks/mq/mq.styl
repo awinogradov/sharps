@@ -24,10 +24,28 @@ large_up     = "screen and (min-width : " + large_start + ")";
 large_only   = "screen and (min-width : " + large_start + ") and (max-width : " + large_stop + ")";
 
 /*
+* XLARGE DISPLAYS:
+*/
+xlarge_start  = 90.063em;
+xlarge_stop   = 120em;
+xlarge_up     = "screen and (min-width : " + xlarge_start + ")";
+xlarge_only   = "screen and (min-width : " + xlarge_start + ") and (max-width : " + xlarge_stop + ")";
+
+/*
+* XXLARGE DISPLAYS:
+*/
+xxlarge_start  = 120.063em;
+xxlarge_stop   = 99999999em;
+xxlarge_up     = "screen and (min-width : " + xxlarge_start + ")";
+xxlarge_only   = "screen and (min-width : " + xxlarge_start + ") and (max-width : " + xxlarge_stop + ")";
+
+/*
 * ALIAS
 */
 small        = small_up;
 medium       = medium_up;
 large        = large_up;
+xlarge       = xlarge_up;
+xxlarge      = xxlarge_up;
 landscape    = "screen and (orientation : landscape)";
 portrait     = "screen and (orientation : portrait)";

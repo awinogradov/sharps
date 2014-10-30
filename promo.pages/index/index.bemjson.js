@@ -40,7 +40,7 @@
                             content : [
                                 {
                                     block : 'paragraph',
-                                    content : 'Responsive mods enable specifying different column sizes, offsets and alignment at s, m & l widths'
+                                    content : 'Responsive mods enable specifying different column sizes, offsets and alignment at s, m, l, xl and xxl displays'
                                 },
                                 {
                                     block : 'example',
