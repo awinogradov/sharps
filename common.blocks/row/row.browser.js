@@ -5,12 +5,12 @@ modules.define(
 
 provide(BEMDOM.decl(this.name, {
 
-    onSetMod: {
+    onSetMod : {
         'js' : {
-            'inited' : function () {
+            'inited' : function() {
                 var detect = document.createElement('detect');
                 detect.style.display = 'flex';
-                detect.style.display === 'flex' && this.setMod('no-flexbox', true);
+                detect.style.display !== 'flex' && this.setMod('no-flexbox', true);
             }
         }
     }
