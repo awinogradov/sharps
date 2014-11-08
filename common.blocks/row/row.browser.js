@@ -13,6 +13,26 @@ provide(BEMDOM.decl(this.name, {
                 detect.style.display !== 'flex' && this.setMod('no-flexbox', true);
             }
         }
+    },
+
+    length : function() {
+        // cols count
+    },
+
+    append : function() {
+        // add col to stack
+    },
+
+    prepend : function() {
+        // add col to start of stack
+    },
+
+    pasteByIndex : function() {
+        // paste new element to row by index
+    },
+
+    sort : function() {
+        // sort columns
     }
 
 }));
