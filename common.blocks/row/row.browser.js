@@ -27,8 +27,12 @@ provide(BEMDOM.decl(this.name, {
         // add col to start of stack
     },
 
-    pasteByIndex : function() {
+    addByIndex : function() {
         // paste new element to row by index
+    },
+
+    removeByIndex : function() {
+        // remove element from row by index
     },
 
     sort : function() {
