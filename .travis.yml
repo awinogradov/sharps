@@ -1,0 +1,14 @@
+language: node_js
+
+node_js:
+  - "0.10"
+
+env:
+  global:
+    - GH_REF: github.com/bem/bem-components.git
+  matrix:
+    - TEST_SCOPE: lint
+    - TEST_SCOPE: specs
+
+matrix:
+  fast_finish: true
