@@ -35,7 +35,7 @@ MAKE.decl('SetsNode', {
 
     getSets : function() {
         return {
-            'library' : [
+            'common' : [
                 'common.blocks',
                 'test.blocks'
             ]
@@ -43,7 +43,7 @@ MAKE.decl('SetsNode', {
     },
 
     getSourceTechs : function() {
-        return ['examples', 'tests', 'specs'];
+        return ['specs'];
     }
 
 });

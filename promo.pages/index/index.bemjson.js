@@ -785,55 +785,6 @@
                                             ]
                                         }
                                     ]
-                                },
-                                {
-                                    block: 'test',
-                                    js : true,
-                                    content: [
-                                        {
-                                            elem: 'build',
-                                            content: [
-                                                {
-                                                    block : 'link',
-                                                    mix : [{ block : 'remove' }],
-                                                    url : '#',
-                                                    content : 'Remove'
-                                                },
-                                                {
-                                                    block : 'link',
-                                                    mix : [{ block : 'add' }],
-                                                    url : '#',
-                                                    content : 'Add'
-                                                },
-                                                {
-                                                    block: 'row',
-                                                    content: [
-                                                        {
-                                                            elem: 'col',
-                                                            mods: { s: true },
-                                                            content: [
-                                                                { block: 'box', content: '0' }
-                                                            ]
-                                                        },
-                                                        {
-                                                            elem: 'col',
-                                                            mods: { s: true },
-                                                            content: [
-                                                                { block: 'box', content: '1' }
-                                                            ]
-                                                        },
-                                                        {
-                                                            elem: 'col',
-                                                            mods: { s: true },
-                                                            content: [
-                                                                { block: 'box', content: '2' }
-                                                            ]
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
                                 }
                             ]
                         }

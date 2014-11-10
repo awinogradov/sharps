@@ -1,7 +1,7 @@
 modules.define(
     'row',
-    ['i-bem__dom', 'BEMHTML'],
-    function(provide, BEMDOM, BEMHTML) {
+    ['i-bem__dom', 'BEMHTML', 'jquery'],
+    function(provide, BEMDOM, BEMHTML, $) {
 
 provide(BEMDOM.decl(this.name, {
 
@@ -10,14 +10,15 @@ provide(BEMDOM.decl(this.name, {
             'inited' : function() {
                 var detect = document.createElement('detect');
                 detect.style.display = 'flex';
-                detect.style.display !== 'flex' && this.setMod('no-flexbox', true);
+                detect.style.display !== 'flex' && this.setMod('flexbox', 'disabled');
             }
         }
     },
 
     /**
-     * Get right index of col.
-     * If index is integer return it as right.
+     * Get right index of col
+     *
+     * If index is integer return it as right,
      * If `index` is undefined return last of row col
      * or id `start` is true return 0.
      *
@@ -32,16 +33,17 @@ provide(BEMDOM.decl(this.name, {
     },
 
     /**
-     * Alias to get all __cols without cache.
+     * Alias to get all __cols without cache
      *
      * @returns {JQuery collection}
      */
     cols : function() {
-        return this.findElem('col');
+        return $(this.findElem('col'));
     },
 
     /**
-     * Append row cols with new __col.
+     * Append __cols with new __col
+     *
      * Create new __col after `index`.
      *
      * @param {BEMJSON} col
@@ -57,7 +59,8 @@ provide(BEMDOM.decl(this.name, {
     },
 
     /**
-     * Prepend row cols with new __col.
+     * Prepend __cols with new __col
+     *
      * Create new __col before `index`.
      *
      * @param {BEMJSON} col
@@ -73,7 +76,7 @@ provide(BEMDOM.decl(this.name, {
     },
 
     /**
-     * Replace row col with new __col.
+     * Replace __col with new __col
      *
      * @param {BEMJSON} col
      * @param {Integer} index
@@ -95,7 +98,7 @@ provide(BEMDOM.decl(this.name, {
     },
 
     /**
-     * Remove row col by index.
+     * Remove __col by index
      *
      * @param {Integer} index
      * @returns {Boolean} result
@@ -103,7 +106,7 @@ provide(BEMDOM.decl(this.name, {
     remove : function(index) {
         if(this.cols().length < index) return false;
 
-        this.cols()[index].remove();
+        BEMDOM.destruct($(this.cols()[index]));
         return true;
     }
 
