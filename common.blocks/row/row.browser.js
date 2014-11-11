@@ -16,10 +16,10 @@ provide(BEMDOM.decl(this.name, {
     },
 
     /**
-     * Get right index of col
+     * Get right index of __col
      *
      * If index is integer return it as right,
-     * If `index` is undefined return last of row col
+     * If `index` is undefined return last __col
      * or id `start` is true return 0.
      *
      * @param {Integer} index
@@ -29,7 +29,7 @@ provide(BEMDOM.decl(this.name, {
     _resolveIndex : function(index, start) {
         if(index !== undefined) return index;
         if(start) return 0;
-        return this.cols().length - 1;
+        return this.getCols().length - 1;
     },
 
     /**
@@ -37,8 +37,8 @@ provide(BEMDOM.decl(this.name, {
      *
      * @returns {JQuery collection}
      */
-    cols : function() {
-        return $(this.findElem('col'));
+    getCols : function() {
+        return this.findElem('col');
     },
 
     /**
@@ -53,9 +53,7 @@ provide(BEMDOM.decl(this.name, {
     append : function(col, index) {
         var i = this._resolveIndex(index);
 
-        BEMDOM.after(this.cols()[i], BEMHTML.apply(col));
-
-        return this.cols()[i];
+        return BEMDOM.after(this.getCols()[i], BEMHTML.apply(col));
     },
 
     /**
@@ -70,9 +68,7 @@ provide(BEMDOM.decl(this.name, {
     prepend : function(col, index) {
         var i = this._resolveIndex(index, true);
 
-        BEMDOM.before(this.cols()[i], BEMHTML.apply(col));
-
-        return this.cols()[i];
+        return BEMDOM.before(this.getCols()[i], BEMHTML.apply(col));
     },
 
     /**
@@ -85,16 +81,16 @@ provide(BEMDOM.decl(this.name, {
     replace : function(col, index) {
         var method, i;
 
-        if(index === this.cols().length - 1) method = 'append';
-        else {
+        if(index === this.getCols().length - 1){
+            method = 'append';
+        } else {
             method = 'prepend';
             i = index;
         }
 
         this.remove(index);
-        this[method](col, i);
 
-        return this.cols()[index];
+        return this[method](col, i);
     },
 
     /**
@@ -104,10 +100,9 @@ provide(BEMDOM.decl(this.name, {
      * @returns {Boolean} result
      */
     remove : function(index) {
-        if(this.cols().length < index) return false;
+        if(this.getCols().length < index) return false;
 
-        BEMDOM.destruct($(this.cols()[index]));
-        return true;
+        return BEMDOM.destruct($(this.getCols()[index]));
     }
 
 }));
