@@ -1,9 +1,23 @@
-({
+[{
+    tech : 'js',
     mustDeps : [
-        { block : 'calc', elems : 'rem' },
+        { tech : 'bemhtml', block : 'i-bem' },
+        { tech : 'bemhtml', block : 'row' }
+    ]
+},
+{
+    tech : 'spec.js',
+    mustDeps : [
+        { tech : 'bemhtml', block : 'row' }
+    ]
+},
+{
+    mustDeps : [
+        { block : 'i-bem', elems : 'dom' },
         { block : 'mq' }
     ],
     shouldDeps : [
-        { block : 'row', mods : { 'no-flexbox' : true } }
+        { block : 'row', mods : { flexbox : 'disabled' } },
+        { elems : 'col' }
     ]
-})
+}]

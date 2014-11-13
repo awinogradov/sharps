@@ -35,7 +35,7 @@ MAKE.decl('SetsNode', {
 
     getSets : function() {
         return {
-            'library' : [
+            'common' : [
                 'common.blocks',
                 'test.blocks'
             ]
@@ -43,7 +43,7 @@ MAKE.decl('SetsNode', {
     },
 
     getSourceTechs : function() {
-        return ['examples', 'tests', 'specs'];
+        return ['specs'];
     }
 
 });
@@ -76,7 +76,8 @@ MAKE.decl('BundleNode', {
             'libs/bem-content/design/promo.blocks',
             'common.blocks',
             'promo.blocks',
-            'design/promo.blocks'
+            'design/promo.blocks',
+            'test.blocks'
         ];
     },
 
