@@ -1,13 +1,8 @@
 ({
     tech : 'js',
     mustDeps : [
-        { block : 'i-bem', tech : 'bemhtml' }
-    ]
-},
-{
-    tech : 'spec.js',
-    mustDeps : [
-        { block : 'row', tech : 'bemhtml' }
+        { tech : 'bemhtml', block : 'i-bem' },
+        { tech : 'bemhtml', block : 'row' }
     ]
 },
 {
