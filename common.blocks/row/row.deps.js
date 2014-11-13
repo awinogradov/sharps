@@ -1,7 +1,8 @@
-({
+[{
     tech : 'js',
     mustDeps : [
-        { tech : 'bemhtml', block : 'i-bem' }
+        { tech : 'bemhtml', block : 'i-bem' },
+        { tech : 'bemhtml', block : 'row' }
     ]
 },
 {
@@ -19,4 +20,4 @@
         { block : 'row', mods : { flexbox : 'disabled' } },
         { elems : 'col' }
     ]
-})
+}]
