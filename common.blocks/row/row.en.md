@@ -48,6 +48,12 @@ Align columns to bottom.
 Will be auto added to `row` block if browser don't support flexboxes and it create
 tables fallback.
 
+### _type
+
+***js***
+
+Add JavaScript methods for manipulating with cols.
+
 ## Elements of a block
 
 ### __col
