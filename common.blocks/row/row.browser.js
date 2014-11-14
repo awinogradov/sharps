@@ -1,7 +1,7 @@
 modules.define(
     'row',
-    ['i-bem__dom', 'BEMHTML', 'jquery'],
-    function(provide, BEMDOM, BEMHTML, $) {
+    ['i-bem__dom', 'BEMHTML'],
+    function(provide, BEMDOM, BEMHTML) {
 
 provide(BEMDOM.decl(this.name, {
 
@@ -102,7 +102,7 @@ provide(BEMDOM.decl(this.name, {
     remove : function(index) {
         if(this.getCols().length < index) return false;
 
-        return BEMDOM.destruct($(this.getCols()[index]));
+        return BEMDOM.destruct(this.getCols().eq(index));
     }
 
 }));
