@@ -5,7 +5,7 @@ node_js:
 
 env:
   global:
-    - GH_REF: github.com/bem/bem-components.git
+    - GH_REF: github.com/verybigman/bem-grid.git
   matrix:
     - TEST_SCOPE: lint
     - TEST_SCOPE: specs
