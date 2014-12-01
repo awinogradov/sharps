@@ -65,6 +65,8 @@ __Useful mods for col element:__
 - __(s|m|l|xl|xxl)of__ - order first this col on needed displays
 - __(s|m|l|xl|xxl)ol__ - order last this col on needed displays
 
+Also `row` have i-bem.js methods for cols manipulating. Read about them [here](https://github.com/verybigman/bem-grid/blob/master/common.blocks/row/_type/row_type_js.browser.js)
+
 ## Customize
 
 
