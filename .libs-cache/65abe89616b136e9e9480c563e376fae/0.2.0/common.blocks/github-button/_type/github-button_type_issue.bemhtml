@@ -1,0 +1,17 @@
+block('github-button').mod('type', 'issue')(
+    attrs()(function() {
+        var mods = this.ctx.mods;
+        var user = this.ctx.user;
+        var repo = this.ctx.repo;
+
+        return this.extend(applyNext(), {
+            href : 'https://github.com/' + user + '/' + repo + '/issues',
+            'data-style' : mods.large && 'mega',
+            'data-count-api' : mods.count && ('/repos/' + user + '/' + repo + '#open_issues_count'),
+            'data-icon' : 'octicon-issue-opened'
+        });
+    }),
+    content()(function() {
+        return this.ctx.text || 'Issue';
+    })
+);

@@ -1,0 +1,27 @@
+{
+  "name": "bem-core",
+  "version": "2.3.0",
+  "description": "bem-core Library",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bem/bem-core.git"
+  },
+  "keywords": [
+    "bem",
+    "core"
+  ],
+  "authors": [
+    "Sergey Belov <peimei@ya.ru>"
+  ],
+  "devDependencies": {
+    "bem-pr": "git://github.com/narqo/bem-pr.git#0.8.1-beta3"
+  },
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "node_modules",
+    "libs",
+    "tools",
+    "*.bundles"
+  ]
+}

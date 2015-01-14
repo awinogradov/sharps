@@ -94,7 +94,7 @@ module.exports = {
             options : {
                 asi : true
             },
-            includes : ['*.pages/**/*.bemjson.js']
+            includes : ['*.bundles/**/*.bemjson.js']
         },
 
         nodejs : {

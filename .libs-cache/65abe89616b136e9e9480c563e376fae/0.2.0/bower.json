@@ -1,0 +1,37 @@
+{
+  "name": "bem-social",
+  "version": "0.1.0",
+  "description": "BEM Social Components Library",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/voischev/bem-social"
+  },
+  "keywords": [
+    "bem",
+    "stylus",
+    "social",
+    "buttons",
+    "widgets"
+  ],
+  "bugs": "https://github.com/voischev/bem-social/issues",
+  "ignore": [
+    ".bem/cache",
+    "node_modules",
+    "libs"
+  ],
+  "authors": [
+    "Ivan Voischev <voischev.ivan@ya.ru>"
+  ],
+  "dependencies": {
+    "bem-components": "git://github.com/bem/bem-components#v2"
+  },
+  "devDependencies": {
+    "bem-content": "git://github.com/voischev/bem-content/#33a9bad6a72a2f6b45725e8fdaca26acd21a1ca9",
+    "bem-grid": "1.1.0",
+    "bem-font": "git://github.com/voischev/bem-font#c86250ac3f4594b6dd2b1dacf5a6df49edecaf81"
+  },
+  "license": "MIT",
+  "resolutions": {
+    "bem-core": "v2.3.0"
+  }
+}

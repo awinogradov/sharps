@@ -1,0 +1,17 @@
+block('github-ribbon')(
+    tag()('a'),
+    attrs()(function() {
+        return {
+            href : this.ctx.url
+        };
+    }),
+    content()(function() {
+        return {
+            tag : 'img',
+            attrs : {
+                src : this.ctx.image,
+                alt : this.ctx.alt || 'Fork me on GitHub'
+            }
+        };
+    })
+);

@@ -1,0 +1,6 @@
+({
+    mustDeps : [
+        'i-bem',
+        'spec'
+    ]
+})

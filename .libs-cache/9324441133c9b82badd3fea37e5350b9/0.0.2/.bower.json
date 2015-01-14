@@ -1,0 +1,40 @@
+{
+  "name": "bem-content",
+  "version": "0.0.2",
+  "description": "Library for right work with content in BEM methodology",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/verybigman/bem-content.git"
+  },
+  "keywords": [
+    "bem",
+    "stylus",
+    "typography",
+    "content"
+  ],
+  "authors": [
+    "Anton Winogradov <winogradovaa@gmail.com>"
+  ],
+  "ignore": [
+    "node_modules",
+    "libs"
+  ],
+  "dependencies": {
+    "bem-core": "v2.4.0",
+    "highlight": "~7.0.1"
+  },
+  "devDependencies": {
+    "bem-components": "3b41cd9d817f51b94bead414409a099913509299",
+    "bem-pr": "git://github.com/narqo/bem-pr.git#~0.10.0"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/verybigman/bem-content",
+  "_release": "0.0.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.2",
+    "commit": "6c49a3b8c7844acef33dcd82cfb92b655dbcb459"
+  },
+  "_source": "git://github.com/verybigman/bem-content.git",
+  "_target": "~0.0.2"
+}

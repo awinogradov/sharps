@@ -1,0 +1,12 @@
+block('yashare')(
+    js()(true),
+    cls()('yashare-auto-init'),
+    attrs()(function() {
+        var ctx = this.ctx;
+        return {
+            'data-yashareQuickServices' : (ctx.quickServices || []).join(','),
+            'data-yashareTheme' : ctx.theme || 'counter',
+            'data-yashareL10n' : ctx.l10n || 'ru'
+        };
+    })
+);

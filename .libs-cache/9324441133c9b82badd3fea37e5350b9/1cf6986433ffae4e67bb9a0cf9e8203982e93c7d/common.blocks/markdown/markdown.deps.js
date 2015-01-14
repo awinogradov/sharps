@@ -1,0 +1,6 @@
+[{
+    mustDeps: [],
+    shouldDeps: [
+        { elems : ['marked'] }
+    ]
+}]

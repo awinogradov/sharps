@@ -1,0 +1,24 @@
+block('vk').mod('widget', 'like')(
+    js()(function() {
+        var ctx = this.ctx;
+        return this.extend(
+            applyNext(),
+            {
+                element_id : this.ctx.id,
+                type : ctx.type,
+                pageTitle : ctx.title,
+                pageDescription : ctx.description,
+                pageUrl : ctx.url,
+                pageImage : ctx.image,
+                text : ctx.text,
+                verb : ctx.verb,
+                width : ctx.width,
+                height : ctx.height,
+                page_id : ctx.pageId
+            }
+        );
+    }),
+    attrs()(function() {
+        return this.extend(applyNext(), { id : this.ctx.id });
+    })
+);

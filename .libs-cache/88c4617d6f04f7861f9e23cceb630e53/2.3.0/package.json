@@ -1,0 +1,49 @@
+{
+  "name": "bem-core",
+  "version": "2.3.0",
+  "private": true,
+  "description": "bem-core Library",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bem/bem-core.git"
+  },
+  "keywords": [
+    "bem",
+    "core"
+  ],
+  "author": "Sergey Belov <peimei@ya.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "ym": "0.0.15",
+    "bem-xjst": "0.4.0",
+    "bemhtml-compat": "~0.0.4",
+    "bem-environ": "~1.2.0"
+  },
+  "devDependencies": {
+    "bem": "~0.7.2",
+    "mocha": "~1.9.0",
+    "jshint-groups": "0.6.0",
+    "jscs": "1.0.0",
+    "git-hooks": "0.0.3",
+    "bower-npm-install": "~0.5.4",
+    "istanbul": "~0.2.6",
+    "vow": "0.4.4",
+    "enb": "0.13.4",
+    "enb-bem-docs": "0.1.4",
+    "enb-bem-examples": "0.2.6",
+    "enb-diverse-js": "0.1.0",
+    "enb-modules": "0.1.2",
+    "enb-bemxjst": "1.2.0",
+    "enb-bh": "0.2.0",
+    "enb-borschik": "1.0.4"
+  },
+  "scripts": {
+    "build": "YENV=production enb make examples && enb make tests && enb make docs && enb make",
+    "lint": "jshint-groups && jscs .",
+    "libs": "bower-npm-install",
+    "bem-test": "npm run libs && bem make -w 7 desktop.specs touch.specs",
+    "bem-coverage": "ISTANBUL_COVERAGE=yes npm run bem-test",
+    "bem-jsdoc": "bem make desktop.jsdoc",
+    "test": "npm run bem-test && mocha --ui tdd --reporter spec common.blocks/i-bem/i-bem.test.bemhtml/*-test.js common.blocks/i-bem/__i18n/test/*-test.js common.blocks/i-bem/__i18n/i-bem__i18n.test.bemhtml/*-test.js"
+  }
+}

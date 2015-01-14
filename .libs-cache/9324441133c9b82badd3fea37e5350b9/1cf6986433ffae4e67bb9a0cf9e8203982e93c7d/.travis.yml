@@ -1,0 +1,15 @@
+language: node_js
+
+node_js:
+  - "0.10"
+
+env:
+  global:
+    - GH_REF: github.com/verybigman/bem-content.git
+  matrix:
+    - TEST_SCOPE: lint
+    - TEST_SCOPE: specs
+    - TEST_SCOPE: tmpls
+
+matrix:
+  fast_finish: true

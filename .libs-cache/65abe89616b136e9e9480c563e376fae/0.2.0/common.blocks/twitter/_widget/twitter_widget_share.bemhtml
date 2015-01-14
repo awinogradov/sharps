@@ -1,0 +1,19 @@
+block('twitter').mod('widget', 'share')(
+    cls()('twitter-share-button'),
+    attrs()(function() {
+        return this.extend(applyNext(), {
+            href : 'https://twitter.com/share',
+            'data-url' : this.ctx.url,
+            'data-text' : this.ctx.text,
+            'data-via' : this.ctx.via,
+            'data-related' : this.ctx.related,
+            'data-hashtags' : this.ctx.hashtags,
+            'data-count' : this.ctx.count,
+            'data-lang' : this.ctx.lang,
+            'data-size' : this.ctx.size
+        });
+    }),
+    content()(function() {
+        return this.ctx.content || 'Tweet';
+    })
+);

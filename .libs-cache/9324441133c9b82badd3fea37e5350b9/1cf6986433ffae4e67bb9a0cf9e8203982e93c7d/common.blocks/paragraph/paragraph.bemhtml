@@ -1,0 +1,16 @@
+block('paragraph')(
+
+    tag()('p'),
+
+    content()(function() {
+        return [
+            this.ctx.mark && {
+                elem : 'marker',
+                content : this.ctx.mark
+            },
+            applyNext()
+        ];
+    }),
+
+    elem('marker').tag()('span')
+);

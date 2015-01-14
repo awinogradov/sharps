@@ -1,0 +1,21 @@
+block('blockquote')(
+
+    tag()('blockquote'),
+
+    content()(function() {
+        return [
+            {
+                block : 'paragraph',
+                mix : [{ block : this.block, elem : 'content' }],
+                content : this.ctx.content
+            },
+            this.ctx.source && {
+                elem : 'footer',
+                content : this.ctx.source
+            }
+        ];
+    }),
+    
+    elem('footer').tag()('footer')
+
+);

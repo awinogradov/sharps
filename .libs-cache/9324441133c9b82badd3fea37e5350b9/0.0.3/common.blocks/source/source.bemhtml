@@ -1,0 +1,28 @@
+block('source')(
+
+    tag()('pre'),
+
+    js()(true),
+
+    def()(function() {
+        var _ctx = this.ctx;
+
+        applyCtx({
+            block : 'figure',
+            caption : _ctx.caption,
+            content : _ctx
+        });
+    }),
+
+    content()(function() {
+        return [
+            {
+                elem : 'code',
+                cls : this.ctx.mods.lang,
+                content : this.ctx.content
+            }
+        ];
+    }),
+
+    elem('code').tag()('code')
+);
