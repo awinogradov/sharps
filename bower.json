@@ -25,10 +25,11 @@
   "devDependencies": {
     "bem-pr": "git://github.com/narqo/bem-pr.git#~0.10.0",
     "bem-components": "7329bcb78aaee74ab3372d93a026205d7c0ae77e",
-    "bem-content": "git://github.com/verybigman/bem-content#1936b2542979873f1615a9af88b190c3554e338e"
+    "bem-content": "git://github.com/verybigman/bem-content#1cf6986433ffae4e67bb9a0cf9e8203982e93c7d"
   },
   "resolutions": {
-    "bem-core": "v2.5.0"
+    "bem-core": "v2.5.0",
+    "bem-components": "7329bcb78aaee74ab3372d93a026205d7c0ae77e"
   },
   "license": "MIT"
 }

@@ -3,8 +3,8 @@
     title : 'BEM Grid',
     favicon : 'www/favicon.ico',
     head : [{ elem : 'meta', attrs : { name : 'viewport', content : 'width=device-width, initial-scale=1.0' }}],
-    styles : [{ elem : 'css', url : '_index.css' }],
-    scripts : [{ elem : 'js', url : '_index.js' }],
+    styles : [{ elem : 'css', url : 'index.min.css' }],
+    scripts : [{ elem : 'js', url : 'index.min.js' }],
     content : [
         {
             elem : 'header',
