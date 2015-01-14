@@ -1,9 +1,10 @@
 ({
     mustDeps : [
-        { block : 'variables' },
-        { block : 'mq' }
+
     ],
     shouldDeps : [
-
+        { block : 'variables' },
+        { block : 'calc', elems : 'rem' },
+        { block : 'mq' }
     ]
 })
