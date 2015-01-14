@@ -1,0 +1,14 @@
+block('twitter').mod('widget', 'tweet')(
+    cls()('twitter-tweet'),
+    tag()('blockquote'),
+    attrs()(function() {
+        return this.extend(applyNext(), {
+            'lang' : this.ctx.lang || 'ru'
+        });
+    }),
+    content()(function() {
+        return this.ctx.content;
+    })
+);
+
+// <blockquote class="twitter-tweet" lang="ru"><p>Еду домой из дома. <a href="http://t.co/pP0lLMKlCH">pic.twitter.com/pP0lLMKlCH</a></p>&mdash; Sergey Korol (@krlsrg) <a href="https://twitter.com/krlsrg/status/524278438769991680">20 октября 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

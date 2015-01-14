@@ -1,0 +1,7 @@
+block('textarea')(
+    js()(true),
+    def()(function() {
+        applyNext({ _textarea : this.ctx });
+    }),
+    content()({ elem : 'control' })
+);

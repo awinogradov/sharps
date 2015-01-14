@@ -1,0 +1,4 @@
+int_font_size    = unit(font_size, '');
+line_height      = unit(line_base, '') / int_font_size;
+rem_font_size    = remify(font_size);
+rem_line_height  = remify(unit(floor(line_height * int_font_size), 'px'));

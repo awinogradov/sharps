@@ -1,0 +1,19 @@
+block('github-button').mod('type', 'fork')(
+    attrs()(function() {
+        var mods = this.ctx.mods;
+        var user = this.ctx.user;
+        var repo = this.ctx.repo;
+
+        return this.extend(applyNext(), {
+            href : 'https://github.com/' + user + '/' + repo,
+            'data-style' : mods.large && 'mega',
+            'data-count-href' : mods.count && ('/' + user + '/' + repo + '/network'),
+            'data-count-api' : mods.count && ('/repos/' + user + '/' + repo + '#forks_count'),
+            'data-icon' : 'octicon-git-branch'
+        });
+    }),
+    content()(function() {
+        return this.ctx.text || 'Fork';
+    })
+
+);

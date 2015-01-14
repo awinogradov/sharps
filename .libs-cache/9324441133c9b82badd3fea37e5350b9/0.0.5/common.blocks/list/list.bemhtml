@@ -1,0 +1,18 @@
+block('list') (
+    tag()('ul'),
+
+    content()(function() {
+        var ctx = this.ctx;
+
+        return (ctx.items || []).map(function(item) {
+            return [
+                {
+                    elem : 'item',
+                    content : item
+                }
+            ];
+        });
+    }),
+
+    elem('item').tag()('li')
+);

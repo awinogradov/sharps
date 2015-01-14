@@ -1,0 +1,18 @@
+block('github-button').mod('type', 'star')(
+    attrs()(function() {
+        var mods = this.ctx.mods;
+        var user = this.ctx.user;
+        var repo = this.ctx.repo;
+
+        return this.extend(applyNext(), {
+            href : 'https://github.com/' + user + '/' + repo,
+            'data-style' : mods.large && 'mega',
+            'data-count-href' : mods.count && ('/' + user + '/' + repo + '/stargazers'),
+            'data-count-api' : mods.count && ('/repos/' + user + '/' + repo + '#stargazers_count'),
+            'data-icon' : 'octicon-star'
+        });
+    }),
+    content()(function() {
+        return this.ctx.text || 'Star';
+    })
+);

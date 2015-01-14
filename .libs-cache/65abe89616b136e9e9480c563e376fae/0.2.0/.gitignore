@@ -1,0 +1,15 @@
+.project
+.settings/
+.DS_Store
+.idea
+.svn
+node_modules
+libs
+npm-debug.log
+
+.bem/cache
+
+*.bundles/*/*
+!*.bundles/.bem/*
+!*.bundles/*/blocks
+!*.bundles/*/*.bemjson.js

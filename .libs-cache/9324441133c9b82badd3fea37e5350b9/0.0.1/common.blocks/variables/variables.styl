@@ -1,0 +1,56 @@
+// 16px = 1rem
+remify(value) {
+    u = unit(value);
+
+    if (u is 'px') {
+        return unit(value/16, 'rem');
+    } else {
+        return unit(value, u);
+    }
+}
+
+font_family      = Helvetica, Arial, sans-serif;
+font_size_val    = 14;
+font_size        = unit(font_size_val, 'px');
+line_height      = 20 / font_size_val;
+base_font_size   = remify(font_size);
+base_line_height = remify(unit(floor(font_size_val * line_height), 'px'));
+
+h_font_family    = font_family;
+h1_lines         = 4;
+h1_line          = base_line_height;
+h1_line_height   = h1_line * h1_lines;
+h1_font_size     = base_font_size * h1_lines;
+h1_margin_top    = 2 * h1_line;
+h1_margin_bottom = 1 * h1_line;
+
+h2_lines         = 3;
+h2_line          = base_line_height;
+h2_line_height   = h2_line * h2_lines;
+h2_font_size     = base_font_size * h2_lines;
+h2_margin_top    = 2 * h2_line;
+h2_margin_bottom = 1 * h2_line;
+
+h3_line          = base_line_height;
+h3_lines         = 2;
+h3_line_height   = h3_line * h3_lines;
+h3_font_size     = base_font_size * h3_lines;
+h3_margin_top    = 2 * h3_line;
+h3_margin_bottom = 1 * h3_line;
+
+h4_lines         = 1;
+h4_line          = base_line_height;
+h4_line_height   = h4_line * h4_lines;
+h4_font_size     = base_font_size;
+h4_margin_top    = 2 * h4_line;
+h4_margin_bottom = 1 * h4_line;
+
+p_lead_font_size = base_font_size * 1.5;
+p_margin_top     = base_line_height;
+p_margin_bottom  = base_line_height;
+
+source_padding  = 0;
+
+q_padding       = 10px 20px;
+q_margin        = 0 0 20px;
+q_font_size     = base_font_size * 1.25;

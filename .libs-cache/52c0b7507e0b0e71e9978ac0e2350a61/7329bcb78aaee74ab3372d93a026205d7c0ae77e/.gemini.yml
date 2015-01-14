@@ -1,0 +1,36 @@
+gridUrl: http://ondemand.saucelabs.com/wd/hub
+rootUrl: http://localhost:8000/
+
+browsers:
+  firefox-v30:
+    browserName: firefox
+    version: 30
+    platform: Linux
+  chrome-v35:
+    browserName: chrome
+    version: 35
+    platform: Linux
+#  opera-v12:
+#    browserName: opera
+#    version: 12
+#    platform: Windows 7
+#  ie9:
+#    browserName: internet explorer
+#    version: 9
+#    platform: Windows 7
+
+http:
+  timeout: 40000
+  #retries can break the tests if command is
+  #actually performed by saucelabs, but response
+  #is not received. In this case same command may be
+  #executed twice.
+  retries: 0
+
+debug: false
+
+capabilities:
+  record-screenshots: false
+  record-video: false
+  screen-resolution: 1024x768
+  max-duration: 7200

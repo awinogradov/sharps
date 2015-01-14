@@ -1,0 +1,135 @@
+.share_theme_normal
+{
+    font-family: Arial, Helvetica, sans-serif;
+
+    position: relative;
+
+    display: inline-block;
+
+    margin: 0;
+    padding: 0;
+
+    user-select: none;
+
+    color: #fff;
+    text-decoration: none;
+
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+
+    text-align: center;
+    white-space: nowrap;
+
+    .share__text
+    {
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+        vertical-align: top;
+    }
+
+    .icon
+    {
+        // width: 1.6em;
+        // height: 1.6em;
+        // margin: -0.5em 0 -0.5em -0.3em;
+        fill: #fff;
+    }
+
+    SOCIAL_NAME = vkontakte facebook twitter gplus blogger
+    SOCIAL_COLOR = #4D75A3 #3B5998 #00ACED #CC3732 #f26300
+
+    for i in 0..(length(SOCIAL_NAME) - 1) {
+
+        &.share_service_{SOCIAL_NAME[i]} {
+            background-color: SOCIAL_COLOR[i];
+
+            &.share_hovered
+            {
+                background-color: SOCIAL_COLOR[i] - 20%;
+            }
+        }
+
+    }
+
+    &.share_hovered
+    {
+        cursor: pointer;
+    }
+
+    &.share_size_s
+    {
+        font-size: 13px;
+        line-height: 24px;
+        height: 24px;
+
+        .icon
+        {
+            width: 24px;
+            height: 24px;
+        }
+        .share__text
+        {
+            margin: 0 10px;
+        }
+    }
+    &.share_size_m
+    {
+        font-size: 13px;
+        line-height: 28px;
+        height: 28px;
+
+        .icon
+        {
+            width: 28px;
+            height: 28px;
+        }
+        .share__text
+        {
+            margin: 0 13px;
+        }
+    }
+    &.share_size_l
+    {
+        font-size: 15px;
+        line-height: 32px;
+        height: 32px;
+
+        .icon
+        {
+            width: 32px;
+            height: 32px;
+        }
+        .share__text
+        {
+            margin: 0 15px;
+        }
+    }
+    &.share_size_xl
+    {
+        font-size: 18px;
+        line-height: 38px;
+        height: 38px;
+
+        .icon
+        {
+            width: 38px;
+            height: 38px;
+        }
+        .share__text
+        {
+            margin: 0 18px;
+        }
+    }
+
+    & .icon + .share__text
+    {
+        margin-left: 0;
+    }
+
+    .share__text:not(:last-child)
+    {
+        margin-right: 0;
+    }
+}

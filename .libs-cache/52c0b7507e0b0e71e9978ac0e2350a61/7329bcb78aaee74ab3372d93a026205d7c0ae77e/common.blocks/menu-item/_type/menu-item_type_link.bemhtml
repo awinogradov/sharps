@@ -1,0 +1,9 @@
+block('menu-item').mod('type', 'link').mod('disabled', true).match(!this._menuItemDisabled).def()(function() {
+    apply({ _menuItemDisabled : true });
+});
+
+block('link').match(this._menuItemDisabled).def()(function() {
+    delete this._menuItemDisabled;
+    this.mods.disabled = true;
+    apply();
+});

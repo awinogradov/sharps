@@ -1,0 +1,19 @@
+block('figure')(
+
+    tag()('figure'),
+
+    content()(function() {
+        return [
+            {
+                elem : 'content',
+                content : this.ctx.content
+            },
+            this.ctx.caption && {
+                elem : 'caption',
+                content : this.ctx.caption
+            }
+        ];
+    }),
+
+    elem('caption').tag()('figcaption')
+);

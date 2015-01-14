@@ -1,0 +1,7 @@
+block('github-ribbon').mod('theme', 'orange').def()(function() {
+    this.ctx.image = 'https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png';
+    if(this.mods.right) {
+        this.ctx.image = 'https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png';
+    }
+    applyNext();
+});

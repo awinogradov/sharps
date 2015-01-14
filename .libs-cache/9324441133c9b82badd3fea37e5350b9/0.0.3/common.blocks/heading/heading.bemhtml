@@ -1,0 +1,15 @@
+block('heading')(
+
+    def()(function() {
+
+        var lvl = this.ctx.lvl || 1;
+
+        applyCtx({
+            block : this.block,
+            tag : 'h' + lvl,
+            mods : this.extend(this.ctx.mods, { lvl : lvl }),
+            content : this.ctx.content
+        });
+
+    })
+);

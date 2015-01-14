@@ -1,0 +1,9 @@
+remify(value) {
+    u = unit(value);
+
+    if (u is 'px') {
+        return unit(value/unit(rem_base, ''), 'rem');
+    } else {
+        return unit(value, u);
+    }
+}

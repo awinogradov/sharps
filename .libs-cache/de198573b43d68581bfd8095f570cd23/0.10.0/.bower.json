@@ -1,0 +1,24 @@
+{
+  "name": "bem-pr",
+  "description": "A set of bem-make extensions to wrap common infrastructure tasks",
+  "version": "0.10.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/narqo/bem-pr.git"
+  },
+  "ignore": [
+    "GNUmakefile",
+    "examples",
+    "test"
+  ],
+  "private": true,
+  "homepage": "https://github.com/narqo/bem-pr",
+  "_release": "0.10.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.10.0",
+    "commit": "f767f35dca8a3cdf9705806409c3411a079849bb"
+  },
+  "_source": "git://github.com/narqo/bem-pr.git",
+  "_target": "~0.10.0"
+}
