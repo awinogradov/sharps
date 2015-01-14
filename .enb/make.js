@@ -25,12 +25,12 @@ var DEFAULT_LANGS = ['ru', 'en'],
     mergeBemdecl = require('enb-bem-techs/techs/merge-bemdecl'),
     borschik = require('enb-borschik/techs/borschik'),
     PLATFORMS = {
-        'desktop' : ['common'],
+        'desktop' : ['common', 'desktop'],
         'touch-phone' : ['common'],
         'touch-pad' : ['common']
     },
     SETS = {
-        'desktop' : ['common'],
+        'desktop' : ['common', 'desktop'],
         'touch' : ['common']
     };
 
