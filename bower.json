@@ -25,7 +25,7 @@
   "devDependencies": {
     "bem-pr": "git://github.com/narqo/bem-pr.git#~0.10.0",
     "bem-components": "7329bcb78aaee74ab3372d93a026205d7c0ae77e",
-    "bem-content": "git://github.com/verybigman/bem-content#1cf6986433ffae4e67bb9a0cf9e8203982e93c7d"
+    "bem-content": "git://github.com/verybigman/bem-content#ff3a0924e4397da129c9801982ecb0e8576ea024"
   },
   "resolutions": {
     "bem-core": "v2.5.0",

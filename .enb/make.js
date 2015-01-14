@@ -287,17 +287,13 @@ function getSourceLevels(platform) {
     platformNames.forEach(function(name) {
         levels.push(
             { path : path.join('libs', 'bem-core', name + '.blocks'), check : false },
-            { path : path.join('libs', 'bem-components', name + '.blocks'), check : false }//,
-            //{ path : path.join('libs', 'bem-content', name + '.blocks'), check : false }
+            { path : path.join('libs', 'bem-components', name + '.blocks'), check : false },
+            { path : path.join('libs', 'bem-content', name + '.blocks'), check : false }
         );
     });
 
     platformNames.forEach(function(name) {
         levels.push({ path : name + '.blocks', check : true });
-    });
-
-    platformNames.forEach(function(name) {
-        //levels.push({ path : path.join('design',  'promo.blocks'), check : true });
     });
 
     return levels;
