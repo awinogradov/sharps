@@ -1,11 +1,10 @@
 [{
     mustDeps : [
-
-    ],
-    shouldDeps : [
         { block : 'variables' },
         { block : 'calc', elems : 'rem' },
-        { block : 'mq' },
+        { block : 'mq' }
+    ],
+    shouldDeps : [
         { block : 'row', mods : { flexbox : 'disabled' } },
         { elems : 'col' }
     ]
