@@ -1,5 +1,5 @@
 module.exports = function(bh) {
-    bh.match('row', function(ctx) {
+    bh.match('row_flexbox_detect', function(ctx) {
         ctx.js(true);
     });
 };

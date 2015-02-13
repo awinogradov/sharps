@@ -1,9 +1,9 @@
 modules.define(
     'row',
     ['i-bem__dom', 'BEMHTML'],
-    function(provide, BEMDOM, BEMHTML, Row) {
+    function(provide, BEMDOM, BEMHTML) {
 
-provide(Row.decl({ modName : 'type', modVal : 'js' }, {
+provide(BEMDOM.decl({ block : this.name, modName : 'type', modVal : 'js' }, {
     /**
      * Get right index of __col
      *

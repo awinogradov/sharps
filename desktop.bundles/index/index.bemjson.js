@@ -50,6 +50,7 @@
                                             content : [
                                                 {
                                                     block : 'row',
+                                                    mods : { flexbox : 'detect' },
                                                     content : [
                                                         {
                                                             elem : 'col',
@@ -76,6 +77,7 @@
                                                 },
                                                 {
                                                     block : 'row',
+                                                    mods : { type : 'js' },
                                                     content : [
                                                         {
                                                             elem : 'col',
