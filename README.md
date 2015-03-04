@@ -1,6 +1,6 @@
 # bem-grid 
 
-[![Build Status](https://img.shields.io/travis/verybigman/bem-gridhttps://travis-ci.org/verybigman/bem-grid.svg?branch=master&style=flat)](https://travis-ci.org/verybigman/bem-grid)
+[![Build Status](https://travis-ci.org/verybigman/bem-grid.svg?branch=master&style=flat)](https://travis-ci.org/verybigman/bem-grid)
 
 This README also available in [russian](https://github.com/verybigman/bem-grid/blob/master/README.ru.md).
 
