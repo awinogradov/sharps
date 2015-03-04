@@ -1,14 +1,16 @@
-ctx = '.row'
+.row_flexbox_disabled
+{
+    box-sizing: border-box;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
 
-{ctx}_flexbox_disabled
-    box-sizing:   border-box
-    display:      table
-    table-layout: fixed
-    width:        100%
-
-    {ctx}__col
-        position:       relative
-        display:        table-cell
-        flex:           1
-        flex-direction: column
-        white-space:    nowrap
+    .row__col
+    {
+        position: relative;
+        display: table-cell;
+        flex: 1;
+        flex-direction: column;
+        white-space: nowrap;
+    }
+}
