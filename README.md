@@ -4,7 +4,7 @@
 
 This README also available in [russian](https://github.com/verybigman/bem-grid/blob/master/README.ru.md).
 
-Library for do awesome grid in bem-projects. This grid inspired by [Zurb Foundation grid](http://foundation.zurb.com/docs/components/grid.html) and [Flexbox grid](http://flexboxgrid.com/). Grid available for Stylus only.
+Library for do awesome grid in bem-projects. This grid inspired by [Flexbox grid](http://flexboxgrid.com/). Grid available for Stylus only.
 
 ## Dependencies
 
@@ -71,8 +71,7 @@ Also `row` have i-bem.js methods for cols manipulating. Read about them [here](h
 
 ## Customize
 
-
-Grid very simple for customize. You can configure everything. Ex: base grid width, columns count, media queries, paddings and more.
+Grid very simple for customize columns count and media queries.
 To do this you need create block `variables` on one of levels in your project and override any variable in it.
 So, list of variables you can watch [here](https://github.com/verybigman/bem-grid/blob/master/common.blocks/variables/variables.styl).
 
