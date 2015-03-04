@@ -1,5 +1,4 @@
-modules.define(
-    'row',
+modules.define('row',
     ['i-bem__dom'],
     function(provide, BEMDOM) {
 

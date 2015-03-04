@@ -20,14 +20,10 @@
     "libs"
   ],
   "dependencies": {
-    "bem-core": "git://github.com/bem/bem-core.git#v2.5.1"
+    "bem-core": "2.5.1"
   },
   "devDependencies": {
-    "bem-pr": "git://github.com/narqo/bem-pr.git#~0.10.0",
-    "bem-components": "7329bcb78aaee74ab3372d93a026205d7c0ae77e"
-  },
-  "resolutions": {
-    "bem-components": "7329bcb78aaee74ab3372d93a026205d7c0ae77e"
+    "bem-pr": "~0.10.0"
   },
   "license": "MIT"
 }

@@ -1,65 +1,87 @@
-ctx = '.row'
+row(nest = false) {
+    if (nest) {
+        padding: 0;
+    } else {
+        margin:         0;
+        width:          100%;
+        box-sizing:     border-box;
+        display:        flex;
+        flex-direction: row;
+        flex-wrap:      wrap;
+    }
+}
 
-row(nest = false)
-
-    if nest
-        padding: 0
-    else
-        padding-left:   remify(row_padding)
-        padding-right:  remify(row_padding)
-        margin:         0
-        width:          100%
-        box-sizing:     border-box
-        display:        flex
-        flex-direction: row
-        flex-wrap:      wrap
-
-row_align_classes(size)
-
+row_align_classes(size) {
     // {s,m,l}al = {small, medium, large} align left
-    {ctx}_{size}al
-        justify-content: flex-start
-        text-align:      start
+    .row_{size}al
+    {
+        justify-content: flex-start;
+        text-align: start;
+    }
 
     // {s,m,l}ac = {small, medium, large} align center
-    {ctx}_{size}ac
-        justify-content: center
-        text-align:      center
+    .row_{size}ac
+    {
+        justify-content: center;
+        text-align: center;
+    }
 
     // {s,m,l}ar = {small, medium, large} align right
-    {ctx}_{size}ar
-        justify-content: flex-end
-        text-align:      end
+    .row_{size}ar
+    {
+        justify-content: flex-end;
+        text-align: end;
+    }
 
     // {s,m,l}vat = {small, medium, large} vertical align top
-    {ctx}_{size}vat
-        align-items: flex-start
+    .row_{size}vat
+    {
+        align-items: flex-start;
+    }
 
     // {s,m,l}vam = {small, medium, large} vertical align medium
-    {ctx}_{size}vam
-        align-items: center
+    .row_{size}vam
+    {
+        align-items: center;
+    }
 
     // {s,m,l}vab = {small, medium, large} vertical align bottom
-    {ctx}_{size}vab
-        align-items: flex-end
+    .row_{size}vab
+    {
+        align-items: flex-end;
+    }
+}
 
-{ctx}
-    row()
+.row {
+    row();
 
-    {ctx}
-        row(nest: true)
+    .row
+    {
+        row(nest:true);
+    }
+}
 
-@media small
-    row_align_classes(s)
+@media $small
+{
+    row_align_classes(s);
+}
 
-@media medium
-    row_align_classes(m)
+@media $medium
+{
+    row_align_classes(m);
+}
 
-@media large
-    row_align_classes(l)
+@media $large
+{
+    row_align_classes(l);
+}
 
-@media xlarge
-    row_align_classes(xl)
+@media $xlarge
+{
+    row_align_classes(xl);
+}
 
-@media xxlarge
-    row_align_classes(xxl)
+@media $xxlarge
+{
+    row_align_classes(xxl);
+}

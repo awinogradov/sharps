@@ -92,7 +92,8 @@ module.exports = {
 
         bemjsonjs : {
             options : {
-                asi : true
+                asi : true,
+                maxlen : 200
             },
             includes : ['*.bundles/**/*.bemjson.js']
         },
