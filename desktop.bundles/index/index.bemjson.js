@@ -2,7 +2,7 @@
     block : 'page',
     title : 'BEM Grid',
     favicon : 'www/favicon.ico',
-    head : [{ elem : 'meta', attrs : { name : 'viewport', content : 'width=device-width, initial-scale=1.0' }}],
+    head : [{ elem : 'meta', attrs : { name : 'viewport', content : 'width=device-width, initial-scale=1.0' } }],
     styles : [{ elem : 'css', url : 'index.min.css' }],
     scripts : [{ elem : 'js', url : 'index.min.js' }],
     content : [
@@ -32,7 +32,7 @@
                         {
                             block : 'heading',
                             lvl : 2,
-                            mix : [ { block : 'section', elem : 'title' } ],
+                            mix : { block : 'section', elem : 'title' },
                             content : 'Responsive'
                         },
                         {
@@ -139,7 +139,7 @@
                         {
                             block : 'heading',
                             lvl : 2,
-                            mix : [ { block : 'section', elem : 'title' } ],
+                            mix : { block : 'section', elem : 'title' },
                             content : 'Fluid '
                         },
                         {
@@ -279,7 +279,7 @@
                         {
                             block : 'heading',
                             lvl : 2,
-                            mix : [ { block : 'section', elem : 'title' } ],
+                            mix : { block : 'section', elem : 'title' },
                             content : 'Offsets'
                         },
                         {
@@ -380,7 +380,7 @@
                         {
                             block : 'heading',
                             lvl : 2,
-                            mix : [ { block : 'section', elem : 'title' } ],
+                            mix : { block : 'section', elem : 'title' },
                             content : 'Auto size'
                         },
                         {
@@ -466,7 +466,7 @@
                         {
                             block : 'heading',
                             lvl : 2,
-                            mix : [ { block : 'section', elem : 'title' } ],
+                            mix : { block : 'section', elem : 'title' },
                             content : 'Alignment'
                         },
                         {
@@ -630,7 +630,7 @@
                         {
                             block : 'heading',
                             lvl : 2,
-                            mix : [ { block : 'section', elem : 'title' } ],
+                            mix : { block : 'section', elem : 'title' },
                             content : 'Ordering'
                         },
                         {
@@ -730,7 +730,7 @@
                         {
                             block : 'heading',
                             lvl : 2,
-                            mix : [ { block : 'section', elem : 'title' } ],
+                            mix : { block : 'section', elem : 'title' },
                             content : 'Responsive visibility'
                         },
                         {
@@ -751,7 +751,7 @@
                                                     content : [
                                                         {
                                                             elem : 'col',
-                                                            mods : { m : true, sw : 0  },
+                                                            mods : { m : true, sw : 0 },
                                                             content : [
                                                                 { block : 'box', content : '1' }
                                                             ]
@@ -765,7 +765,7 @@
                                                         },
                                                         {
                                                             elem : 'col',
-                                                            mix : [ { block : 'mantle', mods : { hidden : 'l' } } ],
+                                                            mix : { block : 'mantle', mods : { hidden : 'l' } },
                                                             mods : { s : true, lw : 0 },
                                                             content : [
                                                                 { block : 'box', content : '3' }
@@ -798,7 +798,7 @@
                         {
                             block : 'heading',
                             lvl : 2,
-                            mix : [ { block : 'section', elem : 'title' } ],
+                            mix : { block : 'section', elem : 'title' },
                             content : 'Customize'
                         },
                         {
@@ -829,7 +829,7 @@
                         {
                             block : 'heading',
                             lvl : 2,
-                            mix : [ { block : 'section', elem : 'title' } ],
+                            mix : { block : 'section', elem : 'title' },
                             content : 'Browsers support'
                         },
                         {
@@ -861,7 +861,7 @@
                                 {
                                     block : 'image',
                                     url : 'https://rawgit.com/bem/bem-identity/master/sign/sign.png',
-                                    width: '50px'
+                                    width : '50px'
                                 }
                             ]
                         }
