@@ -76,6 +76,34 @@ col_visibility_classes(size) {
         display: none;
     }
 }
+/*
+ * Calculate nested columns width
+ */
+calc_columns_nested(colNumber, colRow) {
+
+  if ( colNumber > 1 ) {
+    unit(( 100 / (colRow  / colNumber) ), '%');
+  } else {
+    unit(( 100 / colNumber / colRow  ), '%');
+  }
+
+}
+
+
+nested_column(column, columns ) {
+  flex-basis  calc_columns_nested(column, columns)
+}
+
+for i in (1..$total_columns - 1) {
+  for n in (1..$total_columns - 1) {
+    if (i > n) {
+      .row__cl{n}_{i} {
+        nested_column(n, i);
+      }
+    }
+  }
+}
+
 
 .row__col
 {
