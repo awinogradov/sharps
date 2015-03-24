@@ -49,6 +49,7 @@
                                         },
                                         {
                                             block: 'row',
+                                            mods: { in: 10 },
                                             content: (function () {
                                                 var articles = [];
 
@@ -93,10 +94,11 @@
                                         },
                                         {
                                             block: 'row',
+                                            mods: { in: 10 },
                                             content: [
                                                 {
                                                     elem: 'col',
-                                                    mods: {c7: 10},
+                                                    mods: { nest: 7 },
                                                     content: [
                                                         {
                                                             block: 'box',
@@ -105,14 +107,15 @@
                                                                 '7 COLUMNS IN 10 ROW',
                                                                 {
                                                                     block: 'row',
+                                                                    mods: { in: 7 },
                                                                     content: [
                                                                         {
                                                                             elem: 'col',
-                                                                            mods: { c2: 7},
+                                                                            mods: { nest: 2 },
                                                                             content: [
                                                                                 {
                                                                                     block: 'box',
-                                                                                    mods: { size: 's', color: 'green' },
+                                                                                    mods: {size: 's', color: 'green'},
                                                                                     content: [
                                                                                         '2 COLUMNS IN 7 ROW',
                                                                                     ]
@@ -121,11 +124,11 @@
                                                                         },
                                                                         {
                                                                             elem: 'col',
-                                                                            mods: {c5: 7},
+                                                                            mods: { nest: 5 },
                                                                             content: [
                                                                                 {
                                                                                     block: 'box',
-                                                                                    mods: { size: 's', color: 'green' },
+                                                                                    mods: {size: 's', color: 'green'},
                                                                                     content: [
                                                                                         '5 COLUMNS IN 7 ROW',
                                                                                     ]
@@ -142,7 +145,7 @@
                                                 },
                                                 {
                                                     elem: 'col',
-                                                    mods: {c3: 10},
+                                                    mods: { nest: 3 },
                                                     content: [
                                                         {
                                                             block: 'box',
