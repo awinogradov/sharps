@@ -92,11 +92,18 @@ nested_column(column, columns) {
     flex-shrink: 0;
 }
 
+nested_column_offset(column, columns ) {
+    margin-left: calc_columns_nested(column, columns);
+}
+
 for i in (1..$total_columns - 1) {
     for n in (1..$total_columns - 1) {
         if (i > n) {
             .row_in_{i} > .row__col_nest_{n} {
                 nested_column(n, i);
+            }
+            .row_in_{i} > .row__col_nestof_{n} {
+                nested_column_offset(n, i);
             }
         }
     }
