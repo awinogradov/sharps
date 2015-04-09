@@ -1,6 +1,4 @@
-# bem-grid 
-
-[![Join the chat at https://gitter.im/verybigman/bem-grid](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/verybigman/bem-grid?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# bem-grid
 
 [![Build Status](https://travis-ci.org/verybigman/bem-grid.svg?branch=master&style=flat)](https://travis-ci.org/verybigman/bem-grid)
 
