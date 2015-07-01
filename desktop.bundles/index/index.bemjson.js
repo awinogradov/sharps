@@ -11,7 +11,7 @@
             content : [
                 {
                     block : 'gh-ribbon',
-                    url : 'https://github.com/verybigman/bem-grid'
+                    url : 'https://github.com/bem-incubator/bem-grid'
                 },
                 {
                     block : 'heading', content : 'BEM Grid'
@@ -121,7 +121,7 @@
                                             content : [
                                                 {
                                                     block : 'link',
-                                                    url : 'https://github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L51-L114',
+                                                    url : 'https://github.com/bem-incubator/bem-grid/blob/master/desktop.bundles/index/index.bemjson.js#L51-L114',
                                                     target : '_blank',
                                                     content : 'view source'
                                                 }
@@ -261,7 +261,7 @@
                                             content : [
                                                 {
                                                     block : 'link',
-                                                    url : 'https://github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L156-L254',
+                                                    url : 'https://github.com/bem-incubator/bem-grid/blob/master/desktop.bundles/index/index.bemjson.js#L156-L254',
                                                     target : '_blank',
                                                     content : 'view source'
                                                 }
@@ -362,7 +362,7 @@
                                             content : [
                                                 {
                                                     block : 'link',
-                                                    url : 'https://github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L296-L355',
+                                                    url : 'https://github.com/bem-incubator/bem-grid/blob/master/desktop.bundles/index/index.bemjson.js#L296-L355',
                                                     target : '_blank',
                                                     content : 'view source'
                                                 }
@@ -448,7 +448,7 @@
                                             content : [
                                                 {
                                                     block : 'link',
-                                                    url : 'https://github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L397-L441',
+                                                    url : 'https://github.com/bem-incubator/bem-grid/blob/master/desktop.bundles/index/index.bemjson.js#L397-L441',
                                                     target : '_blank',
                                                     content : 'view source'
                                                 }
@@ -612,7 +612,7 @@
                                             content : [
                                                 {
                                                     block : 'link',
-                                                    url : 'https://github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L483-L605',
+                                                    url : 'https://github.com/bem-incubator/bem-grid/blob/master/desktop.bundles/index/index.bemjson.js#L483-L605',
                                                     target : '_blank',
                                                     content : 'view source'
                                                 }
@@ -712,7 +712,7 @@
                                             content : [
                                                 {
                                                     block : 'link',
-                                                    url : 'https://github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L647-L705',
+                                                    url : 'https://github.com/bem-incubator/bem-grid/blob/master/desktop.bundles/index/index.bemjson.js#L647-L705',
                                                     target : '_blank',
                                                     content : 'view source'
                                                 }
@@ -780,7 +780,7 @@
                                             content : [
                                                 {
                                                     block : 'link',
-                                                    url : 'https://github.com/verybigman/bem-grid/blob/master/promo.pages/index/index.bemjson.js#L747-L773',
+                                                    url : 'https://github.com/bem-incubator/bem-grid/blob/master/desktop.bundles/index/index.bemjson.js#L747-L773',
                                                     target : '_blank',
                                                     content : 'view source'
                                                 }

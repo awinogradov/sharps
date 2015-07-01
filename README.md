@@ -2,9 +2,9 @@
 
 [![Join the chat at https://gitter.im/bem-incubator/bem-grid](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/bem-incubator/bem-grid?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[![Build Status](https://travis-ci.org/verybigman/bem-grid.svg?branch=master&style=flat)](https://travis-ci.org/verybigman/bem-grid)
+[![Build Status](https://travis-ci.org/bem-incubator/bem-grid.svg?branch=master&style=flat)](https://travis-ci.org/bem-incubator/bem-grid)
 
-This README also available in [russian](https://github.com/verybigman/bem-grid/blob/master/README.ru.md).
+This README also available in [russian](https://github.com/bem-incubator/bem-grid/blob/master/README.ru.md).
 
 Library for do awesome grid in bem-projects. This grid inspired by [Flexbox grid](http://flexboxgrid.com/). Grid available for Stylus only.
 
@@ -69,13 +69,13 @@ __Useful mods for col element:__
 - __(s|m|l|xl|xxl)of__ - order first this col on needed displays
 - __(s|m|l|xl|xxl)ol__ - order last this col on needed displays
 
-Also `row` have i-bem.js methods for cols manipulating. Read about them [here](https://github.com/verybigman/bem-grid/blob/master/common.blocks/row/_type/row_type_js.browser.js)
+Also `row` have i-bem.js methods for cols manipulating. Read about them [here](https://github.com/bem-incubator/bem-grid/blob/master/common.blocks/row/_type/row_type_js.browser.js)
 
 ## Customize
 
 Grid very simple for customize columns count and media queries.
 To do this you need create block `variables` on one of levels in your project and override any variable in it.
-So, list of variables you can watch [here](https://github.com/verybigman/bem-grid/blob/master/common.blocks/variables/variables.styl).
+So, list of variables you can watch [here](https://github.com/bem-incubator/bem-grid/blob/master/common.blocks/variables/variables.styl).
 
 ### Browsers support
 
@@ -87,6 +87,6 @@ All features work in: IE 10+, FF 25+, Chrome 28+, Safari 7+, Opera 12.1+, iOS 7.
 
 ### Ideas
 
-Please, talk about your ideas by GitHub [issues](https://github.com/verybigman/bem-grid/issues).
+Please, talk about your ideas by GitHub [issues](https://github.com/bem-incubator/bem-grid/issues).
 
 ### [MIT](http://en.wikipedia.org/wiki/MIT_License) License

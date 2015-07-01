@@ -5,7 +5,7 @@
 
 ### Как внести изменения
 
-1. [Создайте новое issue](https://github.com/verybigman/bem-grid/issues/new) с описанием или возьмите существующее.
+1. [Создайте новое issue](https://github.com/bem-incubator/bem-grid/issues/new) с описанием или возьмите существующее.
 2. Создайте feature-branch с номером issue от master ветки. Например, для issue #42: `git checkout -b feature/issue@42`.
 3. Зафиксируйте изменения и сделайте `push` вашей ветки.
 4. Создайте pull-request.

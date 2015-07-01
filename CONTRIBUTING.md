@@ -1,12 +1,12 @@
 ## Workflow
 
-This README also available in [russian](https://github.com/verybigman/bem-grid/blob/master/CONTRIBUTING.ru.md).
+This README also available in [russian](https://github.com/bem-incubator/bem-grid/blob/master/CONTRIBUTING.ru.md).
 
 You can read more about workflow on GitHub [guides](http://guides.github.com/).
 
 ### How to contribute
 
-1. [Create an issue](https://github.com/verybigman/bem-grid/issues/new) with description or take from available.
+1. [Create an issue](https://github.com/bem-incubator/bem-grid/issues/new) with description or take from available.
 2. Create a feature-branch with an issue number based on a master branch. For example, for an issue #42: `git checkout -b feature/issue@42`.
 3. Commit changes and `push` your branch.
 4. Create a pull-request from your feature branch.
