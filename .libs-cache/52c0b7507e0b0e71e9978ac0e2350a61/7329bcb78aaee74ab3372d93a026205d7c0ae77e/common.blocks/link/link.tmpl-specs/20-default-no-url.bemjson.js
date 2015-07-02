@@ -1,4 +1,0 @@
-({
-    block : 'link',
-    content : 'link'
-})

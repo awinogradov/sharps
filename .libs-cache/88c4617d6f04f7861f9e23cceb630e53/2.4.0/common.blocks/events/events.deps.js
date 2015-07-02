@@ -1,3 +1,0 @@
-({
-   shouldDeps : ['inherit', 'identify', 'functions']
-})

@@ -1,1 +1,0 @@
-Control component dummy. Used in the standard block's implementation 

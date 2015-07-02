@@ -1,3 +1,0 @@
-block('spin')(
-    tag()('span')
-);

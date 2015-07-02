@@ -1,7 +1,0 @@
-@import url(__v1-21/mocha__v1-21.css);
-
-/* NOTE: hides mocha's html-reporter, so it doesn't affect viewport's dimensions (#72) */
-#mocha
-{
-    display: none;
-}

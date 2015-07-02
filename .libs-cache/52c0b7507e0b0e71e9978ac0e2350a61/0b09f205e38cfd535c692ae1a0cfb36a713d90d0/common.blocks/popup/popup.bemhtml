@@ -1,3 +1,0 @@
-block('popup')(
-    js()(true)
-);

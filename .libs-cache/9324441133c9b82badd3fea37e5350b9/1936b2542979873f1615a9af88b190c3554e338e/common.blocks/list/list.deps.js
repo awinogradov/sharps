@@ -1,7 +1,0 @@
-({
-    mustDeps : [
-    ],
-    shouldDeps : [
-        { elem : 'item' }
-    ]
-})
