@@ -1,6 +1,0 @@
-({
-    mustDeps : [
-        'i-bem',
-        'spec'
-    ]
-})

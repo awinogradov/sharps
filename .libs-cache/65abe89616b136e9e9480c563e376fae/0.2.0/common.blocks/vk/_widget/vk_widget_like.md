@@ -1,1 +1,0 @@
-Doc https://vk.com/dev/widget_like

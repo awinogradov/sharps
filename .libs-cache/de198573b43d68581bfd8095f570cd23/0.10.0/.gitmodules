@@ -1,3 +1,0 @@
-[submodule "bem-core"]
-	path = test/fixtures/bem-core
-	url = git://github.com/bem/bem-core.git

@@ -1,1 +1,0 @@
-block('ua').js()(true);
