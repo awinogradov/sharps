@@ -66,7 +66,7 @@ __Модификаторы для элемента col:__
 
 В этой сетке вы можете настроить все, что только пожелаете. Например: базовую ширину, количество колонок, media queries, отступы и многое другое.
 Чтобы сделать это, вы должны создать блок `variables` на одном из уровней в вашем проекте и перезаписать в нем любые переменные.
-Список доступных переменных можно посмотреть [тут](https://github.com/verybigman/bem-grid/blob/master/common.blocks/variables/variables.styl)
+Список доступных переменных можно посмотреть [тут](https://github.com/bem-incubator/bem-grid/blob/master/common.blocks/variables/variables.styl)
 
 ### Поддержка в браузерах
 

@@ -4,7 +4,7 @@
   "description": "Flexbox grid on BEM methodology",
   "repository": {
     "type": "git",
-    "url": "git://github.com/verybigman/bem-grid.git"
+    "url": "git://github.com/bem-incubator/bem-grid.git"
   },
   "keywords": [
     "bem",
@@ -20,7 +20,7 @@
     "libs"
   ],
   "dependencies": {
-    "bem-core": "2.5.1"
+    "bem-core": "~2.6.0"
   },
   "devDependencies": {
     "bem-pr": "~0.10.0"
