@@ -6,7 +6,7 @@
 
 This README also available in [russian](https://github.com/bem-incubator/bem-grid/blob/master/README.ru.md).
 
-Library for do awesome grid in bem-projects. This grid inspired by [Flexbox grid](http://flexboxgrid.com/). Grid available for Stylus only.
+Library for do awesome grid in bem-projects. This grid based on [lost grid](https://github.com/corysimmons/lost).
 
 ## Dependencies
 
@@ -16,7 +16,6 @@ Library for do awesome grid in bem-projects. This grid inspired by [Flexbox grid
 
 Take way like connecting with [bem-core](https//github.com/bem/bem-core)
 and [bem-components](https//github.com/bem/bem-components) libraries.
-Use [bower-npm-install](https://github.com/arikon/bower-npm-install) to install bem-grid from GitHub or Bower register.
 
 Add levels from bem-grid to your `make.js` file:
 
@@ -46,7 +45,7 @@ Example for two columns on devices with medium screen. They will be collapsed on
 }
 ```
 
-See more examples in `promo.pages/index/index.bemjson.js` (build it with `bem make`) or on [landing page](http://verybigman.github.io/bem-grid).
+See more examples in `promo.pages/index/index.bemjson.js` (build it with `enb make`) or on [landing page](http://bem-incubator.github.io/bem-grid).
 
 ## Row
 
@@ -69,17 +68,7 @@ __Useful mods for col element:__
 - __(s|m|l|xl|xxl)of__ - order first this col on needed displays
 - __(s|m|l|xl|xxl)ol__ - order last this col on needed displays
 
-Also `row` have i-bem.js methods for cols manipulating. Read about them [here](https://github.com/bem-incubator/bem-grid/blob/master/common.blocks/row/_type/row_type_js.browser.js)
-
-## Customize
-
-Grid very simple for customize columns count and media queries.
-To do this you need create block `variables` on one of levels in your project and override any variable in it.
-So, list of variables you can watch [here](https://github.com/bem-incubator/bem-grid/blob/master/common.blocks/variables/variables.styl).
-
-### Browsers support
-
-All features work in: IE 10+, FF 25+, Chrome 28+, Safari 7+, Opera 12.1+, iOS 7.1+, Android Browser 4.1+, Chrome for Android 37+. For support old browsers i made `row_flexbox_detect` mod. It will setup automatically `row_flexbox_disabled` on `row` where flexbox's unsupported and create fallback to tables.
+## [Customize](https://github.com/bem-incubator/bem-grid/blob/master/.enb/postcss-plugins.js)
 
 ### Authors
 
