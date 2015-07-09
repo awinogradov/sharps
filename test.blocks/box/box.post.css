@@ -1,0 +1,44 @@
+.box {
+    font-family: Helvetica, Arial, sans-serif;
+    position: relative;
+    box-sizing: border-box;
+    min-height: 2rem;
+    line-height: 2rem;
+    margin-bottom: 20px;
+    background: #34495e;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+}
+
+.box_size_s {
+    height: 100px;
+}
+
+.box_size_m {
+    height: 150px;
+}
+
+.box_size_l {
+    height: 200px;
+}
+
+.box_size_xl {
+    height: 620px;
+}
+
+.box_color_yellow {
+    background: rgba(248,209,103,1);
+}
+
+.box_color_purple {
+    background: rgba(185,165,255,1);
+}
+
+.box_color_brow {
+    background: rgba(222,174,103,1);
+}
+
+.box_color_green {
+  background: #46aa3a;
+}

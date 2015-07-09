@@ -1,10 +1,8 @@
 ({
     block: 'page',
     title: 'BEM Grid Example',
-    favicon: 'www/favicon.ico',
     head: [{elem: 'meta', attrs: {name: 'viewport', content: 'width=device-width, initial-scale=1.0'}}],
     styles: [{elem: 'css', url: 'example.css'}],
-    scripts: [{elem: 'js', url: 'example.js'}],
     content: [
         {
             elem: 'header',

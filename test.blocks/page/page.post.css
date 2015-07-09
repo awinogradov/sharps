@@ -1,0 +1,4 @@
+.page__header, .page__content, .page__footer {
+    width: 1100px;
+    margin: 0 auto;
+}
