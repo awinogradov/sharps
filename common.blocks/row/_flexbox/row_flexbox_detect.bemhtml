@@ -1,3 +1,0 @@
-block('row').mod('flexbox', 'detect')(
-    js()(true)
-);

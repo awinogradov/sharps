@@ -1,9 +1,9 @@
 [{
     mustDeps : [
-        { block : 'variables' },
         { block : 'mq' }
     ],
     shouldDeps : [
-        { elems : 'col' }
+        { elems : 'col' },
+        { mods : { order : 'reverse' } }
     ]
-}]
+}];

@@ -1,3 +1,0 @@
-block('row').mod('type', 'js')(
-    js()(true)
-);
