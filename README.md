@@ -10,12 +10,12 @@ Library for do awesome grid in bem-projects. This grid based on [lost grid](http
 
 ## Dependencies
 
-- `i-bem` block from [bem-core](https//github.com/bem/bem-core)
+- `i-bem` block from [bem-core](https://github.com/bem/bem-core)
 
 ## Install
 
-Take way like connecting with [bem-core](https//github.com/bem/bem-core)
-and [bem-components](https//github.com/bem/bem-components) libraries.
+Take way like connecting with [bem-core](https://github.com/bem/bem-core)
+and [bem-components](https://github.com/bem/bem-components) libraries.
 
 Add levels from bem-grid to your `make.js` file:
 
