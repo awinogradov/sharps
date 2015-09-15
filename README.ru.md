@@ -8,7 +8,7 @@
 
 ## Установка
 
-Принцип идентичен подключению библиотек [bem-core](https//github.com/bem/bem-core) и [bem-components](https//github.com/bem/bem-components).
+Принцип идентичен подключению библиотек [bem-core](https://github.com/bem/bem-core) и [bem-components](https://github.com/bem/bem-components).
 Используйте [bower-npm-install](https://github.com/arikon/bower-npm-install) для установки bem-grid из GitHub репозитория или Bower регистра, npm зависимости установятся автоматически.
 
 Добавьте необходимые уровни из bem-grid в файл make.js:
