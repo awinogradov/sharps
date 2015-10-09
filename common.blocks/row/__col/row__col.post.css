@@ -57,7 +57,7 @@
     @mixin col_base_classes m;
 }
 
-@media (--medium_only) {
+@media (--medium-only) {
     @mixin col_visibility_classes m;
     @mixin col_order_classes m;
 }
@@ -66,7 +66,7 @@
     @mixin col_base_classes l;
 }
 
-@media (--large_only) {
+@media (--large-only) {
     @mixin col_visibility_classes l;
     @mixin col_order_classes l;
 }
@@ -75,7 +75,7 @@
     @mixin col_base_classes xl;
 }
 
-@media (--xlarge_only) {
+@media (--xlarge-only) {
     @mixin col_visibility_classes xl;
     @mixin col_order_classes xl;
 }
@@ -84,7 +84,7 @@
     @mixin col_base_classes xxl;
 }
 
-@media (--xxlarge_only) {
+@media (--xxlarge-only) {
     @mixin col_visibility_classes xxl;
     @mixin col_order_classes xxl;
 }
