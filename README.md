@@ -9,10 +9,12 @@ BEM-methodology for [Lost](https://github.com/corysimmons/lost).
 ## Usage
 
 Like Twitter Bootstrap:
+
 1. `bower install --save bem-grid`
 2. `<link type="text/css" rel="stylesheet" href="./bower_components/bem-grid/dist/bem-grid.css">`
 
 As [ENB](https://github.com/enb-make/enb) module:
+
 1. `npm i --save-dev bem-grid`
 2. Add `enb-grid` after any css builder
 ``` js
