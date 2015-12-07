@@ -16,7 +16,7 @@ Like Twitter Bootstrap:
 As [ENB](https://github.com/enb-make/enb) module:
 
 1. `npm i --save-dev enb-bem-grid`
-2. Add `enb-grid` after any css builder
+2. Add `enb-bem-grid` after any css builder
 ``` js
 [require('enb-grid'), {
     config : {
