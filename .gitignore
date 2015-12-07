@@ -22,9 +22,9 @@ libs
 /coverage.json
 /gemini-report/
 
-/engines/enb-grid/techs/.enb/tmp
-/engines/enb-grid/techs/build/build.deps.js
-/engines/enb-grid/techs/build/build.css
+/engines/enb-bem-grid/techs/.enb/tmp
+/engines/enb-bem-grid/techs/build/build.deps.js
+/engines/enb-bem-grid/techs/build/build.css
 /dist/dist.css
 /dist/dist.tmp.css
 /dist/dist.tmp.grid.css

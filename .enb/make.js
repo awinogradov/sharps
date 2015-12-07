@@ -9,7 +9,7 @@ var path = require('path'),
         bemhtml : require('enb-bemxjst/techs/bemhtml'),
         borschik : require('enb-borschik/techs/borschik'),
         html : require('enb-bemxjst/techs/bemjson-to-html'),
-        grid : require('../engines/enb-grid/techs/enb-grid')
+        grid : require('../engines/enb-bem-grid/techs/enb-bem-grid')
     };
 
 module.exports = function(config) {
