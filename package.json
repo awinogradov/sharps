@@ -1,5 +1,5 @@
 {
-  "name": "bem-grid",
+  "name": "enb-bem-grid",
   "version": "2.2.0",
   "main": "./engines/enb-grid/techs/enb-grid.js",
   "dependencies": {
