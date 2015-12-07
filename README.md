@@ -12,7 +12,7 @@ Like Twitter Bootstrap:
 1. `bower install --save bem-grid`
 2. `<link type="text/css" rel="stylesheet" href="./bower_components/bem-grid/dist/bem-grid.css">`
 
-As enb module:
+As [ENB](https://github.com/enb-make/enb) module:
 1. `npm i --save-dev bem-grid`
 2. Add `enb-grid` after any css builder
 ``` js
@@ -24,6 +24,7 @@ As enb module:
     }
 }]
 ```
+Example [config](https://github.com/bem-incubator/bem-grid/blob/master/.enb/make.js#L34-L47) file [ENB](https://github.com/enb-make/enb) with [postcss](https://github.com/postcss/postcss) builder.
 
 ## Easy example
 
