@@ -4,14 +4,14 @@
 
 [![Build Status](https://travis-ci.org/bem-incubator/bem-grid.svg?branch=master&style=flat)](https://travis-ci.org/bem-incubator/bem-grid)
 
-BEM-methodology for [Lost](https://github.com/corysimmons/lost).
+BEM methodology for [Lost Grid](https://github.com/corysimmons/lost).
 
 ## Usage
 
 Like Twitter Bootstrap:
 
 1. `bower install --save bem-grid`
-2. `<link type="text/css" rel="stylesheet" href="./bower_components/bem-grid/dist/bem-grid.css">`
+2. `<link rel="stylesheet" href="./bower_components/bem-grid/dist/bem-grid.css">`
 
 As [ENB](https://github.com/enb-make/enb) module:
 
