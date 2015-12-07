@@ -20,8 +20,8 @@ module.exports = function(config) {
         nodeConfig.addTechs([
             [techs.levels, {
                 levels : [
-                    { path : path.join('libs', 'bem-core',  'common.blocks'), check : false },
-                    { path : path.join('libs', 'bem-components',  'common.blocks'), check : false },
+                    { path : path.join('libs', 'bem-core', 'common.blocks'), check : false },
+                    { path : path.join('libs', 'bem-components', 'common.blocks'), check : false },
                     { path : 'test.blocks', check : true }
                 ]
             }],
