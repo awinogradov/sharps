@@ -1,6 +1,6 @@
 {
   "name": "bem-grid",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Flexbox grid on BEM methodology",
   "repository": {
     "type": "git",
@@ -8,7 +8,8 @@
   },
   "keywords": [
     "bem",
-    "stylus",
+    "lost",
+    "postcss",
     "flexbox",
     "grid"
   ],
@@ -20,9 +21,9 @@
     "libs"
   ],
   "dependencies": {
-    "bem-core": "~2.6.0"
   },
   "devDependencies": {
+    "bem-components": "2.4.0",
     "bem-pr": "~0.10.0"
   },
   "license": "MIT"

@@ -1,7 +1,10 @@
 {
-  "private": true,
+  "name": "bem-grid",
+  "version": "2.2.0",
+  "main": "./engines/enb-grid/techs/enb-grid.js",
   "dependencies": {
-    "enb-postcss": "^0.1.1",
+    "bower": "^1.6.5",
+    "enb-postcss": "^0.2.0",
     "autoprefixer-core": "^5.2.1",
     "cssnext": "^1.8.0",
     "lost": "^6.5.0",
@@ -11,10 +14,10 @@
     "postcss-nested": "^0.3.2"
   },
   "devDependencies": {
-    "bower": "1.3.12",
-    "enb": "0.15.0",
-    "enb-bem-techs": "^1.0.3",
-    "enb-bemxjst": "1.3.4",
+    "enb": "^1.1.0",
+    "enb-bem-techs": "^2.1.0",
+    "enb-bemxjst": "^2.1.0",
+    "enb-borschik": "^2.1.0",
     "git-hooks": "~0.0.10",
     "jscs": "^1.11.2",
     "jscs-bem": "^0.2.0",
@@ -23,12 +26,12 @@
   },
   "scripts": {
     "start": "enb server",
-    "make": "enb make --no-cache",
+    "dist": "enb make --no-cache dist/",
     "deps": "bower i",
     "build": "npm run deps && enb make common.examples common.tests common.docs *.bundles/*",
     "lint": "jshint-groups && jscs ."
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=0.10"
   }
 }
