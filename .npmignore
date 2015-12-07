@@ -1,0 +1,8 @@
+dist/
+.gitignore
+
+node_modules/
+libs/
+.githooks/
+desktop.bundles/
+test.blocks/

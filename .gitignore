@@ -22,7 +22,13 @@ libs
 /coverage.json
 /gemini-report/
 
-/dist
+/engines/enb-grid/techs/.enb/tmp
+/engines/enb-grid/techs/build/build.deps.js
+/engines/enb-grid/techs/build/build.css
+/dist/dist.css
+/dist/dist.tmp.css
+/dist/dist.tmp.grid.css
+/dist/dist.deps.js
 /*.docs
 /*.examples
 /*.specs

@@ -1,7 +1,5 @@
 ## Workflow
 
-This README also available in [russian](https://github.com/bem-incubator/bem-grid/blob/master/CONTRIBUTING.ru.md).
-
 You can read more about workflow on GitHub [guides](http://guides.github.com/).
 
 ### How to contribute
