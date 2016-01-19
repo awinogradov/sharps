@@ -1,7 +1,7 @@
 {
   "name": "enb-bem-grid",
-  "version": "2.2.0",
-  "main": "./engines/enb-grid/techs/enb-grid.js",
+  "version": "2.2.1",
+  "main": "./engines/enb-bem-grid/techs/enb-bem-grid.js",
   "dependencies": {
     "bower": "^1.6.5",
     "enb-postcss": "^0.2.0",
