@@ -28,6 +28,7 @@ As [ENB](https://github.com/enb-make/enb) module:
 ```
 
 As plugin for [postcss](https://github.com/postcss/postcss):
+
 1. `npm i --save bem-grid`
 2. Prepend your plugins with `bem-grid`
 ``` js
