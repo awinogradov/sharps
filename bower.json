@@ -1,6 +1,6 @@
 {
   "name": "bem-grid",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Flexbox grid on BEM methodology",
   "repository": {
     "type": "git",
@@ -23,8 +23,6 @@
   "dependencies": {
   },
   "devDependencies": {
-    "bem-components": "2.4.0",
-    "bem-pr": "~0.10.0"
   },
   "license": "MIT"
 }

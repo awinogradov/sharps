@@ -3,13 +3,14 @@ module.exports = function(config) {
         require('postcss-mixins'),
         require('postcss-for'),
         require('postcss-simple-vars')({
-            variables : config.grid
+            variables: config
         }),
         require('lost'),
-        require('cssnext')(),
+        require('postcss-import')(),
+        require('postcss-url')(),
+        require('postcss-cssnext')(),
         require('postcss-nested'),
-        require('autoprefixer-core')({
-            browsers : config.browsers
-        })
+        require('postcss-browser-reporter')(),
+        require('postcss-reporter')()
     ];
 };

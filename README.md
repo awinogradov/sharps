@@ -15,10 +15,10 @@ Like Twitter Bootstrap:
 
 As [ENB](https://github.com/enb-make/enb) module:
 
-1. `npm i --save-dev enb-bem-grid`
-2. Add `enb-bem-grid` after any css builder
+1. `npm i --save-dev bem-grid`
+2. Add `bem-grid` after any css builder
 ``` js
-[require('enb-bem-grid'), {
+[require('bem-grid').enb, {
     config : {
         maxWidth : '1100px',
         gutter : '10px',
@@ -26,7 +26,22 @@ As [ENB](https://github.com/enb-make/enb) module:
     }
 }]
 ```
-Example [config](https://github.com/bem-incubator/bem-grid/blob/master/.enb/make.js#L34-L47) file [ENB](https://github.com/enb-make/enb) with [postcss](https://github.com/postcss/postcss) builder.
+
+As plugin for [postcss](https://github.com/postcss/postcss):
+1. `npm i --save bem-grid`
+2. Prepend your plugins with `bem-grid`
+``` js
+var postcss = require('postcss');
+var bemGrid = require('bem-grid').postcss;
+
+postcss([bemGrid({
+    maxWidth: '1100px',
+    gutter: '10px',
+    flex: 'flex'
+})]).process('a {color: red}').then(function(result) {
+    console.log(result.css);
+});
+```
 
 ## Easy example
 
