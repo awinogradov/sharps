@@ -7,5 +7,5 @@ var files = [
 ];
 
 module.exports = files.reduce(function(prev, curr) {
-    return prev + fs.readFileSync(path.join(process.cwd(), curr));
+    return prev + fs.readFileSync(path.join(__dirname, '..', curr));
 }, '');
