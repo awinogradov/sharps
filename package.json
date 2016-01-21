@@ -1,6 +1,6 @@
 {
   "name": "bem-grid",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "main": ".",
   "dependencies": {
     "lost": "^6.6.3",
