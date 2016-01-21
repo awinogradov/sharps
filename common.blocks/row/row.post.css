@@ -1,5 +1,5 @@
-@lost gutter $gridGutter;
-@lost flexbox $gridFlex;
+@lost gutter $gutter;
+@lost flexbox $flex;
 
 @define-mixin row_align_classes $size {
     /* {s,m,l}al = {small, medium, large} align left */
@@ -33,7 +33,7 @@
 
 .row {
     lost-flex-container: row;
-    lost-center: $gridMaxWidth;
+    lost-center: $maxWidth;
 }
 
 .row_order_reverse {

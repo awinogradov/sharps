@@ -23,8 +23,6 @@
   "dependencies": {
   },
   "devDependencies": {
-    "bem-components": "2.4.0",
-    "bem-pr": "~0.10.0"
   },
   "license": "MIT"
 }
