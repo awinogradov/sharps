@@ -94,7 +94,7 @@ __Useful mods for col element:__
 
 ### Authors
 
-- Anton Winogradov ([verybigman](https://github.com/verybigman)) @awinogradov
+- Anton Winogradov ([awinogradov](https://github.com/awinogradov)) @awinogradov
 
 ### Ideas
 
