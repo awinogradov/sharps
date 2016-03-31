@@ -1,7 +1,7 @@
 # bem-grid
 
-[![Join the chat at https://gitter.im/bem-incubator/bem-grid](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/bem-incubator/bem-grid?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Build Status](https://travis-ci.org/bem-incubator/bem-grid.svg?branch=master&style=flat)](https://travis-ci.org/bem-incubator/bem-grid)
+[![Join the chat at https://gitter.im/bem-contrib/bem-grid](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/bem-contrib/bem-grid?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/bem-contrib/bem-grid.svg?branch=master&style=flat)](https://travis-ci.org/bem-contrib/bem-grid)
 
 BEM methodology for [Lost Grid](https://github.com/corysimmons/lost).
 
@@ -15,7 +15,7 @@ Like Twitter Bootstrap:
 As [ENB](https://github.com/enb-make/enb) module:
 
 1. `npm i --save-dev bem-grid`
-2. Add `bem-grid` after any css builder
+2. Add `bem-grid` after any css builder in your ENB config
 ``` js
 [require('bem-grid').enb, {
     config : {
@@ -59,12 +59,12 @@ postcss([bemGrid({
     content : [
         {
             elem : 'col',
-            mods : { mw : 6 },
+            elemMods : { mw : 6 },
             content : 'left column'
         },
         {
             elem : 'col',
-            mods : { mw : 6 },
+            elemMods : { mw : 6 },
             content : 'right column'
         }
     ]
@@ -98,6 +98,6 @@ __Useful mods for col element:__
 
 ### Ideas
 
-Please, talk about your ideas by GitHub [issues](https://github.com/bem-incubator/bem-grid/issues).
+Please, talk about your ideas by GitHub [issues](https://github.com/bem-contrib/bem-grid/issues).
 
 ### [MIT](http://en.wikipedia.org/wiki/MIT_License) License
