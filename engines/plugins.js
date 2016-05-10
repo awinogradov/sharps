@@ -5,10 +5,10 @@ module.exports = function(config) {
         require('postcss-simple-vars')({
             variables: config
         }),
+        require('postcss-cssnext')(),
         require('lost'),
         require('postcss-import')(),
         require('postcss-url')(),
-        require('postcss-cssnext')(),
         require('postcss-nested'),
         require('postcss-browser-reporter')(),
         require('postcss-reporter')()
