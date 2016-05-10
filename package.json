@@ -1,6 +1,6 @@
 {
   "name": "bem-grid",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "main": ".",
   "dependencies": {
     "enb": "^1.1.2",
