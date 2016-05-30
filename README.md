@@ -15,7 +15,7 @@ Like Twitter Bootstrap:
 As [ENB](https://github.com/enb-make/enb) module:
 
 1. `npm i --save-dev bem-grid`
-2. Add `bem-grid` after any css builder in your ENB config
+2. Add `bem-grid` in your ENB config
 ``` js
 [require('bem-grid').enb, {
     config : {
@@ -23,6 +23,26 @@ As [ENB](https://github.com/enb-make/enb) module:
         gutter : '10px',
         flex : 'flex'
     }
+}]
+```
+_**Note:** If you have any css builder, you should change its `target` and add `source` to bem-grid parameters for preventing conflicts, like this:_
+
+``` js
+[techs.stylus, {
+    target: '?.no-grid.css', // there is the changed target
+    sourcemap: false,
+    autoprefixer: {
+        browsers: ['ie >= 10', 'last 2 versions', 'opera 12.1', '> 2%']
+    }
+}],
+
+[require('bem-grid').enb, {
+    config : {
+        maxWidth : '1100px',
+        gutter : '10px',
+        flex : 'flex'
+    },
+    source: '?.no-grid.css' // there is the source
 }]
 ```
 
