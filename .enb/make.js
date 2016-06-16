@@ -4,13 +4,9 @@ var path = require('path'),
     techs = {
         levels : require('enb-bem-techs/techs/levels'),
         provide : require('enb/techs/file-provider'),
-        bemdecl : require('enb-bem-techs/techs/bemjson-to-bemdecl'),
         deps : require('enb-bem-techs/techs/deps-old'),
         files : require('enb-bem-techs/techs/files'),
-        postcss : require('enb-postcss/techs/enb-postcss'),
-        bemhtml : require('enb-bemxjst/techs/bemhtml'),
-        borschik : require('enb-borschik/techs/borschik'),
-        html : require('enb-bemxjst/techs/bemjson-to-html')
+        postcss : require('enb-postcss/techs/enb-postcss')
     };
 
 module.exports = function(config) {
@@ -25,6 +21,7 @@ module.exports = function(config) {
             [techs.files],
             [techs.postcss, {
                 source : '?.css',
+                target : 'bem-grid.min.css',
                 plugins : [
                     grid({
                         maxWidth : '1100px',
@@ -37,15 +34,16 @@ module.exports = function(config) {
                         'ff 24',
                         'android 4',
                         'ios >= 5'
-                    ])
+                    ]),
+                    process.env.NODE_ENV === 'production' ?
+                      require('postcss-csso') :
+                      function() {}
                 ]
-            }],
-            [techs.borschik, { source : '?.css', target : 'bem-grid.css', minify : false }],
-            [techs.borschik, { source : '?.css', target : 'bem-grid.min.css', minify : true }]
+            }]
         ]);
 
         nodeConfig.addTargets([
-            'bem-grid.css', 'bem-grid.min.css'
+            'bem-grid.min.css'
         ]);
     });
 };

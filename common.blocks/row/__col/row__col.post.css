@@ -3,14 +3,14 @@
     /* {s,m,l}w = {small, medium, large} width */
     @for $i from 1 to 12 {
         .row__col_$(size)w_$(i) {
-            lost-column: 1/calc(12/$i);
+            lost-column: 1/$i;
         }
     }
     /* offset col */
     /* {s,m,l}o = {small, medium, large} offset */
     @for $i from 1 to 11 {
         .row__col_$(size)o_$(i) {
-            lost-offset: 1/calc(12/$i);
+            lost-offset: 1/$i;
         }
     }
     /* auto size col */
