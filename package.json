@@ -2,10 +2,21 @@
   "name": "bem-grid",
   "version": "2.4.0",
   "license": "MIT",
+  "description": "Flexbox grid on BEM methodology",
   "repository": {
     "type": "git",
     "url": "git://github.com/bem-contrib/bem-grid.git"
   },
+  "keywords": [
+    "bem",
+    "lost",
+    "postcss",
+    "flexbox",
+    "grid"
+  ],
+  "authors": [
+    "Anton Winogradov <winogradovaa@gmail.com>"
+  ],
   "dependencies": {
     "enb": "^1.1.2",
     "lost": "^6.6.3",
@@ -24,9 +35,7 @@
     "enb": "^1.1.0",
     "enb-bem-techs": "^2.1.0",
     "enb-postcss": "^0.2.0",
-    "jscs": "^1.11.2",
-    "jshint": "2.6.0",
-    "jshint-groups": "0.7.0"
+    "jscs": "^1.11.2"
   },
   "scripts": {
     "dist": "enb make clean && NODE_ENV=production enb make",

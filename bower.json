@@ -1,10 +1,11 @@
 {
   "name": "bem-grid",
-  "version": "2.3.3",
+  "version": "2.4.0",
+  "license": "MIT",
   "description": "Flexbox grid on BEM methodology",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bem-incubator/bem-grid.git"
+    "url": "git://github.com/bem-contrib/bem-grid.git"
   },
   "keywords": [
     "bem",
@@ -17,12 +18,6 @@
     "Anton Winogradov <winogradovaa@gmail.com>"
   ],
   "ignore": [
-    "node_modules",
-    "libs"
-  ],
-  "dependencies": {
-  },
-  "devDependencies": {
-  },
-  "license": "MIT"
+    "node_modules"
+  ]
 }

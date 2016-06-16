@@ -1,16 +1,15 @@
 # bem-grid
 
-[![Join the chat at https://gitter.im/bem-contrib/bem-grid](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/bem-contrib/bem-grid?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/bem-contrib/bem-grid.svg?branch=master&style=flat)](https://travis-ci.org/bem-contrib/bem-grid)
 
-BEM methodology for [Lost Grid](https://github.com/corysimmons/lost).
+BEM on [Lost Grid](https://github.com/corysimmons/lost).
 
 ## Usage
 
-Like Twitter Bootstrap:
+The easiest way:
 
 1. `bower install --save bem-grid`
-2. `<link rel="stylesheet" href="./bower_components/bem-grid/dist/bem-grid.css">`
+2. `<link rel="stylesheet" href="./bower_components/bem-grid/dist/bem-grid.min.css">`
 
 As [ENB](https://github.com/enb-make/enb) module:
 
@@ -18,10 +17,10 @@ As [ENB](https://github.com/enb-make/enb) module:
 2. Add `bem-grid` in your ENB config
 ``` js
 [require('bem-grid').enb, {
-    config : {
-        maxWidth : '1100px',
-        gutter : '10px',
-        flex : 'flex'
+    config: {
+        maxWidth: '1100px',
+        gutter: '10px',
+        flex: 'flex'
     }
 }]
 ```
@@ -37,10 +36,10 @@ _**Note:** If you have any css builder, you should change its `target` and add `
 }],
 
 [require('bem-grid').enb, {
-    config : {
-        maxWidth : '1100px',
-        gutter : '10px',
-        flex : 'flex'
+    config: {
+        maxWidth: '1100px',
+        gutter: '10px',
+        flex: 'flex'
     },
     source: '?.no-grid.css' // there is the source
 }]
@@ -75,17 +74,17 @@ postcss([bemGrid({
 ``` javascript
 // bemjson
 {
-    block : 'row',
-    content : [
+    block: 'row',
+    content: [
         {
-            elem : 'col',
-            elemMods : { mw : 6 },
-            content : 'left column'
+            elem: 'col',
+            elemMods: { mw: 6 },
+            content: 'left column'
         },
         {
-            elem : 'col',
-            elemMods : { mw : 6 },
-            content : 'right column'
+            elem: 'col',
+            elemMods: { mw: 6 },
+            content: 'right column'
         }
     ]
 }

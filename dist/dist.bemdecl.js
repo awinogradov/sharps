@@ -1,8 +1,4 @@
 exports.blocks = [
-    {
-        "name" : "mq"
-    },
-    {
-        "name" : "row"
-    }
+    { name: 'mq' },
+    { name: 'row' }
 ];
