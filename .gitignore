@@ -4,34 +4,9 @@
 .settings/
 .idea/
 
-.bem/cache
-.bem/snapshots
 .enb/tmp
 node_modules
 npm-debug.log
-libs
-.libs-*
 
-*.bundles/*/*
-!*.bundles/.bem/*
-!*.bundles/*/blocks
-!*.bundles/*/*.bemjson.js
-*.bundles/*/_*.bemjson.js
-
-/coverage
-/coverage.json
-/gemini-report/
-
-/engines/enb-bem-grid/techs/.enb/tmp
-/engines/enb-bem-grid/techs/build/build.deps.js
-/engines/enb-bem-grid/techs/build/build.css
 /dist/dist.css
-/dist/dist.tmp.css
-/dist/dist.tmp.grid.css
 /dist/dist.deps.js
-/*.docs
-/*.examples
-/*.specs
-/*.tests
-/*.sets
-/*.tmpl-specs
