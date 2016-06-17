@@ -17,31 +17,32 @@ As [ENB](https://github.com/enb-make/enb) module:
 2. Add `bem-grid` in your ENB config
 ``` js
 [require('bem-grid').enb, {
-    config: {
-        maxWidth: '1100px',
-        gutter: '10px',
-        flex: 'flex'
-    }
+  config: {
+    columns: 12, // default
+    maxWidth: '1100px',
+    gutter: '10px',
+    flex: 'flex'
+  }
 }]
 ```
 _**Note:** If you have any css builder, you should change its `target` and add `source` to bem-grid parameters for preventing conflicts, like this:_
 
 ``` js
 [techs.stylus, {
-    target: '?.no-grid.css', // there is the changed target
-    sourcemap: false,
-    autoprefixer: {
-        browsers: ['ie >= 10', 'last 2 versions', 'opera 12.1', '> 2%']
-    }
+  target: '?.no-grid.css', // there is the changed target
+  sourcemap: false,
+  autoprefixer: {
+    browsers: ['ie >= 10', 'last 2 versions', 'opera 12.1', '> 2%']
+  }
 }],
 
 [require('bem-grid').enb, {
-    config: {
-        maxWidth: '1100px',
-        gutter: '10px',
-        flex: 'flex'
-    },
-    source: '?.no-grid.css' // there is the source
+  config: {
+    maxWidth: '1100px',
+    gutter: '10px',
+    flex: 'flex'
+  },
+  source: '?.no-grid.css' // there is the source
 }]
 ```
 
@@ -50,15 +51,15 @@ As plugin for [postcss](https://github.com/postcss/postcss):
 1. `npm i --save bem-grid`
 2. Prepend your plugins with `bem-grid`
 ``` js
-var postcss = require('postcss');
-var bemGrid = require('bem-grid').postcss;
+const postcss = require('postcss');
+const bemGrid = require('bem-grid').postcss;
 
-postcss([bemGrid({
-    maxWidth: '1100px',
-    gutter: '10px',
-    flex: 'flex'
+postcss([bemGconstrid({
+  maxWidth: '1100px',
+  gutter: '10px',
+  flex: 'flex'
 })]).process('a {color: red}').then(function(result) {
-    console.log(result.css);
+  console.log(result.css);
 });
 ```
 
@@ -72,21 +73,20 @@ postcss([bemGrid({
 ```
 
 ``` javascript
-// bemjson
 {
-    block: 'row',
-    content: [
-        {
-            elem: 'col',
-            elemMods: { mw: 6 },
-            content: 'left column'
-        },
-        {
-            elem: 'col',
-            elemMods: { mw: 6 },
-            content: 'right column'
-        }
-    ]
+  block: 'row',
+  content: [
+    {
+      elem: 'col',
+      elemMods: { mw: 6 },
+      content: 'left column'
+    },
+    {
+      elem: 'col',
+      elemMods: { mw: 6 },
+      content: 'right column'
+    }
+  ]
 }
 ```
 
