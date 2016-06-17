@@ -10,7 +10,7 @@
   /* {s,m,l}o = {small, medium, large} offset */
   @for $i from 1 to $columnsExceptOne {
     .row__col_$(size)o_$(i) {
-      lost-offset: $i/$columns;
+      lost-move: $i/$columns;
     }
   }
   /* auto size col */
@@ -19,6 +19,11 @@
     flex-grow: 1;
     flex-basis: 0;
     max-width: 100%;
+    margin-right: $gutter;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
