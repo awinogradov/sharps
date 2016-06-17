@@ -1,5 +1,5 @@
 module.exports = {
-  "en": {
-    "title": "Title - bem-grid"
+  en: {
+    title: 'Sharps - modular grid powered by Lost and BEM'
   }
 };
