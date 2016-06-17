@@ -1,0 +1,9 @@
+.paragraph {
+  font-family: 'Helvetica Neue';
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.9);
+}

@@ -1,0 +1,10 @@
+.sharps {
+  padding: 140px 0 80px;
+  font-family: 'Helvetica Neue';
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 20px;
+  color: rgba(0, 0, 0, 0.4);
+  cursor: default;
+}

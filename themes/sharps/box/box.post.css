@@ -1,0 +1,15 @@
+.box {
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  position: relative;
+  box-sizing: border-box;
+  min-height: 2rem;
+  line-height: 2rem;
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+}
