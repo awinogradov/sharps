@@ -1,7 +1,8 @@
 ({
   shouldDeps: [
+    { block: 'logo' },
     { block: 'link' },
-    { block: 'sharps' },
+    { block: 'hr' },
     { block: 'copyright' },
     { block: 'paragraph' },
     {

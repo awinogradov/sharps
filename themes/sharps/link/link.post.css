@@ -1,7 +1,26 @@
 .link {
+  cursor: pointer;
   text-decoration: none;
+  color: rgba(0, 0, 0, 0.9);
 
   &:hover {
     text-decoration: underline;
+  }
+
+  &_action_fork {
+    margin-top: 180px;
+    margin-bottom: 60px;
+    background-image: url('./_action/link_action_fork.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+
+    opacity: .9;
+
+    &:hover {
+      background-image: url('./_action/link_action_fork.link_hovered.svg');
+    }
   }
 }

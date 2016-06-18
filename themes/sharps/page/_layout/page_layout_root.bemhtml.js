@@ -2,29 +2,38 @@ block('page').mod('layout', 'root')(
 
   elem('content')(
     content()(function () {
+      const features = [
+        'responsive',
+        'fluid',
+        'auto',
+        'alignment',
+        'ordering',
+        'offsets',
+        'visibility'
+      ];
       return [
-        { block: 'sharps', number: 3 },
+        { block: 'logo' },
         applyNext(),
-        { block: 'sharps', number: 1 },
-        [
-          'responsive',
-          'fluid',
-          'auto',
-          'alignment',
-          'ordering',
-          'offsets',
-          'visibility'
-        ].map(feature => ([
-          { block: 'example', mods: { feature } },
-          { block: 'sharps', number: 1 }
+        features.map((feature, i) => ([
+          { block: 'hr' },
+          {
+            block: 'example',
+            mods: { feature }
+          }
         ]))
-      ]
+      ];
     })
   ),
 
   elem('footer')(
     content()(function () {
       return [
+        {
+          block: 'link',
+          tag: 'a',
+          attrs: { href: 'https://github.com/theprotein/sharps' },
+          mods: { action: 'fork' }
+        },
         { block: 'copyright' }
       ];
     })

@@ -9,6 +9,9 @@ module.exports = {
       flex: 'flex'
     }),
     require('postcss-nested'),
+    require('postcss-url')({
+      url: 'inline'
+    }),
     require('postcss-font-magician')
   ]
 };
