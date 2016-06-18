@@ -18,7 +18,6 @@
     "Anton Winogradov <winogradovaa@gmail.com>"
   ],
   "dependencies": {
-    "enb": "^1.1.2",
     "lost": "^6.6.3",
     "postcss": "^5.0.14",
     "postcss-browser-reporter": "^0.4.0",
