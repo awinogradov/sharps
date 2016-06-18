@@ -1,13 +1,15 @@
-var path = require('path'),
-  grid = require('../').postcss,
-  autoprefixer = require('autoprefixer'),
-  techs = {
-    levels: require('enb-bem-techs/techs/levels'),
-    provide: require('enb/techs/file-provider'),
-    deps: require('enb-bem-techs/techs/deps-old'),
-    files: require('enb-bem-techs/techs/files'),
-    postcss: require('enb-postcss/techs/enb-postcss')
-  };
+'use strict';
+
+const path = require('path');
+const grid = require('../').postcss;
+const autoprefixer = require('autoprefixer');
+const techs = {
+  levels: require('enb-bem-techs/techs/levels'),
+  provide: require('enb/techs/file-provider'),
+  deps: require('enb-bem-techs/techs/deps-old'),
+  files: require('enb-bem-techs/techs/files'),
+  postcss: require('enb-postcss/techs/enb-postcss')
+};
 
 module.exports = function(config) {
   config.node('dist/', function(nodeConfig) {
@@ -18,7 +20,7 @@ module.exports = function(config) {
       [techs.files],
       [techs.postcss, {
         source: '?.css',
-        target: 'bem-grid.min.css',
+        target: 'sharps.min.css',
         plugins: [
           grid({
             maxWidth: '1100px',
@@ -39,6 +41,6 @@ module.exports = function(config) {
       }]
     ]);
 
-    nodeConfig.addTargets(['bem-grid.min.css']);
+    nodeConfig.addTargets(['sharps.min.css']);
   });
 };

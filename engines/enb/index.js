@@ -5,7 +5,7 @@ const src = require('../src');
 const plugins = require('../plugins');
 
 module.exports = require('enb/lib/build-flow').create()
-  .name('enb-bem-grid')
+  .name('enb-sharps')
   .target('target', '?.css')
   .defineOption('config')
   .defineOption('source')

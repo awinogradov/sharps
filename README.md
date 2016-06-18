@@ -1,22 +1,40 @@
-# bem-grid
+# Sharps
 
-[![Build Status](https://travis-ci.org/bem-contrib/bem-grid.svg?branch=master&style=flat)](https://travis-ci.org/bem-contrib/bem-grid)
+[![Build Status](https://travis-ci.org/bem-contrib/sharps.svg?branch=master&style=flat)](https://travis-ci.org/bem-contrib/sharps)
 
-BEM on [Lost Grid](https://github.com/corysimmons/lost).
+Modular grid powered by [Lost](http://peter.coffee/lost) and [BEM](http://bem.info)
 
 ## Usage
 
 The easiest way:
 
-1. `bower install --save bem-grid`
-2. `<link rel="stylesheet" href="./bower_components/bem-grid/dist/bem-grid.min.css">`
+1. `bower install --save sharps`
+2. `<link rel="stylesheet" href="./bower_components/sharps/dist/sharps.min.css">`
+
+As plugin for [postcss](https://github.com/postcss/postcss):
+
+1. `npm i --save sharps`
+2. Prepend your plugins with `sharps`
+``` js
+const postcss = require('postcss');
+const sharps = require('sharps').postcss;
+
+postcss([sharps({
+  columns: 12, // default
+  maxWidth: '1100px',
+  gutter: '10px',
+  flex: 'flex'
+})]).process('a {color: red}').then(function(result) {
+  console.log(result.css);
+});
+```
 
 As [ENB](https://github.com/enb-make/enb) module:
 
-1. `npm i --save-dev bem-grid`
-2. Add `bem-grid` in your ENB config
+1. `npm i --save-dev sharps`
+2. Add `sharps` in your ENB config
 ``` js
-[require('bem-grid').enb, {
+[require('sharps').enb, {
   config: {
     columns: 12, // default
     maxWidth: '1100px',
@@ -25,7 +43,7 @@ As [ENB](https://github.com/enb-make/enb) module:
   }
 }]
 ```
-_**Note:** If you have any css builder, you should change its `target` and add `source` to bem-grid parameters for preventing conflicts, like this:_
+_**Note:** If you have any css builder, you should change its `target` and add `source` to sharps parameters for preventing conflicts, like this:_
 
 ``` js
 [techs.stylus, {
@@ -36,7 +54,7 @@ _**Note:** If you have any css builder, you should change its `target` and add `
   }
 }],
 
-[require('bem-grid').enb, {
+[require('sharps').enb, {
   config: {
     maxWidth: '1100px',
     gutter: '10px',
@@ -44,23 +62,6 @@ _**Note:** If you have any css builder, you should change its `target` and add `
   },
   source: '?.no-grid.css' // there is the source
 }]
-```
-
-As plugin for [postcss](https://github.com/postcss/postcss):
-
-1. `npm i --save bem-grid`
-2. Prepend your plugins with `bem-grid`
-``` js
-const postcss = require('postcss');
-const bemGrid = require('bem-grid').postcss;
-
-postcss([bemGconstrid({
-  maxWidth: '1100px',
-  gutter: '10px',
-  flex: 'flex'
-})]).process('a {color: red}').then(function(result) {
-  console.log(result.css);
-});
 ```
 
 ## Easy example
@@ -90,7 +91,7 @@ postcss([bemGconstrid({
 }
 ```
 
-## Row
+## Options
 
 __Useful mods for row block:__
 
@@ -117,6 +118,6 @@ __Useful mods for col element:__
 
 ### Ideas
 
-Please, talk about your ideas by GitHub [issues](https://github.com/bem-contrib/bem-grid/issues).
+Please, talk about your ideas by GitHub [issues](https://github.com/bem-contrib/sharps/issues).
 
 ### [MIT](http://en.wikipedia.org/wiki/MIT_License) License

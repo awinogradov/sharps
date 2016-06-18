@@ -1,11 +1,11 @@
 {
-  "name": "bem-grid",
-  "version": "2.5.0",
+  "name": "sharps",
+  "version": "3.0.0",
   "license": "MIT",
-  "description": "Flexbox grid on BEM methodology",
+  "description": "Modular grid powered by Lost and BEM",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bem-contrib/bem-grid.git"
+    "url": "git://github.com/bem-contrib/sharps.git"
   },
   "keywords": [
     "bem",
