@@ -1,7 +1,5 @@
 # Sharps
 
-[![Build Status](https://travis-ci.org/bem-contrib/sharps.svg?branch=master&style=flat)](https://travis-ci.org/bem-contrib/sharps)
-
 Modular grid powered by [Lost](http://peter.coffee/lost) and [BEM](http://bem.info)
 
 ## Usage
