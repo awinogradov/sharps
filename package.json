@@ -1,0 +1,23 @@
+{
+  "name": "sharps-web",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/theprotein/sharps.git"
+  },
+  "authors": [
+    "Anton Winogradov <winogradovaa@gmail.com>"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "bem-grid": "^2.5.0",
+    "mad-mark": "^2.2.4",
+    "postcss": "^5.0.21",
+    "postcss-font-magician": "^1.4.0",
+    "postcss-url": "^5.1.2"
+  },
+  "scripts": {},
+  "engines": {
+    "node": ">=4"
+  }
+}
