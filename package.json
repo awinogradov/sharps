@@ -29,16 +29,25 @@
     "postcss-simple-vars": "^1.2.0"
   },
   "devDependencies": {
-    "postcss-csso": "^1.1.2",
     "autoprefixer": "^6.3.1",
+    "conventional-changelog": "^1.1.0",
+    "conventional-changelog-cli": "^1.2.0",
+    "conventional-changelog-lint": "^0.3.4",
     "enb": "^1.1.0",
     "enb-bem-techs": "^2.1.0",
     "enb-postcss": "^0.2.0",
-    "jscs": "^1.11.2"
+    "husky": "^0.11.4",
+    "jscs": "^1.11.2",
+    "mversion": "^1.10.1",
+    "postcss-csso": "^1.1.2"
   },
   "scripts": {
     "dist": "enb make clean && NODE_ENV=production enb make",
-    "lint": "jshint-groups && jscs ."
+    "lint": "jshint-groups && jscs .",
+    "commitmsg": "conventional-changelog-lint -p angular -e",
+    "release-patch": "mversion patch",
+    "release-minor": "mversion minor",
+    "release-major": "mversion major"
   },
   "engines": {
     "node": ">=4"
