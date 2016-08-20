@@ -16,10 +16,10 @@ module.exports = require('enb/lib/build-flow').create()
     _this.config.columns = _this.config.columns || 12;
     _this.config.columnsExceptOne = _this.config.columns - 1;
 
-    return new Promise(function(resolve) {
+    return new Promise(function(resolve, reject) {
         postcss(plugins(_this._config)).process(src).then(function(gridResult) {
-            return gridResult.css + preTargetSource;
-        }).then(resolve);
+          return gridResult.css + preTargetSource;
+        }).then(resolve).catch(reject);
     });
   })
   .createTech();
