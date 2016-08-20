@@ -12,9 +12,9 @@ module.exports = require('enb/lib/build-flow').create()
   .useSourceText('source', '?')
   .builder(function(preTargetSource) {
     const _this = this;
-    _this.config = _this.config || {};
-    _this.config.columns = _this.config.columns || 12;
-    _this.config.columnsExceptOne = _this.config.columns - 1;
+    _this._config = _this._config || {};
+    _this._config.columns = _this._config.columns || 12;
+    _this._config.columnsExceptOne = _this._config.columns - 1;
 
     return new Promise(function(resolve, reject) {
         postcss(plugins(_this._config)).process(src).then(function(gridResult) {
