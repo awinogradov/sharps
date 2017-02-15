@@ -7,23 +7,23 @@
 /*
 * MEDIUM DISPLAYS:
 */
-@custom-media --medium screen and (min-width: 40.063em);
-@custom-media --medium-only screen and (min-width: 40.063em) and (max-width: 64em);
+@custom-media --medium screen and (min-width: 40.0001em);
+@custom-media --medium-only screen and (min-width: 40.0001em) and (max-width: 64em);
 
 /*
 * LARGE DISPLAYS:
 */
-@custom-media --large screen and (min-width: 64.063em);
-@custom-media --large-only screen and (min-width: 64.063em) and (max-width: 90em);
+@custom-media --large screen and (min-width: 64.0001em);
+@custom-media --large-only screen and (min-width: 64.0001em) and (max-width: 90em);
 
 /*
 * XLARGE DISPLAYS:
 */
-@custom-media --xlarge screen and (min-width: 90.063em);
-@custom-media --xlarge-only screen and (min-width: 90.063em) and (max-width: 120em);
+@custom-media --xlarge screen and (min-width: 90.0001em);
+@custom-media --xlarge-only screen and (min-width: 90.0001em) and (max-width: 120em);
 
 /*
 * XXLARGE DISPLAYS:
 */
-@custom-media --xxlarge screen and (min-width: 120.063em);
-@custom-media --xxlarge-only screen and (min-width: 120.063em) and (max-width: 99999999em);
+@custom-media --xxlarge screen and (min-width: 120.0001em);
+@custom-media --xxlarge-only screen and (min-width: 120.0001em) and (max-width: 99999999em);
